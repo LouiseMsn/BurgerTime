@@ -1,6 +1,8 @@
 # BurgerTech
 ![Screenshot from 2023-05-09 10-53-45](https://user-images.githubusercontent.com/108003990/237046133-a7b44b22-62d4-43a8-8105-92abe2f17c17.png)
 
+**Louise MANSON, Alice MOURIER**
+
 ## Installation
 Installation de la biliothèque SFML avec: <br>
 ``
@@ -47,3 +49,18 @@ Utiliser [Ctrl Droit] pour lancer du poivre sur les ennemis
 \- : _supprime des ennemis_<br>
 **F11** : _termine le joueur 1_<br>
 **F12** : _termine le joueur 2_<br>
+
+## Commentaires sur le projet
+
+**Ce qui ne marche pas:**
+- Les tranches ont parfois du mal à tomber lorsqu'on marche dessus
+- lorsque l'on sélectionne le mode à 2 joueurs, revenir à 1 joueur ne marche pas (mais l'inverse, oui)
+
+**Points d'interêt**
+- Il a été difficile de régler la vitesse du jeu pour que la vitesse du jeu ne dépende pas de la vitesse de la machine sur laquelle on joue d'oû la méthode "update" de la classe Updatable. On utilise des entier pour les pixels, mais les événements (comme le fait d'appuyer sur une flèche directionnelle) arrvient en microsecondes et dépendent de la machine. Donc on les accumule juqu'à ce qu'ils dépassent un seuil, et on met à jour à ce moment là.
+
+**Répartiion du travail dans le binôme*
+- Nous avons fait l'UML ensemble sur un draw.io partagé.
+- Nous nous sommes réparti les classes à programmer à avons soumis les changements sur GitHub
+- Alice à réalisé la documentation sur Doxygen
+- Louise à écrit les tests unitaires
