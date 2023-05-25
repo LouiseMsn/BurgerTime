@@ -55,7 +55,6 @@ Utiliser [Ctrl Droit] pour lancer du poivre sur les ennemis
 
 **Ce qui ne marche pas dans le jeu**
 - Les tranches ont parfois du mal à tomber lorsqu'on marche dessus
-- lorsque l'on sélectionne le mode à 2 joueurs, revenir à 1 joueur ne marche pas (mais l'inverse, oui)
 
 **Points d'interêt**
 - Il a été difficile de régler la vitesse du jeu pour que la vitesse du jeu ne dépende pas de la vitesse de la machine sur laquelle on joue d'oû la méthode "update" de la classe Updatable. On utilise des entier pour les pixels, mais les événements (comme le fait d'appuyer sur une flèche directionnelle) arrvient en microsecondes et dépendent de la machine. Donc on les accumule juqu'à ce qu'ils dépassent un seuil, et on met à jour à ce moment là.
