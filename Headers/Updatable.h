@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Entités pouvant être mise à jour dans le jeu
+ * 
+ */
 class Game;
 
 class Updatable

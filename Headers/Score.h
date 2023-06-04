@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Score
+ * 
+ */
 class Score : public Updatable
 {
 	int _value;

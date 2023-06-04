@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Hamburger composé de tranche à compléter pour terminer les niveaux
+ * 
+ */
 class Burger
 {
 	int _number;

@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Tranche de hamburger
+ * 
+ */
 enum SliceState
 {
 	SliceImmobile,

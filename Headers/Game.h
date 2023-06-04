@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Le jeu
+ * 
+ */
 enum textAlignment
 {
 	TextCenter,

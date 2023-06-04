@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Cornichon : ennemi
+ * 
+ */
 class Pickle: public Enemy
 {
 public:

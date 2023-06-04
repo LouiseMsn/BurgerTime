@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Saucisse : ennmemi
+ * 
+ */
 class Sausage : public Enemy
 {
 public:

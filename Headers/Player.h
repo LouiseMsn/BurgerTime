@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Joueur
+ * 
+ */
 enum PlayerState
 {
 	PlayerStandingFront,

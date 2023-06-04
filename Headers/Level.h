@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Niveau du jeu
+ * 
+ */
 enum MoveDirection : int
 {
 	None,

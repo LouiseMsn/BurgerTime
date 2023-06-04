@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Ennemi (oeuf au plat, cornichon ou saucisse)
+ * 
+ */
 enum EnemyState
 {
 	// existe mais pas encore apparu

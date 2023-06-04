@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Poivre pour attaquer les ennemis
+ * 
+ */
 enum PepperState
 {
 	PepperState1,

@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Oeuf : ennemis
+ * 
+ */
 class Egg : public Enemy
 {
 public:
