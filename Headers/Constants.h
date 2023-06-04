@@ -1,9 +1,5 @@
 #pragma once
 
-/**
- * @brief Constantes diverses pour le jeu
- * 
- */
 // vitesse des objets
 const float playerSpeed = 0.00004f; //  0.00013f; // 0.0001f; // vitesse du joueur
 const float enemyBaseSpeed = 0.00002f; // vitesse de base des enemis (elle peut augmenter)

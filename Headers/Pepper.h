@@ -1,9 +1,6 @@
 #pragma once
 
-/**
- * @brief Poivre pour attaquer les ennemis
- * 
- */
+
 enum PepperState
 {
 	PepperState1,
@@ -14,6 +11,10 @@ enum PepperState
 	PepperFinished,
 };
 
+/**
+ * @brief Poivre pour attaquer les ennemis
+ * 
+ */
 class Pepper : public Movable
 {
 	sf::Clock _clock;

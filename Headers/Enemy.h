@@ -1,9 +1,5 @@
 #pragma once
 
-/**
- * @brief Ennemi (oeuf au plat, cornichon ou saucisse)
- * 
- */
 enum EnemyState
 {
 	// existe mais pas encore apparu
@@ -54,6 +50,10 @@ enum EnemySubState
 	EnemyMashedLeft4,
 };
 
+/**
+ * @brief Ennemi (oeuf au plat, cornichon ou saucisse)
+ * 
+ */
 class Enemy : public Movable
 {
 	sf::Vector2i _targetBlockPosition;

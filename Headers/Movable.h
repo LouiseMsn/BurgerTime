@@ -1,9 +1,5 @@
 #pragma once
 
-/**
- * @brief Objet qui bouge sur l'écran
- * 
- */
 #define SPRITE(x) (getGame()->getSpriteSheet().getSprite(x))
 
 enum MovableType
@@ -17,6 +13,10 @@ enum MovableType
 class Game;
 enum MoveDirection : int;
 
+/**
+ * @brief Objet qui bouge sur l'écran
+ * 
+ */
 class Movable : public Updatable
 {
 	int _state;

@@ -1,7 +1,7 @@
 #pragma once
 
 /**
- * @brief Score
+ * @brief Score qui apparaît au dessus du joueur
  * 
  */
 class Score : public Updatable

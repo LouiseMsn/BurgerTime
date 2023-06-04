@@ -1,9 +1,5 @@
 #pragma once
 
-/**
- * @brief Tranche de hamburger
- * 
- */
 enum SliceState
 {
 	SliceImmobile,
@@ -17,6 +13,10 @@ enum SliceState
 class Burger;
 class Player;
 
+/**
+ * @brief Tranche de hamburger
+ * 
+ */
 class Slice : public Movable
 {
 	const static int _sliceWidth = 32;

@@ -1,9 +1,5 @@
 #pragma once
 
-/**
- * @brief Joueur
- * 
- */
 enum PlayerState
 {
 	PlayerStandingFront,
@@ -21,6 +17,10 @@ enum PlayerState
 	PlayerWins,
 };
 
+/**
+ * @brief Joueur
+ * 
+ */
 class Player : public Movable
 {
 	int _score;

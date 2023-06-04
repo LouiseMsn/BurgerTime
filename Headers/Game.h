@@ -1,9 +1,5 @@
 #pragma once
 
-/**
- * @brief Le jeu
- * 
- */
 enum textAlignment
 {
 	TextCenter,
@@ -58,6 +54,10 @@ class SpriteSheet;
 class Level;
 class Player;
 
+/**
+ * @brief Le jeu
+ * 
+ */
 class Game : public Updatable
 {
 	bool _keysState[sf::Keyboard::KeyCount];

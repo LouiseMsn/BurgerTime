@@ -1,9 +1,5 @@
 #pragma once
 
-/**
- * @brief Niveau du jeu
- * 
- */
 enum MoveDirection : int
 {
 	None,
@@ -24,6 +20,10 @@ class Pepper;
 class Score;
 class Updatable;
 
+/**
+ * @brief Niveau du jeu
+ * 
+ */
 class Level : public Updatable
 {
 public:
