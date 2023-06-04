@@ -10,12 +10,21 @@
 #include "Headers/Enemy.h"
 #include "Headers/Sausage.h"
 
+/**
+ * @brief construit une nouvelle saucisse
+ * 
+ * @param game 
+ */
 Sausage::Sausage(Game* game) :
 	Enemy(game)
 {
 	setSprite(getSubStateSprite(EnemyRight1));
 }
 
+/**
+ * @brief la saucisse meurt écrasée par une tranche qui tombe
+ * 
+ */
 void Sausage::dieMashed()
 {
 	auto direction = getMovingDirection();
@@ -30,6 +39,12 @@ void Sausage::dieMashed()
 	}
 }
 
+/**
+ * @brief récupère le sprite correspondant au sous-état spécifié en paramètre
+ * 
+ * @param subState 
+ * @return sf::Sprite* 
+ */
 sf::Sprite* Sausage::getSubStateSprite(EnemySubState subState) const
 {
 	auto offset = SausageDown1;

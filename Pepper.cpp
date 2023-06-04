@@ -9,6 +9,12 @@
 #include "Headers/Movable.h"
 #include "Headers/Pepper.h"
 
+/**
+ * @brief Construit un nouveau poivre
+ * 
+ * @param game 
+ * @param direction 
+ */
 Pepper::Pepper(Game* game, MoveDirection direction)
 	:Movable(game)
 {
@@ -22,6 +28,11 @@ Pepper::Pepper(Game* game, MoveDirection direction)
 	move();
 }
 
+/**
+ * @brief bouge le poivre selon la direction dans laquelle il est lancé
+ * le poivre à 4 sprite et donc 4 états
+ * 
+ */
 void Pepper::move()
 {
 	auto state = getState();
@@ -60,16 +71,32 @@ void Pepper::move()
 	restartSubStateClock();
 }
 
+/**
+ * @brief setter de la position du poivre
+ * le poivre peut passer à travers tout, donc on ne gère pas la notion de bloc ouvert dans cette fonction
+ * 
+ * @param pixelPosition 
+ * @param checkBlocks 
+ * @return true 
+ * @return false 
+ */
 bool Pepper::setPixelPosition(const sf::Vector2i& pixelPosition, bool checkBlocks)
 {
 	if (_pixelPosition == pixelPosition)
 		return false;
 
-	// le poivre peuvent passer a travers tout donc on ne gere pas la notion de block ouvert
+	// le poivre peut passer à travers tout, donc on ne gère pas la notion de bloc ouvert
 	_pixelPosition = pixelPosition;
 	return true;
 }
 
+/**
+ * @brief mise à jour du poivre
+ * 
+ * @param window 
+ * @param deltaTime 
+ * @param states 
+ */
 void Pepper::update(sf::RenderWindow& window, const sf::Time& deltaTime, const sf::RenderStates& states)
 {
 	if (getGame()->isPaused())

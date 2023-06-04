@@ -9,6 +9,11 @@
 #include "Headers/Game.h"
 #include "Headers/Movable.h"
 
+/**
+ * @brief Construit un nouveau Movable (entité qui peut bouger dans le jeu)
+ * 
+ * @param game 
+ */
 Movable::Movable(Game* game) :
 	Updatable(game),
 	_state(-1),
@@ -21,6 +26,12 @@ Movable::Movable(Game* game) :
 {
 }
 
+/**
+ * @brief récupère la direction opposée à celle passée en paramètre
+ * 
+ * @param direction 
+ * @return MoveDirection 
+ */
 MoveDirection Movable::getOppositeDirection(MoveDirection direction)
 {
 	switch (direction)
@@ -42,6 +53,14 @@ MoveDirection Movable::getOppositeDirection(MoveDirection direction)
 	}
 }
 
+/**
+ * @brief enlève une direction spécifiée en paramètre ou retourne false
+ * 
+ * @param directions 
+ * @param direction 
+ * @return true 
+ * @return false 
+ */
 bool Movable::removeDirection(std::vector<MoveDirection>& directions, MoveDirection direction)
 {
 	auto find = std::find(directions.begin(), directions.end(), direction);
@@ -53,6 +72,14 @@ bool Movable::removeDirection(std::vector<MoveDirection>& directions, MoveDirect
 	return false;
 }
 
+/**
+ * @brief vérifie que 2 directions passées en paramètre sont opposée
+ * 
+ * @param dir1 
+ * @param dir2 
+ * @return true 
+ * @return false 
+ */
 bool Movable::areOppositeDirection(MoveDirection dir1, MoveDirection dir2)
 {
 	if (dir1 == None || dir2 == None)
@@ -61,21 +88,45 @@ bool Movable::areOppositeDirection(MoveDirection dir1, MoveDirection dir2)
 	return dir1 == getOppositeDirection(dir2);
 }
 
+/**
+ * @brief setter du type d'objet Movable
+ * 
+ * @param type 
+ */
 void Movable::setType(MovableType type)
 {
 	_type = type;
 }
 
+/**
+ * @brief récupère le type d'objet movable
+ * 
+ * @return MovableType 
+ */
 MovableType Movable::getType() const
 {
 	return _type;
 }
 
+/**
+ * @brief récupère la direction du mouvement
+ * 
+ * @return MoveDirection 
+ */
 MoveDirection Movable::getMovingDirection() const
 {
 	return _movingDirection;
 }
 
+/**
+ * @brief setter de la direction du mouvement 
+ * retourne false si la movingDirection est déjà égale à la direction spécifiée en paramètre
+ * retourne true sinon
+ * 
+ * @param direction 
+ * @return true 
+ * @return false 
+ */
 bool Movable::setMovingDirection(MoveDirection direction)
 {
 	if (_movingDirection == direction)
@@ -89,47 +140,98 @@ bool Movable::setMovingDirection(MoveDirection direction)
 	return true;
 }
 
+/**
+ * @brief récupère la dernière direction du mouvement
+ * 
+ * @return MoveDirection 
+ */
 MoveDirection Movable::getLastMovingDirection() const
 {
 	return _lastMovingDirection;
 }
 
+/**
+ * @brief setter de la dernière direction du mouvement
+ * retourne true 
+ * 
+ * @param direction 
+ * @return true 
+ * @return false 
+ */
 bool Movable::setLastMovingDirection(MoveDirection direction)
 {
 	_lastMovingDirection = direction;
 	return true;
 }
 
+/**
+ * @brief récupère le délai du changement de sous-état
+ * 
+ * @return int 
+ */
 int Movable::getSubStateChangeDelay() const
 {
 	return _subStateChangeDelay;
 }
 
+/**
+ * @brief setter du délai du changement de sous-état
+ * 
+ * @param subStateChangeDelay 
+ */
 void Movable::setSubStateChangeDelay(int subStateChangeDelay)
 {
 	_subStateChangeDelay = subStateChangeDelay;
 }
 
+/**
+ * @brief redémarre la clock des sous-état
+ * 
+ */
 void Movable::restartSubStateClock()
 {
 	_subStateClock.restart();
 }
 
+/**
+ * @brief retourne le temps écoulé en millisecodndes pour le sous état
+ * 
+ * @return int 
+ */
 int Movable::getSubStateElapsedMilliseconds() const
 {
 	return _subStateClock.getElapsedTime().asMilliseconds();
 }
 
+/**
+ * @brief récupère l'état
+ * 
+ * @return int 
+ */
 int Movable::getState() const
 {
 	return _state;
 }
 
+/**
+ * @brief récupère le sous état (plusieurs animations pour un état donné)
+ * 
+ * @return int 
+ */
 int Movable::getSubState() const
 {
 	return _subState;
 }
 
+/**
+ * @brief setter de l'état
+ * retourne false si l'état était déjà le bon
+ * retourne true sinon
+ * 
+ * @param state 
+ * @return true 
+ * @return false 
+ */
 bool Movable::setState(int state)
 {
 	if (state == _state)
@@ -139,6 +241,16 @@ bool Movable::setState(int state)
 	return true;
 }
 
+/**
+ * @brief setter du sous-état 
+ * une fois fait, la clock redémarre
+ * retourne false si l'état était déjà le bon
+ * retourne true sinon
+ * 
+ * @param state 
+ * @return true 
+ * @return false 
+ */
 bool Movable::setSubState(int subState)
 {
 	if (subState == _subState)
@@ -149,22 +261,42 @@ bool Movable::setSubState(int subState)
 	return true;
 }
 
+/**
+ * @brief récupère le sprite
+ * 
+ * @return sf::Sprite* 
+ */
 sf::Sprite* Movable::getSprite() const
 {
 	return _sprite;
 }
 
+/**
+ * @brief récupère les bords
+ * 
+ * @return sf::IntRect 
+ */
 sf::IntRect Movable::getPixelBounds() const
 {
 	auto pos = getPixelPosition();
 	return sf::IntRect(pos, _size);
 }
 
+/**
+ * @brief récupère la position en pixels
+ * 
+ * @return sf::Vector2i 
+ */
 sf::Vector2i Movable::getPixelPosition() const
 {
 	return _pixelPosition;
 }
 
+/**
+ * @brief récupère la position en pixel du centre
+ * 
+ * @return sf::Vector2i 
+ */
 sf::Vector2i Movable::getCenterPixelPosition() const
 {
 	auto pos = _pixelPosition;
@@ -173,11 +305,23 @@ sf::Vector2i Movable::getCenterPixelPosition() const
 	return pos;
 }
 
+/**
+ * @brief récupère la position du bloc
+ * 
+ * @return sf::Vector2i 
+ */
 sf::Vector2i Movable::getBlockPosition() const
 {
 	return Level::getBlockPosition(_pixelPosition);
 }
 
+/**
+ * @brief vérifie que l'objet Movable se trouve au bloc spécifié par blockPosition
+ * 
+ * @param blockPosition 
+ * @return true 
+ * @return false 
+ */
 bool Movable::isAtBlock(const sf::Vector2i& blockPosition) const
 {
 	auto blockPos = Level::getBlockPixelPosition(blockPosition);
@@ -206,22 +350,50 @@ bool Movable::collides(const sf::IntRect pixelBounds, int tolerance) const
 	return intersects;
 }
 
+/**
+ * @brief vérifie si il y à collision entre deux movable avec une tolérance spécifée en paramètre
+ * 
+ * @param movable avec lequel on vérfie la collision
+ * @param tolerance tolérance qui détermine à quelle moment on considère qu'il y a collision
+ * @return true 
+ * @return false 
+ */
 bool Movable::collides(const Movable* movable, int tolerance) const
 {
 	return collides(movable->getPixelBounds(), tolerance);
 }
 
+/**
+ * @brief setter de la taille de l'objet Movable
+ * 
+ * @param size 
+ */
 void Movable::setSize(const sf::Vector2i& size)
 {
 	_size = size;
 }
 
+/**
+ * @brief setter du sprite du Movable
+ * 
+ * @param sprite 
+ */
 void Movable::setSprite(sf::Sprite* sprite)
 {
 	_sprite = sprite;
 	setPixelPosition(_pixelPosition);
 }
 
+/**
+ * @brief change la position en pixel à celle spécifiée en paramètre
+ * retourne false si la position actuelle est la même que celle spécifiée 
+ * ceci inclus notamment de se replacer lorsque le Movable se trouve dans des endroits interdis à cause de la tolérence
+ * 
+ * @param pixelPosition 
+ * @param checkBlocks 
+ * @return true 
+ * @return false 
+ */
 bool Movable::setPixelPosition(const sf::Vector2i& pixelPosition, bool checkBlocks)
 {
 	if (_pixelPosition == pixelPosition)
@@ -276,7 +448,7 @@ bool Movable::setPixelPosition(const sf::Vector2i& pixelPosition, bool checkBloc
 
 	if (dir == Up || dir == Down)
 	{
-		// est on bien places une echelle?
+		// est on bien placés sur une une echelle?
 		auto m = finalPos.x % levelBlocksSizeX;
 		if (m < levelBlocksSizeX / 2)
 		{
@@ -314,6 +486,11 @@ bool Movable::setPixelPosition(const sf::Vector2i& pixelPosition, bool checkBloc
 	return true;
 }
 
+/**
+ * @brief récupère toutes les directions disponibles selon la position du Movable
+ * 
+ * @return std::vector<MoveDirection> 
+ */
 std::vector<MoveDirection> Movable::getAvailableDirections() const
 {
 	auto level = getGame()->getCurrentLevel();
@@ -321,6 +498,11 @@ std::vector<MoveDirection> Movable::getAvailableDirections() const
 	return level->getAvailableDirections(pos);
 }
 
+/**
+ * @brief mouvement en fonction de la touche appuyée par l'utilisateur, passée en paramètre
+ * 
+ * @param key appuyée
+ */
 void Movable::moveFromKey(sf::Keyboard::Key key)
 {
 	switch (key)
@@ -347,6 +529,13 @@ void Movable::moveFromKey(sf::Keyboard::Key key)
 	}
 }
 
+/**
+ * @brief dessine le sprite sur la fenêtre
+ * 
+ * @param window 
+ * @param deltaTime 
+ * @param states 
+ */
 void Movable::drawSprite(sf::RenderWindow& window, const sf::Time& deltaTime, const sf::RenderStates& states)
 {
 	if (!_sprite)
@@ -359,6 +548,12 @@ void Movable::drawSprite(sf::RenderWindow& window, const sf::Time& deltaTime, co
 	window.draw(*_sprite, states);
 }
 
+/**
+ * @brief met à jour lorsque le Movable bouge
+ * se termine si il n'y à pas de movingDirection (qu'elle vaut none)
+ * 
+ * @param speed 
+ */
 void Movable::updateWhenMoved(int speed)
 {
 	if (_movingDirection == None)
@@ -386,6 +581,13 @@ void Movable::updateWhenMoved(int speed)
 	setPixelPosition(position);
 }
 
+/**
+ * @brief mise à jour du Movable
+ * 
+ * @param window 
+ * @param deltaTime 
+ * @param states 
+ */
 void Movable::update(sf::RenderWindow& window, const sf::Time& deltaTime, const sf::RenderStates& states)
 {
 	Updatable::update(window, deltaTime, states);

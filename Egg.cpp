@@ -22,9 +22,9 @@ Egg::Egg(Game* game) :
 }
 
 /**
- * @brief récupère le sprite correspondant au sous-état de l'oeuf précisé en paramètre
+ * @brief récupère le sprite correspondant au sous-état spécifié en paramètre
  * 
- * @param subState sous-état de l'oeuf
+ * @param subState 
  * @return sf::Sprite* 
  */
 sf::Sprite* Egg::getSubStateSprite(EnemySubState subState) const

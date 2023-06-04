@@ -8,6 +8,14 @@
 #include "Headers/Game.h"
 #include "Headers/Score.h"
 
+/**
+ * @brief construit un nouveau score
+ * 
+ * @param game 
+ * @param value 
+ * @param pixelPosition 
+ * @param color 
+ */
 Score::Score(Game* game, int value, const sf::Vector2i& pixelPosition, const sf::Color& color) :
 	Updatable(game)
 {
@@ -24,6 +32,11 @@ Score::Score(Game* game, int value, const sf::Vector2i& pixelPosition, const sf:
 	updateText(0);
 }
 
+/**
+ * @brief mise à jour du score
+ * 
+ * @param speed 
+ */
 void Score::updateText(int speed)
 {
 	auto scale = getGame()->getScale();
@@ -40,11 +53,22 @@ void Score::updateText(int speed)
 	_text.setFillColor(color);
 }
 
+/**
+ * @brief true si le temps d'affichage du score est écoulé
+ * 
+ * @return true 
+ * @return false 
+ */
 bool Score::timedOut()
 {
 	return _timeout.getElapsedTime().asSeconds() >= scoreShowTime;
 }
 
+/**
+ * @brief met à jour lorsqu'il bouge
+ * 
+ * @param speed 
+ */
 void Score::updateWhenMoved(int speed)
 {
 	if (timedOut())
@@ -53,6 +77,13 @@ void Score::updateWhenMoved(int speed)
 	updateText(speed);
 }
 
+/**
+ * @brief mise à jour du score
+ * 
+ * @param window 
+ * @param deltaTime 
+ * @param states 
+ */
 void Score::update(sf::RenderWindow& window, const sf::Time& deltaTime, const sf::RenderStates& states)
 {
 	Updatable::update(window, deltaTime, states);

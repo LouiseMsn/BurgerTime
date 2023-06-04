@@ -16,6 +16,22 @@ int startLevel = 0;
 int windowStyle = sf::Style::Default;
 bool soundEnabled = true;
 
+/**
+ * @brief MAIN
+ * on boucle sur les arguments passés en ligne de commande:
+ * -l nombre de vies
+ *-p nombre de poivres
+ *-s échelle
+ *-ws style de fenêtre
+ *-w largeur de la fenêtre
+ *-h hauteur de la fenêtre
+ *-t niveau de départ
+ *-so 0 ou 1 (activer ou couper le son)
+ * On cree le jeu avec les parametres passes ou par default
+ * @param argc 
+ * @param argv 
+ * @return int 
+ */
 int main(int argc, char** argv)
 {
 	// la taille de l'ecran complet avant mise a l'echelle
