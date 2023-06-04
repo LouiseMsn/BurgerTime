@@ -27,9 +27,12 @@ const int arrayBlocksY = blocksCountY + 2;
 const int burgerMaxCount = 4; // nombre max de burgers par niveau
 const int burgerMaxSlices = 12; // nombre max de tranches par burger
 
-// niveaux de 1 a 6
-// ' ' => on peut y aller, 'X' => impossible d'y aller (voir levels.png)
-// ce tableau contient les bords (qu'on ne voit pas a l'ecran)
+
+/**
+ * @brief niveaux de 1 à 6
+ * ' ' => on peut y aller, 'X' => impossible d'y aller (voir levels.png)
+ * ce tableau contient les bords (qu'on ne voit pas a l'ecran)
+ */
 char blocks[levelsCount][arrayBlocksY][arrayBlocksX + 1] = { // + 1 car on utilise une chaine de caractere terminee par un "invisible" zero
 	{
 	"XXXXXXXXXXXXXXXXXXX",
@@ -371,6 +374,13 @@ int pickles[levelsCount] = { 0,	0,	3,	2,	2,	2 };
 // il y a un leger decalage du sprite du level avec la taille des blocs
 sf::Vector2i offset(0, 3);
 
+/**
+ * @brief construit un nouveau niveau
+ * 
+ * @param game jeu
+ * @param sprite sprite du niveau
+ * @param number numéro du niveau
+ */
 Level::Level(Game* game, sf::Sprite* sprite, int number) :
 	Updatable(game)
 {
@@ -405,6 +415,10 @@ Level::Level(Game* game, sf::Sprite* sprite, int number) :
 	}
 }
 
+/**
+ * @brief détruit le niveau
+ * 
+ */
 Level::~Level()
 {
 	destroy(false);
@@ -414,6 +428,11 @@ Level::~Level()
 	}
 }
 
+/**
+ * @brief on détruit les burger si gameStart est true
+ * 
+ * @param gameStart 
+ */
 void Level::destroy(bool gameStart)
 {
 	for (const auto& item : _enemies)
@@ -451,6 +470,12 @@ void Level::destroy(bool gameStart)
 	_movables.clear();
 }
 
+/**
+ * @brief prépare pour le jeu
+ * 
+ * @param gameStart 
+ * @param resetSlices 
+ */
 void Level::prepareForPlay(bool gameStart, bool resetSlices)
 {
 	destroy(gameStart);
@@ -584,36 +609,74 @@ void Level::prepareForPlay(bool gameStart, bool resetSlices)
 	}
 }
 
+/**
+ * @brief récupère le numéro du niveau
+ * 
+ * @return numéro du niveau
+ */
 int Level::getNumber() const
 {
 	return _number;
 }
 
+/**
+ * @brief retourne le joueur qui termine
+ * 
+ * @return Player* 
+ */
 Player* Level::getFinishingPlayer() const
 {
 	return _finishingPlayer;
 }
 
+/**
+ * @brief ajoute au niveau un objet de classe Movable passé en paramètre 
+ * 
+ * @param movable 
+ */
 void Level::addMovable(Movable* movable)
 {
 	_movables.push_back(movable);
 }
 
+/**
+ * @brief enlève un objet de classe Movable du niveau, passé en paramètre
+ * 
+ * @param movable 
+ */
 void Level::removeMovable(Movable* movable)
 {
 	_movables.erase(std::remove(_movables.begin(), _movables.end(), movable), _movables.end());
 }
 
+/**
+ * @brief vérifie si tout les burgers ont été complétés
+ * 
+ * @return true 
+ * @return false 
+ */
 bool Level::areAllBurgersPrepared() const
 {
 	return _stackableSlices == 0;
 }
 
+/**
+ * @brief vérifie si le niveau est terminé (si tout les burgers sont finis, ou qu'un joueur est mort)
+ * 
+ * @return true 
+ * @return false 
+ */
 bool Level::isFinished() const
 {
 	return areAllBurgersPrepared() || getGame()->isAnyPlayerDead();
 }
 
+/**
+ * @brief termine le niveau
+ * 
+ * @param finishingPlayer 
+ * @param resetSlices 
+ */
 void Level::finish(Player* finishingPlayer, bool resetSlices)
 {
 	if (resetSlices)
@@ -632,12 +695,22 @@ void Level::finish(Player* finishingPlayer, bool resetSlices)
 	}
 }
 
+/**
+ * @brief enlève le score passé en paramètre
+ * 
+ * @param score 
+ */
 void Level::killScore(Score* score)
 {
 	_scores.erase(std::remove(_scores.begin(), _scores.end(), score), _scores.end());
 	delete score;
 }
 
+/**
+ * @brief enlève le poivre passé en paramètre
+ * 
+ * @param pepper 
+ */
 void Level::killPepper(Pepper* pepper)
 {
 	removeMovable(pepper);
@@ -645,6 +718,12 @@ void Level::killPepper(Pepper* pepper)
 	delete pepper;
 }
 
+/**
+ * @brief enlève l'ennemi passé en paramètre et fait apparaître un nouvel ennemi si spawNewOne est true
+ * 
+ * @param enemy 
+ * @param spawnNewOne 
+ */
 void Level::killEnemy(Enemy* enemy, bool spawnNewOne)
 {
 	removeMovable(enemy);
@@ -656,6 +735,10 @@ void Level::killEnemy(Enemy* enemy, bool spawnNewOne)
 	}
 }
 
+/**
+ * @brief enlève un ennemi au hasard dans ceux présents
+ * 
+ */
 void Level::killRandomEnemy()
 {
 	if (!_enemies.size())
@@ -665,6 +748,11 @@ void Level::killRandomEnemy()
 	killEnemy(_enemies.at(index), false);
 }
 
+/**
+ * @brief fait apparaître un nouvel ennemi
+ * 
+ * @return const Enemy* 
+ */
 const Enemy* Level::spawnNewEnemy()
 {
 	auto rnd = Game::getRandom(0, 2);
@@ -693,6 +781,14 @@ const Enemy* Level::spawnNewEnemy()
 	return enemy;
 }
 
+/**
+ * @brief vérifie si un ennemi se trouve sur un certain bloc passé en paramètre
+ * 
+ * @param blockPosition 
+ * @param except 
+ * @return true 
+ * @return false 
+ */
 bool Level::isThereAnyEnemyAtBlock(const sf::Vector2i blockPosition, const Enemy* except) const
 {
 	auto bounds = Level::getBlockPixelBounds(blockPosition);
@@ -707,7 +803,13 @@ bool Level::isThereAnyEnemyAtBlock(const sf::Vector2i blockPosition, const Enemy
 	return false;
 }
 
-// faire apparaitre un ennemi
+
+/**
+ * @brief fait apparaître un ennemi
+ * on essaye de ne pas mettre 2 ennemis au même endroit
+ * 
+ * @param enemy 
+ */
 void Level::spawnEnemy(Enemy* enemy) const
 {
 	// on essaie de ne pas mettre 2 ennemis au meme endroit
@@ -727,6 +829,14 @@ void Level::spawnEnemy(Enemy* enemy) const
 	enemy->setBlockPosition(*_enemiesEntryPositions.at(index), false);
 }
 
+/**
+ * @brief ajoute une tranche
+ * si le burger est complet, on gagne des points
+ * à 2 joueur, le joueur qui finit le niveau à des points en plus
+ * 
+ * @param slice 
+ * @param player 
+ */
 void Level::addStackedSlice(Slice* slice, Player* player)
 {
 	_stackableSlices--;
@@ -737,7 +847,7 @@ void Level::addStackedSlice(Slice* slice, Player* player)
 		player->addScore(completeBurgerScore, slice->getCenterPixelPosition());
 	}
 
-	// a 1 joueur, le joueur qui finit le niveau a des points en plus
+	// a 2 joueur, le joueur qui finit le niveau a des points en plus
 	if (!_stackableSlices)
 	{
 		_finishingPlayer = player;
@@ -748,6 +858,14 @@ void Level::addStackedSlice(Slice* slice, Player* player)
 	}
 }
 
+/**
+ * @brief parcours du joueur
+ * on vérifie si on marche sur un bonus
+ * on parcourt les burgers et les tranches pour savoir si on a marché dessus
+ * 
+ * @param pixelBounds 
+ * @param player 
+ */
 void Level::playerStep(const sf::IntRect& pixelBounds, Player* player) const
 {
 	// est ce qu'on marche sur un bonus?
@@ -772,28 +890,50 @@ void Level::playerStep(const sf::IntRect& pixelBounds, Player* player) const
 	}
 }
 
+/**
+ * @brief récupère la position d'un bloc
+ * 
+ * @param pixelPosition 
+ * @return sf::Vector2i 
+ */
 sf::Vector2i Level::getBlockPosition(const sf::Vector2i& pixelPosition)
 {
 	return sf::Vector2i(getBlockXFromPixelPositionX(pixelPosition.x), getBlockYFromPixelPositionY(pixelPosition.y));
 }
 
-// en X, le rapport entre les blocks et les pixels n'est pas lineaire
-// car les blocks sont de 16 (blocs visibles) et 8 pixels (blocs "murs" intermediaires)
-// 
-// index pixel (208):  0..15 16..23 24..39 40..47 .... 183..191 192..207       
-// index bloc   (19):  1     2      3      4      .... 15       16     (0 et 17 sont les bords, non definis dans l'image)
+
+/**
+ * @brief récupère le bloc en X
+ * en X, le rapport entre les blocs et les pixels n'est pas linéaire, car les blocs sont de 16 (blocs visibles) et 8 pixels (blocs "murs" intermédiaires)
+ * index pixel (208):  0..15 16..23 24..39 40..47 .... 183..191 192..207     
+ * index bloc   (19):  1     2      3      4      .... 15       16     (0 et 17 sont les bords, non definis dans l'image)
+ * @param x 
+ * @return int 
+ */
 int Level::getBlockXFromPixelPositionX(int x)
 {
 	if (x < 0) return 0;
 	return 1 + (x / levelBlocksDivisionX / 3) * 2 + ((x / levelBlocksDivisionX) % 3) / 2;
 }
 
+/**
+ * @brief récupère le bloc en Y
+ * 
+ * @param y 
+ * @return int 
+ */
 int Level::getBlockYFromPixelPositionY(int y)
 {
 	if (y < 0) return 0;
 	return  1 + y / levelBlocksPixelsY;
 }
 
+/**
+ * @brief récupère la position en pixel d'un bloc
+ * 
+ * @param blockPosition 
+ * @return sf::Vector2i 
+ */
 sf::Vector2i Level::getBlockPixelPosition(const sf::Vector2i& blockPosition)
 {
 	auto x = blockPosition.x / 2 * 3 * levelBlocksDivisionX;
@@ -806,6 +946,12 @@ sf::Vector2i Level::getBlockPixelPosition(const sf::Vector2i& blockPosition)
 	return sf::Vector2i(x, y);
 }
 
+/**
+ * @brief récupère les bords d'un block
+ * 
+ * @param blockPosition 
+ * @return sf::IntRect 
+ */
 sf::IntRect Level::getBlockPixelBounds(const sf::Vector2i& blockPosition)
 {
 	int width;
@@ -824,6 +970,12 @@ sf::IntRect Level::getBlockPixelBounds(const sf::Vector2i& blockPosition)
 	return sf::IntRect(x, y, width, levelBlocksPixelsY);
 }
 
+/**
+ * @brief récupère les directions disponibles (dans lequelles on peut se rendre) selon ou on se trouve
+ * 
+ * @param blockPosition 
+ * @return std::vector<MoveDirection> 
+ */
 std::vector<MoveDirection> Level::getAvailableDirections(const sf::Vector2i blockPosition) const
 {
 	std::vector<MoveDirection> directions;
@@ -850,9 +1002,15 @@ std::vector<MoveDirection> Level::getAvailableDirections(const sf::Vector2i bloc
 	return directions;
 }
 
-// un sol c'est un bloc vide avec
-// soit un bloc en dessous plein
-// soit un bloc en dessous vide et les 2 blocs a cote du bloc en dessous pleins (milieu d'echelle)
+/**
+ * @brief est ce que le bloc est du sol (où le joueur peut marcher)
+ * 
+ * un sol est un bloc vide avec: soit un bloc plein en dessous, soit un bloc vide en dessous et les 2 blocs à côté du bloc en dessous pleins (milieu d'échelle)
+ * 
+ * @param blockPosition 
+ * @return true 
+ * @return false 
+ */
 bool Level::isBlockGround(const sf::Vector2i& blockPosition) const
 {
 	if (blockPosition.x <= 0 || blockPosition.y <= 0)
@@ -872,15 +1030,31 @@ bool Level::isBlockGround(const sf::Vector2i& blockPosition) const
 	return !isBlockOpen(sf::Vector2i(pos.x - 1, pos.y)) && !isBlockOpen(sf::Vector2i(pos.x + 1, pos.y));
 }
 
+/**
+ * @brief est ce que le bloc est ouvert
+ * 
+ * @param blockPosition 
+ * @return true 
+ * @return false 
+ */
 bool Level::isBlockOpen(const sf::Vector2i& blockPosition) const
 {
 	return blocks[_number][blockPosition.y][blockPosition.x] == ' ';
 }
 
+/**
+ * @brief surcharge de la fonction précédente
+ * la tolérance sert à pouvoir passer facilement d'une échelle au sol ou inversement
+ * on teste chaque coin du rectangle moyennant la tolérance
+ * 
+ * @param pixelBounds 
+ * @param tolerance 
+ * @return true 
+ * @return false 
+ */
 bool Level::isBlockOpen(const sf::IntRect& pixelBounds, int tolerance) const
 {
-	// la tolerance sert a pouvoir facilement passer d'une echelle au sol ou inversement
-	// on teste chaque coin du rectangle moyennant la tolerance
+
 	if (!isBlockOpen(Level::getBlockPosition(sf::Vector2i(pixelBounds.left + tolerance, pixelBounds.top + tolerance))))
 		return false;
 
@@ -896,7 +1070,13 @@ bool Level::isBlockOpen(const sf::IntRect& pixelBounds, int tolerance) const
 	return true;
 }
 
-// recuperation des ennemis dans le coin
+
+/**
+ * @brief récupère les ennemis dans le coin
+ * 
+ * @param pixelBounds 
+ * @return std::vector<Enemy*> 
+ */
 std::vector<Enemy*> Level::getEnemiesAround(const sf::IntRect pixelBounds) const
 {
 	std::vector<Enemy*> enemies;
@@ -910,6 +1090,13 @@ std::vector<Enemy*> Level::getEnemiesAround(const sf::IntRect pixelBounds) const
 	return enemies;
 }
 
+/**
+ * @brief est ce qu'un ennemi est empoivré
+ * 
+ * @param pixelBounds 
+ * @return true 
+ * @return false 
+ */
 bool Level::isPeppered(const sf::IntRect pixelBounds) const
 {
 	for (const auto& item : _peppers)
@@ -920,6 +1107,12 @@ bool Level::isPeppered(const sf::IntRect pixelBounds) const
 	return false;
 }
 
+/**
+ * @brief jette du poivre
+ * 
+ * @param pixelPosition 
+ * @param direction 
+ */
 void Level::sprayPepper(const sf::Vector2i pixelPosition, MoveDirection direction)
 {
 	auto pepper = new Pepper(getGame(), direction);
@@ -928,12 +1121,23 @@ void Level::sprayPepper(const sf::Vector2i pixelPosition, MoveDirection directio
 	addMovable(pepper);
 }
 
+/**
+ * @brief ajoute le score de la valeur passée en paramètre
+ * 
+ * @param value 
+ * @param pixelPosition 
+ * @param color 
+ */
 void Level::addScore(int value, const sf::Vector2i& pixelPosition, const sf::Color& color)
 {
 	auto score = new Score(getGame(), value, pixelPosition, color);
 	_scores.push_back(score);
 }
 
+/**
+ * @brief ajoute un bonus
+ * 
+ */
 void Level::addBonus()
 {
 	if (_bonus)
@@ -945,6 +1149,10 @@ void Level::addBonus()
 	_bonusClock.restart();
 }
 
+/**
+ * @brief enlève un bonus
+ * 
+ */
 void Level::removeBonus()
 {
 	if (!_bonus)
@@ -956,6 +1164,10 @@ void Level::removeBonus()
 	_bonusClock.restart();
 }
 
+/**
+ * @brief traite les évènements 
+ * 
+ */
 void Level::processEvents()
 {
 	if (getGame()->isPaused())
@@ -996,6 +1208,13 @@ void Level::processEvents()
 	}
 }
 
+/**
+ * @brief mise à jour du niveau
+ * 
+ * @param window 
+ * @param deltaTime 
+ * @param states 
+ */
 void Level::update(sf::RenderWindow& window, const sf::Time& deltaTime, const sf::RenderStates& states)
 {
 	if (getGame()->getState() != GamePlaying)
