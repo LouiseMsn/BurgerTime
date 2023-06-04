@@ -12,6 +12,16 @@
 
 #define LOAD_SOUND(x) {auto buffer = new sf::SoundBuffer(); buffer->loadFromFile("Resources/" #x ".ogg");_soundBuffers[GameSound::x] = buffer; auto sound = new sf::Sound(); sound->setBuffer(*buffer); _sounds[GameSound::x] = sound;}
 
+/**
+ * @brief construit le jeu
+ * 
+ * @param screen écran
+ * @param scale échelle
+ * @param playerLives Nombres de vies des joueurs
+ * @param playerPeppers Nombre de poivres
+ * @param startLevel Niveau initial
+ * @param soundEnabled Activation du son
+ */
 Game::Game(const sf::Vector2i& screen, const sf::Vector2i& scale, int playerLives, int playerPeppers, int startLevel, bool soundEnabled) :
 	Updatable(this)
 {
@@ -110,6 +120,10 @@ Game::Game(const sf::Vector2i& screen, const sf::Vector2i& scale, int playerLive
 	LOAD_SOUND(SoundEnemyFalling);
 }
 
+/**
+ * @brief Détruit le jeu
+ * 
+ */
 Game::~Game()
 {
 	for (const auto& item : _levels)
@@ -133,6 +147,12 @@ Game::~Game()
 	}
 }
 
+/**
+ * @brief Prépare pour jouer
+ * 
+ * @param gameStart vraie ou faux
+ * @param resetSlices Reinitialisation des tranches
+ */
 void Game::prepareForPlay(bool gameStart, bool resetSlices)
 {
 	_state = GamePlaying;
@@ -148,6 +168,11 @@ void Game::prepareForPlay(bool gameStart, bool resetSlices)
 	getCurrentLevel()->prepareForPlay(gameStart, resetSlices);
 }
 
+/**
+ * @brief on redémarre un jeu et on ajoute des joueurs si nécessaire
+ * 
+ * @param numberOfPlayers nombre de joueurs
+ */
 void Game::play(int numberOfPlayers)
 {
 	// on redemarre un jeu
@@ -166,21 +191,41 @@ void Game::play(int numberOfPlayers)
 	prepareForPlay(true, true);
 }
 
+/**
+ * @brief récupère le nombre de vie des joueurs
+ * 
+ * @return int nombre de vies
+ */
 int Game::getPlayerLives() const
 {
 	return _playerLives;
 }
 
+/**
+ * @brief récupère le nombre de poivres des joueurs
+ * 
+ * @return int nombre de poivres
+ */
 int Game::getPlayerPeppers() const
 {
 	return _playerPeppers;
 }
 
+/**
+ * @brief récupère l'état du jeu
+ * 
+ * @return GameState état du jeu
+ */
 GameState Game::getState() const
 {
 	return _state;
 }
 
+/**
+ * @brief met le score du joueur
+ * 
+ * @param score 
+ */
 void Game::setPlayerScore(int score)
 {
 	if (score > _hiScore)
@@ -189,22 +234,43 @@ void Game::setPlayerScore(int score)
 	}
 }
 
+/**
+ * @brief vérifie si le jeu est en pause
+ * 
+ * @return true 
+ * @return false 
+ */
 bool Game::isPaused() const
 {
 	return _paused;
 }
 
+/**
+ * @brief arrête la musique
+ * 
+ */
 void Game::stopMusic()
 {
 	_musicWhileChoosing.stop();
 	_musicWhilePlaying.stop();
 }
 
+/**
+ * @brief vérifie si le son est activé
+ * 
+ * @return true 
+ * @return false 
+ */
 const bool Game::isSoundEnabled() const
 {
 	return _soundEnabled;
 }
 
+/**
+ * @brief active le son
+ * 
+ * @param enabled 
+ */
 void Game::enableSound(bool enabled)
 {
 	_soundEnabled = enabled;
@@ -232,16 +298,31 @@ void Game::enableSound(bool enabled)
 	}
 }
 
+/**
+ * @brief la touche est appuyée
+ * 
+ * @param event évènement pour lequel la touche est appuyée
+ */
 void Game::keyPress(const sf::Event& event)
 {
 	_keysState[event.key.code] = true;
 }
 
+/**
+ * @brief la touche est relâchée
+ * 
+ * @param event évènement pour lequel la touche était appuyée
+ */
 void Game::keyRelease(const sf::Event& event)
 {
 	_keysState[event.key.code] = false;
 }
 
+/**
+ * @brief joue le son en paramètre
+ * 
+ * @param sound 
+ */
 void Game::playSound(GameSound sound) const
 {
 	if (!_soundEnabled)
@@ -253,6 +334,10 @@ void Game::playSound(GameSound sound) const
 	_sounds[sound]->play();
 }
 
+/**
+ * @brief traitement des évènements
+ * 
+ */
 void Game::processEvents()
 {
 	// son
@@ -508,21 +593,47 @@ void Game::processEvents()
 	}
 }
 
+/**
+ * @brief retourne un float aléatoire entre min et max
+ * 
+ * @param min 
+ * @param max 
+ * @return float 
+ */
 float Game::getRandom(float min, float max)
 {
 	return ((((float)std::rand()) / (float)RAND_MAX) * (max - min)) + min;
 }
 
+/**
+ * @brief retourne un int aléatoire entre min et max
+ * 
+ * @param min 
+ * @param max 
+ * @return int 
+ */
 int Game::getRandom(int min, int max)
 {
 	return std::rand() % (max - min + 1) + min;
 }
 
+/**
+ * @brief retourne le module d'un vecteur passé en paramètre, en int
+ * 
+ * @param vector 
+ * @return int 
+ */
 int Game::getDistance(sf::Vector2i vector)
 {
 	return (int)std::round(std::sqrt(vector.x * vector.x + vector.y * vector.y));
 }
 
+/**
+ * @brief vérifie si au moins un joueur est mort
+ * 
+ * @return true 
+ * @return false 
+ */
 bool Game::isAnyPlayerDead() const
 {
 	for (const auto& item : _players)
@@ -533,6 +644,11 @@ bool Game::isAnyPlayerDead() const
 	return false;
 }
 
+/**
+ * @brief récupère le premier joueur qui n'a plus de vie
+ * 
+ * @return Player* 
+ */
 Player* Game::getFirstPlayerWithNoLivesLeft() const
 {
 	for (const auto& item : _players)
@@ -543,41 +659,78 @@ Player* Game::getFirstPlayerWithNoLivesLeft() const
 	return nullptr;
 }
 
+/**
+ * @brief récupère le joueur d'index passé en paramètre
+ * 
+ * @param index 
+ * @return joueur
+ */
 Player* Game::getPlayer(int index) const
 {
 	return _players.at(index);
 }
 
+/**
+ * @brief récupère le nombre de joueurs
+ * 
+ * @return nombre de joueurs
+ */
 int Game::getPlayersCount() const
 {
 	return (int)_players.size();
 }
-
+/**
+ * @brief récupère le niveau actuel
+ * 
+ * @return Level* niveau actuel
+ */
 Level* Game::getCurrentLevel() const
 {
 	return getLevel(_currentLevelNumber);
 }
-
+/**
+ * @brief récupère le niveau dont le numéro est passé en paramètre
+ * 
+ * @param number numéro du niveau
+ * @return Level* 
+ */
 Level* Game::getLevel(int number) const
 {
 	return _levels[number];
 }
-
+/**
+ * @brief récupère l'échelle
+ * 
+ * @return const sf::Vector2i& 
+ */
 const sf::Vector2i& Game::getScale() const
 {
 	return _scale;
 }
-
+/**
+ * @brief récupère la police de caractère
+ * 
+ * @return const sf::Font& 
+ */
 const sf::Font& Game::getFont() const
 {
 	return _font;
 }
-
+/**
+ * @brief récupère le sprite sheet
+ * 
+ * @return const SpriteSheet& 
+ */
 const SpriteSheet& Game::getSpriteSheet() const
 {
 	return _spritesSheet;
 }
-
+/**
+ * @brief va à un niveau dont le numéro est donné en paramètre
+ * 
+ * @param number numéro du niveau
+ * @return Level* 
+ */
 Level* Game::goToLevel(int number)
 {
 	number = number % levelsCount;
@@ -590,11 +743,20 @@ Level* Game::goToLevel(int number)
 	return getCurrentLevel();
 }
 
+/**
+ * @brief va au niveau suivant
+ * 
+ * @return Level* 
+ */
 Level* Game::goToNextLevel()
 {
 	return goToLevel(_currentLevelNumber + 1);
 }
 
+/**
+ * @brief va au choix sélectionné
+ * 
+ */
 void Game::goToChoice()
 {
 	_state = GameChoice;
@@ -606,7 +768,10 @@ void Game::goToChoice()
 	}
 }
 
-// debug, affichage d'un bloc
+/**
+ * @brief debug, affichage d'un bloc
+ * 
+ */
 void Game::drawBlock(sf::RenderWindow& window, const sf::RenderStates& states, const char* text, float scale, const sf::Vector2i& blockPosition, const sf::Color& textColor, const sf::Color& backColor) const
 {
 	auto bounds = Level::getBlockPixelBounds(blockPosition);
@@ -629,7 +794,10 @@ void Game::drawBlock(sf::RenderWindow& window, const sf::RenderStates& states, c
 	window.draw(t, states);
 }
 
-// affichage d'un texte sur l'ecran
+/**
+ * @brief affichage d'un texte sur l'écran
+ * 
+ */
 sf::FloatRect Game::drawText(sf::RenderWindow& window,
 	sf::String text,
 	sf::Color fillColor,
@@ -681,7 +849,10 @@ sf::FloatRect Game::drawText(sf::RenderWindow& window,
 	return sf::FloatRect(x, y, scaledBounds.width, scaledBounds.height);
 }
 
-// on affiche les infos pour 1 joueur
+/**
+ * @brief affiche les informations pour un joueur
+ * 
+ */
 void Game::updatePlayerInfo(sf::RenderWindow& window, Player* player) const
 {
 	auto m = player->getNumber() % 2;
@@ -699,7 +870,10 @@ void Game::updatePlayerInfo(sf::RenderWindow& window, Player* player) const
 	updatePlayerLives(window, player);
 }
 
-// on affiche les vies pour 1 joueur
+/**
+ * @brief affiche les vies pour un joueur
+ * 
+ */
 void Game::updatePlayerLives(sf::RenderWindow& window, Player* player) const
 {
 	auto m = player->getNumber() % 2;
@@ -719,7 +893,11 @@ void Game::updatePlayerLives(sf::RenderWindow& window, Player* player) const
 	}
 }
 
-// on affiche les niveaux horizontalement (note: meme a 2 joueurs, le nombre de niveaux est le meme)
+/**
+ * @brief on affiche les niveaux horizontalement (note: meme a 2 joueurs, le nombre de niveaux est le meme)
+ * 
+ * @param window 
+ */
 void Game::updateTotalLevels(sf::RenderWindow& window) const
 {
 	auto burgerIcon = _spritesSheet.getSprite(BurgerIcon);
@@ -735,6 +913,13 @@ void Game::updateTotalLevels(sf::RenderWindow& window) const
 	}
 }
 
+/**
+ * @brief mise à jouer du jeu
+ * 
+ * @param window 
+ * @param deltaTime 
+ * @param states 
+ */
 void Game::update(sf::RenderWindow& window, const sf::Time& deltaTime, const sf::RenderStates& states)
 {
 	sf::Color blueColor(88, 172, 230);
