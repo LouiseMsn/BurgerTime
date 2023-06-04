@@ -45,11 +45,16 @@ Utiliser [Ctrl Droit] pour lancer du poivre sur les ennemis
   - Utiliser [Ctrl Gauche] pour lancer du poivre sur les ennemis.
 
 ## Fonctionnalités additionnelles / debug
+### Depuis le jeu
 **F1** à **F6** : _changer de niveau_<br>
 \+  : _ajoute des ennemis_<br>
 \- : _supprime des ennemis_<br>
 **F11** : _termine le joueur 1_<br>
 **F12** : _termine le joueur 2_<br>
+
+### Lancement des tests
+Utiliser ``make [NOM DE LA CLASSE]Test`` pour générer l'éxecutable de test de la classe puis le lancer avec ``./[NOM DE LA CLASSE]Test``
+Il est aussi possible de régénérer ces exécutables en utilisant ``make clean_tests`` puis la commande make précédente.
 
 ## Commentaires sur le projet
 
@@ -64,4 +69,4 @@ Utiliser [Ctrl Droit] pour lancer du poivre sur les ennemis
 - Nous nous sommes réparti les classes à programmer à avons soumis les changements sur GitHub
 - Nous tenons à préciser que nous avons reçu de l'aide pour la programmation (d'un parent fan de jeux d'arcade - et de programmation !), sans quoi nous n'auriont pas réussi à programmer un jeu aussi complet !
 - Alice à réalisé la documentation sur Doxygen
-- Louise à écrit les tests unitaires
+- Louise à écrit les tests unitaires : ils sont relativement réduits faute de temps
