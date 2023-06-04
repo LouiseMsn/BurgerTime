@@ -1,0 +1,15 @@
+<map id="Updatable" name="Updatable">
+<area shape="rect" id="node1" title="Entités pouvant être mise à jour dans le jeu." alt="" coords="125,5,215,32"/>
+<area shape="rect" id="node2" href="$class_game.html" title="Le jeu." alt="" coords="10,80,71,107"/>
+<area shape="rect" id="node3" href="$class_level.html" title="Niveau du jeu." alt="" coords="96,80,153,107"/>
+<area shape="rect" id="node4" href="$class_movable.html" title="Objet qui bouge sur l&#39;écran." alt="" coords="177,80,256,107"/>
+<area shape="rect" id="node13" href="$class_score.html" title="Score qui apparaît au dessus du joueur." alt="" coords="281,80,339,107"/>
+<area shape="rect" id="node5" href="$class_bonus.html" title="Bonus pour les joueur." alt="" coords="5,155,68,181"/>
+<area shape="rect" id="node6" href="$class_enemy.html" title="Ennemi (oeuf au plat, cornichon ou saucisse)" alt="" coords="93,155,159,181"/>
+<area shape="rect" id="node10" href="$class_pepper.html" title="Poivre pour attaquer les ennemis." alt="" coords="183,155,250,181"/>
+<area shape="rect" id="node11" href="$class_player.html" title="Joueur." alt="" coords="275,155,337,181"/>
+<area shape="rect" id="node12" href="$class_slice.html" title="Tranche de hamburger." alt="" coords="362,155,415,181"/>
+<area shape="rect" id="node7" href="$class_egg.html" title="Oeuf : ennemis." alt="" coords="24,229,71,256"/>
+<area shape="rect" id="node8" href="$class_pickle.html" title="Cornichon : ennemi." alt="" coords="95,229,157,256"/>
+<area shape="rect" id="node9" href="$class_sausage.html" title="Saucisse : ennmemi." alt="" coords="181,229,258,256"/>
+</map>

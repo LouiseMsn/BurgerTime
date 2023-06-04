@@ -1,0 +1,10 @@
+<map id="Bonus" name="Bonus">
+<area shape="rect" id="node1" title="Bonus pour les joueur." alt="" coords="40,5,103,32"/>
+<area shape="rect" id="node7" href="$class_level.html" title="Niveau du jeu." alt="" coords="127,95,184,121"/>
+<area shape="rect" id="node2" href="$class_movable.html" title="Objet qui bouge sur l&#39;écran." alt="" coords="5,349,84,376"/>
+<area shape="rect" id="node8" href="$class_player.html" title="Joueur." alt="" coords="52,425,115,452"/>
+<area shape="rect" id="node3" href="$class_updatable.html" title="Entités pouvant être mise à jour dans le jeu." alt="" coords="255,273,344,300"/>
+<area shape="rect" id="node4" href="$class_game.html" title="Le jeu." alt="" coords="267,184,329,211"/>
+<area shape="rect" id="node5" href="$class_sprite_sheet.html" title=" " alt="" coords="257,95,355,121"/>
+<area shape="rect" id="node6" href="$class_sheet.html" title=" " alt="" coords="347,5,406,32"/>
+</map>

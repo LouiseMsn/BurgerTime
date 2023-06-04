@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BurgerTech:  Fichier source de /home/smo/Documents/Polytech/BurgerTime/Headers/Score.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BurgerTech
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_score_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Score.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_score_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_score.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_score.html">Score</a> : <span class="keyword">public</span> <a class="code" href="class_updatable.html">Updatable</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_score.html#aad5a7e7fb45f1edc717a3467b3c8b97d">    9</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_score.html#aad5a7e7fb45f1edc717a3467b3c8b97d">_value</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_score.html#a33b8ff3611e0ba0a086257e94cbd16cc">   10</a></span>&#160;    sf::Text <a class="code" href="class_score.html#a33b8ff3611e0ba0a086257e94cbd16cc">_text</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_score.html#a14b8865347c0e164c185a1cb14955b71">   11</a></span>&#160;    sf::Vector2f <a class="code" href="class_score.html#a14b8865347c0e164c185a1cb14955b71">_pixelPosition</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_score.html#a75c334f1b18a302d34b94144f452b3b5">   12</a></span>&#160;    sf::Clock <a class="code" href="class_score.html#a75c334f1b18a302d34b94144f452b3b5">_timeout</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_score.html#a22c7de617e6852532553f8a51d6693ce">   13</a></span>&#160;    sf::Color <a class="code" href="class_score.html#a22c7de617e6852532553f8a51d6693ce">_color</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_score.html#a32fe0c8d7eb415d49e12761b97123457">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_score.html#a32fe0c8d7eb415d49e12761b97123457">_xIncrement</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_score.html#a9ea119915612a916058204c713526874">   15</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_score.html#a9ea119915612a916058204c713526874">_yIncrement</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_score.html#aba537094579899648472d87176d80600">updateText</a>(<span class="keywordtype">int</span> speed);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_score.html#a96b3aa10cf832a232f8ac955b905291f">Score</a>(<a class="code" href="class_game.html">Game</a>* game, <span class="keywordtype">int</span> <a class="code" href="namespace_catch_1_1_generators.html#a3c4989dd0dca44455f55484cedaa18da">value</a>, <span class="keyword">const</span> sf::Vector2i&amp; pixelPosition, <span class="keyword">const</span> sf::Color&amp; color);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_score.html#a6458565e45674f3513937695d81966c8">timedOut</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// surchages</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_score.html#a4a6484ff5656795ef80b33eb55f7eca9">updateWhenMoved</a>(<span class="keywordtype">int</span> speed);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_score.html#a1e1d5da5820882086526796cff164917">update</a>(sf::RenderWindow&amp; window, <span class="keyword">const</span> sf::Time&amp; deltaTime, <span class="keyword">const</span> sf::RenderStates&amp; states = sf::RenderStates::Default);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="ttc" id="aclass_game_html"><div class="ttname"><a href="class_game.html">Game</a></div><div class="ttdoc">Le jeu.</div><div class="ttdef"><b>Definition:</b> Game.h:62</div></div>
+<div class="ttc" id="aclass_score_html"><div class="ttname"><a href="class_score.html">Score</a></div><div class="ttdoc">Score qui apparaît au dessus du joueur.</div><div class="ttdef"><b>Definition:</b> Score.h:8</div></div>
+<div class="ttc" id="aclass_score_html_a14b8865347c0e164c185a1cb14955b71"><div class="ttname"><a href="class_score.html#a14b8865347c0e164c185a1cb14955b71">Score::_pixelPosition</a></div><div class="ttdeci">sf::Vector2f _pixelPosition</div><div class="ttdef"><b>Definition:</b> Score.h:11</div></div>
+<div class="ttc" id="aclass_score_html_a1e1d5da5820882086526796cff164917"><div class="ttname"><a href="class_score.html#a1e1d5da5820882086526796cff164917">Score::update</a></div><div class="ttdeci">void update(sf::RenderWindow &amp;window, const sf::Time &amp;deltaTime, const sf::RenderStates &amp;states=sf::RenderStates::Default)</div><div class="ttdoc">mise à jour du score</div><div class="ttdef"><b>Definition:</b> Score.cpp:87</div></div>
+<div class="ttc" id="aclass_score_html_a22c7de617e6852532553f8a51d6693ce"><div class="ttname"><a href="class_score.html#a22c7de617e6852532553f8a51d6693ce">Score::_color</a></div><div class="ttdeci">sf::Color _color</div><div class="ttdef"><b>Definition:</b> Score.h:13</div></div>
+<div class="ttc" id="aclass_score_html_a32fe0c8d7eb415d49e12761b97123457"><div class="ttname"><a href="class_score.html#a32fe0c8d7eb415d49e12761b97123457">Score::_xIncrement</a></div><div class="ttdeci">int _xIncrement</div><div class="ttdef"><b>Definition:</b> Score.h:14</div></div>
+<div class="ttc" id="aclass_score_html_a33b8ff3611e0ba0a086257e94cbd16cc"><div class="ttname"><a href="class_score.html#a33b8ff3611e0ba0a086257e94cbd16cc">Score::_text</a></div><div class="ttdeci">sf::Text _text</div><div class="ttdef"><b>Definition:</b> Score.h:10</div></div>
+<div class="ttc" id="aclass_score_html_a4a6484ff5656795ef80b33eb55f7eca9"><div class="ttname"><a href="class_score.html#a4a6484ff5656795ef80b33eb55f7eca9">Score::updateWhenMoved</a></div><div class="ttdeci">void updateWhenMoved(int speed)</div><div class="ttdoc">met à jour lorsqu'il bouge</div><div class="ttdef"><b>Definition:</b> Score.cpp:72</div></div>
+<div class="ttc" id="aclass_score_html_a6458565e45674f3513937695d81966c8"><div class="ttname"><a href="class_score.html#a6458565e45674f3513937695d81966c8">Score::timedOut</a></div><div class="ttdeci">bool timedOut()</div><div class="ttdoc">true si le temps d'affichage du score est écoulé</div><div class="ttdef"><b>Definition:</b> Score.cpp:62</div></div>
+<div class="ttc" id="aclass_score_html_a75c334f1b18a302d34b94144f452b3b5"><div class="ttname"><a href="class_score.html#a75c334f1b18a302d34b94144f452b3b5">Score::_timeout</a></div><div class="ttdeci">sf::Clock _timeout</div><div class="ttdef"><b>Definition:</b> Score.h:12</div></div>
+<div class="ttc" id="aclass_score_html_a96b3aa10cf832a232f8ac955b905291f"><div class="ttname"><a href="class_score.html#a96b3aa10cf832a232f8ac955b905291f">Score::Score</a></div><div class="ttdeci">Score(Game *game, int value, const sf::Vector2i &amp;pixelPosition, const sf::Color &amp;color)</div><div class="ttdoc">construit un nouveau score</div><div class="ttdef"><b>Definition:</b> Score.cpp:19</div></div>
+<div class="ttc" id="aclass_score_html_a9ea119915612a916058204c713526874"><div class="ttname"><a href="class_score.html#a9ea119915612a916058204c713526874">Score::_yIncrement</a></div><div class="ttdeci">int _yIncrement</div><div class="ttdef"><b>Definition:</b> Score.h:15</div></div>
+<div class="ttc" id="aclass_score_html_aad5a7e7fb45f1edc717a3467b3c8b97d"><div class="ttname"><a href="class_score.html#aad5a7e7fb45f1edc717a3467b3c8b97d">Score::_value</a></div><div class="ttdeci">int _value</div><div class="ttdef"><b>Definition:</b> Score.h:9</div></div>
+<div class="ttc" id="aclass_score_html_aba537094579899648472d87176d80600"><div class="ttname"><a href="class_score.html#aba537094579899648472d87176d80600">Score::updateText</a></div><div class="ttdeci">void updateText(int speed)</div><div class="ttdoc">mise à jour du score</div><div class="ttdef"><b>Definition:</b> Score.cpp:40</div></div>
+<div class="ttc" id="aclass_updatable_html"><div class="ttname"><a href="class_updatable.html">Updatable</a></div><div class="ttdoc">Entités pouvant être mise à jour dans le jeu.</div><div class="ttdef"><b>Definition:</b> Updatable.h:10</div></div>
+<div class="ttc" id="anamespace_catch_1_1_generators_html_a3c4989dd0dca44455f55484cedaa18da"><div class="ttname"><a href="namespace_catch_1_1_generators.html#a3c4989dd0dca44455f55484cedaa18da">Catch::Generators::value</a></div><div class="ttdeci">GeneratorWrapper&lt; T &gt; value(T &amp;&amp;value)</div><div class="ttdef"><b>Definition:</b> catch.hpp:4001</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2b298ba2fe274a0e79ead9f59c761ae6.html">BurgerTime</a></li><li class="navelem"><a class="el" href="dir_7dfc6200125ba505770d11d2abcc3b77.html">Headers</a></li><li class="navelem"><a class="el" href="_score_8h.html">Score.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

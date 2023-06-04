@@ -1,0 +1,11 @@
+<map id="Pepper" name="Pepper">
+<area shape="rect" id="node1" title="Poivre pour attaquer les ennemis." alt="" coords="5,81,72,108"/>
+<area shape="rect" id="node2" href="$class_movable.html" title="Objet qui bouge sur l&#39;écran." alt="" coords="86,5,165,32"/>
+<area shape="rect" id="node8" href="$class_bonus.html" title="Bonus pour les joueur." alt="" coords="247,81,310,108"/>
+<area shape="rect" id="node9" href="$class_player.html" title="Joueur." alt="" coords="147,81,210,108"/>
+<area shape="rect" id="node3" href="$class_updatable.html" title="Entités pouvant être mise à jour dans le jeu." alt="" coords="225,349,314,376"/>
+<area shape="rect" id="node4" href="$class_game.html" title="Le jeu." alt="" coords="331,260,392,287"/>
+<area shape="rect" id="node7" href="$class_level.html" title="Niveau du jeu." alt="" coords="238,171,295,197"/>
+<area shape="rect" id="node5" href="$class_sprite_sheet.html" title=" " alt="" coords="475,171,573,197"/>
+<area shape="rect" id="node6" href="$class_sheet.html" title=" " alt="" coords="376,81,435,108"/>
+</map>

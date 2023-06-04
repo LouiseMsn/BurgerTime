@@ -1,0 +1,5 @@
+<map id="Bonus" name="Bonus">
+<area shape="rect" id="node1" title="Bonus pour les joueur." alt="" coords="19,155,81,181"/>
+<area shape="rect" id="node2" href="$class_movable.html" title="Objet qui bouge sur l&#39;écran." alt="" coords="11,80,89,107"/>
+<area shape="rect" id="node3" href="$class_updatable.html" title="Entités pouvant être mise à jour dans le jeu." alt="" coords="5,5,95,32"/>
+</map>

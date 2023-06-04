@@ -1,0 +1,4 @@
+<map id="SpriteSheet" name="SpriteSheet">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,103,107"/>
+<area shape="rect" id="node2" href="$class_sheet.html" title=" " alt="" coords="25,5,83,32"/>
+</map>

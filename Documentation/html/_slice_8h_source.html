@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BurgerTech:  Fichier source de /home/smo/Documents/Polytech/BurgerTime/Headers/Slice.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BurgerTech
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_slice_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Slice.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_slice_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2fee">    3</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2fee">SliceState</a></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feeaf2ff57e3b1f3afb8a7eabd70895ca9b1">    5</a></span>&#160;    <a class="code" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feeaf2ff57e3b1f3afb8a7eabd70895ca9b1">SliceImmobile</a>,</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feea1f37c71a236062a61944b2e18e5fad8b">    6</a></span>&#160;    <a class="code" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feea1f37c71a236062a61944b2e18e5fad8b">SliceFalling</a>,</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feea6aa1033ce4ae496a6a1f573e72a81e77">    7</a></span>&#160;    <a class="code" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feea6aa1033ce4ae496a6a1f573e72a81e77">SliceBouncingUp</a>,</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feea09e615d7457c1f6d9bd90c31f2e3884e">    8</a></span>&#160;    <a class="code" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feea09e615d7457c1f6d9bd90c31f2e3884e">SliceBouncingDown</a>,</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feeaa39fb642b04eaff1399198184cb3bb89">    9</a></span>&#160;    <a class="code" href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feeaa39fb642b04eaff1399198184cb3bb89">SliceStacked</a>,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;};</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_burger.html">Burger</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_player.html">Player</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_slice.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_slice.html">Slice</a> : <span class="keyword">public</span> <a class="code" href="class_movable.html">Movable</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_slice.html#adc22594973e671bf6c1068b905d10bcf">   22</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_slice.html#adc22594973e671bf6c1068b905d10bcf">_sliceWidth</a> = 32;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_slice.html#ac6f0b335c5afcb03d005fb68c59691d4">   23</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_slice.html#ac6f0b335c5afcb03d005fb68c59691d4">_sliceHeight</a> = 7;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_slice.html#aef8706b04d44fc9260b59a28b97648a8">   24</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_slice.html#aef8706b04d44fc9260b59a28b97648a8">_chunksCount</a> = 4;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_slice.html#ad9c3044eb6fcc3682816f67593c45a4a">   26</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_burger.html">Burger</a>* <a class="code" href="class_slice.html#ad9c3044eb6fcc3682816f67593c45a4a">_burger</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_slice.html#aa3c384e655e01baeeffb8c5a949290a7">   27</a></span>&#160;    <a class="code" href="_sprite_sheet_8h.html#a8579284b76c480ef09dbecc47afa34b0">BurgerTechSprite</a> <a class="code" href="class_slice.html#aa3c384e655e01baeeffb8c5a949290a7">_type</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_slice.html#a442415204fec512c3143fec91e93cab9">   28</a></span>&#160;    <a class="code" href="class_player.html">Player</a>* <a class="code" href="class_slice.html#a442415204fec512c3143fec91e93cab9">_steppingPlayer</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_slice.html#a56451d45c253f8df5c4d3886aee48abb">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_slice.html#a56451d45c253f8df5c4d3886aee48abb">_number</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_slice.html#a681f69eea4d00154e5d1d24bbfdabb1d">   30</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_slice.html#a681f69eea4d00154e5d1d24bbfdabb1d">_verticalPosition</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_slice.html#abf66f3759a3bb843c4c06ad5e2df9e12">   31</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_slice.html#abf66f3759a3bb843c4c06ad5e2df9e12">_fallingWeight</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_slice.html#a7d6c9fa3df7f28c2b03ab133d3a0683a">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_slice.html#a7d6c9fa3df7f28c2b03ab133d3a0683a">_bouncePosition</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_slice.html#a860d5095497563302eb7c9cbdb20b39f">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_slice.html#a860d5095497563302eb7c9cbdb20b39f">_stepped</a>[<a class="code" href="class_slice.html#aef8706b04d44fc9260b59a28b97648a8">_chunksCount</a>];</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_slice.html#adfcb91ba45903b469cfa056287f6404c">   34</a></span>&#160;    sf::Vector2i <a class="code" href="class_slice.html#adfcb91ba45903b469cfa056287f6404c">_fallingBlockPosition</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_slice.html#a1e018fe517d843816ca4e568af78ab36">   35</a></span>&#160;    sf::Sprite* <a class="code" href="class_slice.html#a1e018fe517d843816ca4e568af78ab36">_chunks</a>[<a class="code" href="class_slice.html#aef8706b04d44fc9260b59a28b97648a8">_chunksCount</a>];</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_slice.html#a4390c9beafb53fc993c1e7ac67e64668">stepOnIfSameLevel</a>(<span class="keywordtype">int</span> <a class="code" href="namespace_catch_1_1_generators.html#a0ac5eeee0354973c318f62d0937a7981">chunk</a>, <span class="keywordtype">int</span> level, <a class="code" href="class_player.html">Player</a>* player);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_slice.html#ad6ed274520fd4776e66d9e497d9509da">setBouncingShape</a>(<span class="keywordtype">int</span> <a class="code" href="namespace_catch_1_1_generators.html#a3c4989dd0dca44455f55484cedaa18da">value</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_slice.html#a62ec316c94c4be66016b0212928e332a">Slice</a>(<a class="code" href="class_game.html">Game</a>* game, <span class="keyword">const</span> <a class="code" href="class_burger.html">Burger</a>* burger, <span class="keywordtype">int</span> number, <a class="code" href="_sprite_sheet_8h.html#a8579284b76c480ef09dbecc47afa34b0">BurgerTechSprite</a> type, <span class="keywordtype">int</span> verticalPosition);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_slice.html#af5eca11ee40a61159787ec35f2f1ed27">~Slice</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_burger.html">Burger</a>* <a class="code" href="class_slice.html#aaa82bd60db15bb80b5fbe16c44d89b4a">getBurger</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_slice.html#a2a4dcc5b50b56987c3f2044fb8565fed">getNumber</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="_sprite_sheet_8h.html#a8579284b76c480ef09dbecc47afa34b0">BurgerTechSprite</a> <a class="code" href="class_slice.html#aa9fa13a4e7324584488b36f6a79ac77c">getSliceType</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_slice.html#ae9b4a0a6d5e343dbc66078243335de0a">getVerticalPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_slice.html#af4415926156e6c3daf3eaebed3a9b502">playerStep</a>(<span class="keyword">const</span> sf::IntRect&amp; pixelBounds, <a class="code" href="class_player.html">Player</a>* player);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_slice.html#a53454eccbd1592d89e606e74d1dc217f">prepareForPlay</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// surchages</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_slice.html#a75d2616330d0b4716440f6385832ea30">setState</a>(<span class="keywordtype">int</span> state);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_slice.html#a85398c6ff85c520369c3df4f1df5eb6d">setPixelPosition</a>(<span class="keyword">const</span> sf::Vector2i&amp; position, <span class="keywordtype">bool</span> checkBlocks = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_slice.html#a214231f649e60d9d5337015155d5933a">updateWhenMoved</a>(<span class="keywordtype">int</span> speed);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_slice.html#a034a32cbd8f40b024fd04fe11fab0aed">drawSprite</a>(sf::RenderWindow&amp; window, <span class="keyword">const</span> sf::Time&amp; deltaTime, <span class="keyword">const</span> sf::RenderStates&amp; states);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="ttc" id="a_slice_8h_html_a47d86e7cbb45a97ea5e165e1e8aa2fee"><div class="ttname"><a href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2fee">SliceState</a></div><div class="ttdeci">SliceState</div><div class="ttdef"><b>Definition:</b> Slice.h:4</div></div>
+<div class="ttc" id="a_slice_8h_html_a47d86e7cbb45a97ea5e165e1e8aa2feea09e615d7457c1f6d9bd90c31f2e3884e"><div class="ttname"><a href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feea09e615d7457c1f6d9bd90c31f2e3884e">SliceBouncingDown</a></div><div class="ttdeci">@ SliceBouncingDown</div><div class="ttdef"><b>Definition:</b> Slice.h:8</div></div>
+<div class="ttc" id="a_slice_8h_html_a47d86e7cbb45a97ea5e165e1e8aa2feea1f37c71a236062a61944b2e18e5fad8b"><div class="ttname"><a href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feea1f37c71a236062a61944b2e18e5fad8b">SliceFalling</a></div><div class="ttdeci">@ SliceFalling</div><div class="ttdef"><b>Definition:</b> Slice.h:6</div></div>
+<div class="ttc" id="a_slice_8h_html_a47d86e7cbb45a97ea5e165e1e8aa2feea6aa1033ce4ae496a6a1f573e72a81e77"><div class="ttname"><a href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feea6aa1033ce4ae496a6a1f573e72a81e77">SliceBouncingUp</a></div><div class="ttdeci">@ SliceBouncingUp</div><div class="ttdef"><b>Definition:</b> Slice.h:7</div></div>
+<div class="ttc" id="a_slice_8h_html_a47d86e7cbb45a97ea5e165e1e8aa2feeaa39fb642b04eaff1399198184cb3bb89"><div class="ttname"><a href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feeaa39fb642b04eaff1399198184cb3bb89">SliceStacked</a></div><div class="ttdeci">@ SliceStacked</div><div class="ttdef"><b>Definition:</b> Slice.h:9</div></div>
+<div class="ttc" id="a_slice_8h_html_a47d86e7cbb45a97ea5e165e1e8aa2feeaf2ff57e3b1f3afb8a7eabd70895ca9b1"><div class="ttname"><a href="_slice_8h.html#a47d86e7cbb45a97ea5e165e1e8aa2feeaf2ff57e3b1f3afb8a7eabd70895ca9b1">SliceImmobile</a></div><div class="ttdeci">@ SliceImmobile</div><div class="ttdef"><b>Definition:</b> Slice.h:5</div></div>
+<div class="ttc" id="a_sprite_sheet_8h_html_a8579284b76c480ef09dbecc47afa34b0"><div class="ttname"><a href="_sprite_sheet_8h.html#a8579284b76c480ef09dbecc47afa34b0">BurgerTechSprite</a></div><div class="ttdeci">BurgerTechSprite</div><div class="ttdef"><b>Definition:</b> SpriteSheet.h:7</div></div>
+<div class="ttc" id="aclass_burger_html"><div class="ttname"><a href="class_burger.html">Burger</a></div><div class="ttdoc">Hamburger composé de tranche à compléter pour terminer les niveaux.</div><div class="ttdef"><b>Definition:</b> Burger.h:8</div></div>
+<div class="ttc" id="aclass_game_html"><div class="ttname"><a href="class_game.html">Game</a></div><div class="ttdoc">Le jeu.</div><div class="ttdef"><b>Definition:</b> Game.h:62</div></div>
+<div class="ttc" id="aclass_movable_html"><div class="ttname"><a href="class_movable.html">Movable</a></div><div class="ttdoc">Objet qui bouge sur l'écran.</div><div class="ttdef"><b>Definition:</b> Movable.h:21</div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Joueur.</div><div class="ttdef"><b>Definition:</b> Player.h:25</div></div>
+<div class="ttc" id="aclass_slice_html"><div class="ttname"><a href="class_slice.html">Slice</a></div><div class="ttdoc">Tranche de hamburger.</div><div class="ttdef"><b>Definition:</b> Slice.h:21</div></div>
+<div class="ttc" id="aclass_slice_html_a034a32cbd8f40b024fd04fe11fab0aed"><div class="ttname"><a href="class_slice.html#a034a32cbd8f40b024fd04fe11fab0aed">Slice::drawSprite</a></div><div class="ttdeci">void drawSprite(sf::RenderWindow &amp;window, const sf::Time &amp;deltaTime, const sf::RenderStates &amp;states)</div><div class="ttdoc">dessine le sprite de la tranche sur la fenêtre</div><div class="ttdef"><b>Definition:</b> Slice.cpp:197</div></div>
+<div class="ttc" id="aclass_slice_html_a1e018fe517d843816ca4e568af78ab36"><div class="ttname"><a href="class_slice.html#a1e018fe517d843816ca4e568af78ab36">Slice::_chunks</a></div><div class="ttdeci">sf::Sprite * _chunks[_chunksCount]</div><div class="ttdef"><b>Definition:</b> Slice.h:35</div></div>
+<div class="ttc" id="aclass_slice_html_a214231f649e60d9d5337015155d5933a"><div class="ttname"><a href="class_slice.html#a214231f649e60d9d5337015155d5933a">Slice::updateWhenMoved</a></div><div class="ttdeci">void updateWhenMoved(int speed)</div><div class="ttdoc">mise à jour lorsque la tranche bouge</div><div class="ttdef"><b>Definition:</b> Slice.cpp:293</div></div>
+<div class="ttc" id="aclass_slice_html_a2a4dcc5b50b56987c3f2044fb8565fed"><div class="ttname"><a href="class_slice.html#a2a4dcc5b50b56987c3f2044fb8565fed">Slice::getNumber</a></div><div class="ttdeci">int getNumber() const</div><div class="ttdoc">récupère le numéro de la tranche</div><div class="ttdef"><b>Definition:</b> Slice.cpp:96</div></div>
+<div class="ttc" id="aclass_slice_html_a4390c9beafb53fc993c1e7ac67e64668"><div class="ttname"><a href="class_slice.html#a4390c9beafb53fc993c1e7ac67e64668">Slice::stepOnIfSameLevel</a></div><div class="ttdeci">void stepOnIfSameLevel(int chunk, int level, Player *player)</div><div class="ttdoc">on descend les morceaux voisins qui sont au même niveau les tranches sont divisées en morceaux,...</div><div class="ttdef"><b>Definition:</b> Slice.cpp:222</div></div>
+<div class="ttc" id="aclass_slice_html_a442415204fec512c3143fec91e93cab9"><div class="ttname"><a href="class_slice.html#a442415204fec512c3143fec91e93cab9">Slice::_steppingPlayer</a></div><div class="ttdeci">Player * _steppingPlayer</div><div class="ttdef"><b>Definition:</b> Slice.h:28</div></div>
+<div class="ttc" id="aclass_slice_html_a53454eccbd1592d89e606e74d1dc217f"><div class="ttname"><a href="class_slice.html#a53454eccbd1592d89e606e74d1dc217f">Slice::prepareForPlay</a></div><div class="ttdeci">void prepareForPlay()</div><div class="ttdoc">prépare pour joueur initialise la vitesse, position, le rebondissement de la tranche au début du nive...</div><div class="ttdef"><b>Definition:</b> Slice.cpp:116</div></div>
+<div class="ttc" id="aclass_slice_html_a56451d45c253f8df5c4d3886aee48abb"><div class="ttname"><a href="class_slice.html#a56451d45c253f8df5c4d3886aee48abb">Slice::_number</a></div><div class="ttdeci">int _number</div><div class="ttdef"><b>Definition:</b> Slice.h:29</div></div>
+<div class="ttc" id="aclass_slice_html_a62ec316c94c4be66016b0212928e332a"><div class="ttname"><a href="class_slice.html#a62ec316c94c4be66016b0212928e332a">Slice::Slice</a></div><div class="ttdeci">Slice(Game *game, const Burger *burger, int number, BurgerTechSprite type, int verticalPosition)</div><div class="ttdoc">construit une nouvelle tranche de hamburger</div><div class="ttdef"><b>Definition:</b> Slice.cpp:25</div></div>
+<div class="ttc" id="aclass_slice_html_a681f69eea4d00154e5d1d24bbfdabb1d"><div class="ttname"><a href="class_slice.html#a681f69eea4d00154e5d1d24bbfdabb1d">Slice::_verticalPosition</a></div><div class="ttdeci">int _verticalPosition</div><div class="ttdef"><b>Definition:</b> Slice.h:30</div></div>
+<div class="ttc" id="aclass_slice_html_a75d2616330d0b4716440f6385832ea30"><div class="ttname"><a href="class_slice.html#a75d2616330d0b4716440f6385832ea30">Slice::setState</a></div><div class="ttdeci">bool setState(int state)</div><div class="ttdoc">met la tranche dans un état</div><div class="ttdef"><b>Definition:</b> Slice.cpp:153</div></div>
+<div class="ttc" id="aclass_slice_html_a7d6c9fa3df7f28c2b03ab133d3a0683a"><div class="ttname"><a href="class_slice.html#a7d6c9fa3df7f28c2b03ab133d3a0683a">Slice::_bouncePosition</a></div><div class="ttdeci">int _bouncePosition</div><div class="ttdef"><b>Definition:</b> Slice.h:32</div></div>
+<div class="ttc" id="aclass_slice_html_a85398c6ff85c520369c3df4f1df5eb6d"><div class="ttname"><a href="class_slice.html#a85398c6ff85c520369c3df4f1df5eb6d">Slice::setPixelPosition</a></div><div class="ttdeci">bool setPixelPosition(const sf::Vector2i &amp;position, bool checkBlocks=true)</div><div class="ttdoc">place la tranche à une position passée en paramètre en pixel</div><div class="ttdef"><b>Definition:</b> Slice.cpp:136</div></div>
+<div class="ttc" id="aclass_slice_html_a860d5095497563302eb7c9cbdb20b39f"><div class="ttname"><a href="class_slice.html#a860d5095497563302eb7c9cbdb20b39f">Slice::_stepped</a></div><div class="ttdeci">int _stepped[_chunksCount]</div><div class="ttdef"><b>Definition:</b> Slice.h:33</div></div>
+<div class="ttc" id="aclass_slice_html_aa3c384e655e01baeeffb8c5a949290a7"><div class="ttname"><a href="class_slice.html#aa3c384e655e01baeeffb8c5a949290a7">Slice::_type</a></div><div class="ttdeci">BurgerTechSprite _type</div><div class="ttdef"><b>Definition:</b> Slice.h:27</div></div>
+<div class="ttc" id="aclass_slice_html_aa9fa13a4e7324584488b36f6a79ac77c"><div class="ttname"><a href="class_slice.html#aa9fa13a4e7324584488b36f6a79ac77c">Slice::getSliceType</a></div><div class="ttdeci">BurgerTechSprite getSliceType() const</div><div class="ttdoc">récupère le type de tranche (fromage, salade, viande..)</div><div class="ttdef"><b>Definition:</b> Slice.cpp:86</div></div>
+<div class="ttc" id="aclass_slice_html_aaa82bd60db15bb80b5fbe16c44d89b4a"><div class="ttname"><a href="class_slice.html#aaa82bd60db15bb80b5fbe16c44d89b4a">Slice::getBurger</a></div><div class="ttdeci">const Burger * getBurger() const</div><div class="ttdoc">récupère le burger auquel apparatient la tranche</div><div class="ttdef"><b>Definition:</b> Slice.cpp:106</div></div>
+<div class="ttc" id="aclass_slice_html_abf66f3759a3bb843c4c06ad5e2df9e12"><div class="ttname"><a href="class_slice.html#abf66f3759a3bb843c4c06ad5e2df9e12">Slice::_fallingWeight</a></div><div class="ttdeci">int _fallingWeight</div><div class="ttdef"><b>Definition:</b> Slice.h:31</div></div>
+<div class="ttc" id="aclass_slice_html_ac6f0b335c5afcb03d005fb68c59691d4"><div class="ttname"><a href="class_slice.html#ac6f0b335c5afcb03d005fb68c59691d4">Slice::_sliceHeight</a></div><div class="ttdeci">static const int _sliceHeight</div><div class="ttdef"><b>Definition:</b> Slice.h:23</div></div>
+<div class="ttc" id="aclass_slice_html_ad6ed274520fd4776e66d9e497d9509da"><div class="ttname"><a href="class_slice.html#ad6ed274520fd4776e66d9e497d9509da">Slice::setBouncingShape</a></div><div class="ttdeci">void setBouncingShape(int value)</div><div class="ttdoc">forme du rebondissement de la tranche</div><div class="ttdef"><b>Definition:</b> Slice.cpp:280</div></div>
+<div class="ttc" id="aclass_slice_html_ad9c3044eb6fcc3682816f67593c45a4a"><div class="ttname"><a href="class_slice.html#ad9c3044eb6fcc3682816f67593c45a4a">Slice::_burger</a></div><div class="ttdeci">const Burger * _burger</div><div class="ttdef"><b>Definition:</b> Slice.h:26</div></div>
+<div class="ttc" id="aclass_slice_html_adc22594973e671bf6c1068b905d10bcf"><div class="ttname"><a href="class_slice.html#adc22594973e671bf6c1068b905d10bcf">Slice::_sliceWidth</a></div><div class="ttdeci">static const int _sliceWidth</div><div class="ttdef"><b>Definition:</b> Slice.h:22</div></div>
+<div class="ttc" id="aclass_slice_html_adfcb91ba45903b469cfa056287f6404c"><div class="ttname"><a href="class_slice.html#adfcb91ba45903b469cfa056287f6404c">Slice::_fallingBlockPosition</a></div><div class="ttdeci">sf::Vector2i _fallingBlockPosition</div><div class="ttdef"><b>Definition:</b> Slice.h:34</div></div>
+<div class="ttc" id="aclass_slice_html_ae9b4a0a6d5e343dbc66078243335de0a"><div class="ttname"><a href="class_slice.html#ae9b4a0a6d5e343dbc66078243335de0a">Slice::getVerticalPosition</a></div><div class="ttdeci">int getVerticalPosition() const</div><div class="ttdoc">récupère la position verticale de la tranche</div><div class="ttdef"><b>Definition:</b> Slice.cpp:76</div></div>
+<div class="ttc" id="aclass_slice_html_aef8706b04d44fc9260b59a28b97648a8"><div class="ttname"><a href="class_slice.html#aef8706b04d44fc9260b59a28b97648a8">Slice::_chunksCount</a></div><div class="ttdeci">static const int _chunksCount</div><div class="ttdef"><b>Definition:</b> Slice.h:24</div></div>
+<div class="ttc" id="aclass_slice_html_af4415926156e6c3daf3eaebed3a9b502"><div class="ttname"><a href="class_slice.html#af4415926156e6c3daf3eaebed3a9b502">Slice::playerStep</a></div><div class="ttdeci">bool playerStep(const sf::IntRect &amp;pixelBounds, Player *player)</div><div class="ttdoc">pas du joueur si la position du joueur interesecte notre tranche, on détermine le morceau et on écras...</div><div class="ttdef"><b>Definition:</b> Slice.cpp:254</div></div>
+<div class="ttc" id="aclass_slice_html_af5eca11ee40a61159787ec35f2f1ed27"><div class="ttname"><a href="class_slice.html#af5eca11ee40a61159787ec35f2f1ed27">Slice::~Slice</a></div><div class="ttdeci">~Slice()</div><div class="ttdoc">détruit la tranche</div><div class="ttdef"><b>Definition:</b> Slice.cpp:63</div></div>
+<div class="ttc" id="anamespace_catch_1_1_generators_html_a0ac5eeee0354973c318f62d0937a7981"><div class="ttname"><a href="namespace_catch_1_1_generators.html#a0ac5eeee0354973c318f62d0937a7981">Catch::Generators::chunk</a></div><div class="ttdeci">GeneratorWrapper&lt; std::vector&lt; T &gt; &gt; chunk(size_t size, GeneratorWrapper&lt; T &gt; &amp;&amp;generator)</div><div class="ttdef"><b>Definition:</b> catch.hpp:4333</div></div>
+<div class="ttc" id="anamespace_catch_1_1_generators_html_a3c4989dd0dca44455f55484cedaa18da"><div class="ttname"><a href="namespace_catch_1_1_generators.html#a3c4989dd0dca44455f55484cedaa18da">Catch::Generators::value</a></div><div class="ttdeci">GeneratorWrapper&lt; T &gt; value(T &amp;&amp;value)</div><div class="ttdef"><b>Definition:</b> catch.hpp:4001</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2b298ba2fe274a0e79ead9f59c761ae6.html">BurgerTime</a></li><li class="navelem"><a class="el" href="dir_7dfc6200125ba505770d11d2abcc3b77.html">Headers</a></li><li class="navelem"><a class="el" href="_slice_8h.html">Slice.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

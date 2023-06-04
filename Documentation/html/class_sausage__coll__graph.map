@@ -1,0 +1,14 @@
+<map id="Sausage" name="Sausage">
+<area shape="rect" id="node1" title="Saucisse : ennmemi." alt="" coords="5,364,83,391"/>
+<area shape="rect" id="node2" href="$class_enemy.html" title="Ennemi (oeuf au plat, cornichon ou saucisse)" alt="" coords="11,275,77,301"/>
+<area shape="rect" id="node3" href="$class_movable.html" title="Objet qui bouge sur l&#39;écran." alt="" coords="251,5,330,32"/>
+<area shape="rect" id="node9" href="$class_bonus.html" title="Bonus pour les joueur." alt="" coords="399,81,462,108"/>
+<area shape="rect" id="node10" href="$class_player.html" title="Joueur." alt="" coords="259,81,322,108"/>
+<area shape="rect" id="node11" href="$class_slice.html" title="Tranche de hamburger." alt="" coords="80,171,133,197"/>
+<area shape="rect" id="node4" href="$class_updatable.html" title="Entités pouvant être mise à jour dans le jeu." alt="" coords="430,364,519,391"/>
+<area shape="rect" id="node5" href="$class_game.html" title="Le jeu." alt="" coords="444,275,505,301"/>
+<area shape="rect" id="node8" href="$class_level.html" title="Niveau du jeu." alt="" coords="341,171,398,197"/>
+<area shape="rect" id="node6" href="$class_sprite_sheet.html" title=" " alt="" coords="434,171,531,197"/>
+<area shape="rect" id="node7" href="$class_sheet.html" title=" " alt="" coords="549,81,608,108"/>
+<area shape="rect" id="node12" href="$class_burger.html" title="Hamburger composé de tranche à compléter pour terminer les niveaux." alt="" coords="115,81,181,108"/>
+</map>

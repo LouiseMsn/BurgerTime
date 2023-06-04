@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BurgerTech: BurgerTech</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BurgerTech
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('md__home_smo__documents__polytech__burger_time__r_e_a_d_m_e.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">BurgerTech </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><img src="https://user-images.githubusercontent.com/108003990/237046133-a7b44b22-62d4-43a8-8105-92abe2f17c17.png" alt="Screenshot from 2023-05-09 10-53-45" class="inline"/></p>
+<p><b>Louise MANSON, Alice MOURIER</b></p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Installation</h1>
+<p>Installation de la biliothèque SFML avec: <br  />
+ `` sudo apt-get install libsfml-dev `` <br  />
+ Puis se placer dans le dossier BurgerTech Taper la commande <code>make</code> puis la commande <code>./BurgerTech</code> pour exécuter le programme</p>
+<p><b>Options de lancement</b> (à ajouter apres <code>./BurgerTech</code>):</p>
+<p><b>-l</b> <em>nombre de vies</em> <br  />
+ <b>-p</b> <em>nombre de poivres</em> <br  />
+ <b>-s</b> <em>échelle</em> <br  />
+ <b>-ws</b> <em>style de fenêtre</em><br  />
+ <b>-w</b> <em>largeur de la fenêtre</em><br  />
+ <b>-h</b> <em>hauteur de la fenêtre</em><br  />
+ <b>-t</b> <em>niveau de départ</em><br  />
+ <b>-so 0</b> ou <b>1</b> (<em>activer ou couper le son</em>)<br  />
+</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Jouer à BurgerTech</h1>
+<p>BurgerTech est un jeu basé sur le jeu d'arcade BurgerTime. Le but du jeu est de marcher sur les différentes tranches du burger pour les faire tomber jusqu'à l'assiette tout en évitant les saucisses, les oeufs et les cornichons. <br  />
+ Un niveau est complété lorsque tous les burgers sont complétés. <br  />
+ Lancer du poivre sur un ennemi paralyse l'ennemi pendant quelques secondes. <br  />
+ Des bonus apparaissent aussi sur la carte sous la forme de frites, glace ou café. Les attraper vous ajoute des points. <br  />
+</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Commandes pour 1 joueur</h2>
+<p>Le personnage se contrôle en utilisant les touches [←] [↑] [→] et [↓]. Utiliser [Ctrl Droit] pour lancer du poivre sur les ennemis</p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Commandes pour 2 joueurs</h2>
+<ul>
+<li>Joueur 1 :<ul>
+<li>Le personnage se contrôle en utilisant les touches [←] [↑] [→] et [↓].</li>
+<li>Utiliser [Ctrl Droit] pour lancer du poivre sur les ennemis.</li>
+</ul>
+</li>
+<li>Joueur 2 :<ul>
+<li>Le personnage se contrôle en utilisant les touches [Z] [Q] [S] et [D].</li>
+<li>Utiliser [Ctrl Gauche] pour lancer du poivre sur les ennemis.</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md5"></a>
+Fonctionnalités additionnelles / debug</h1>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Depuis le jeu</h2>
+<p><b>F1</b> à <b>F6</b> : <em>changer de niveau</em><br  />
+ + : <em>ajoute des ennemis</em><br  />
+ - : <em>supprime des ennemis</em><br  />
+ <b>F11</b> : <em>termine le joueur 1</em><br  />
+ <b>F12</b> : <em>termine le joueur 2</em><br  />
+</p>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Lancement des tests</h2>
+<p>Utiliser <code>make [NOM DE LA CLASSE]Test</code> pour générer l'éxecutable de test de la classe puis le lancer avec <code>./[NOM DE LA CLASSE]Test</code> Il est aussi possible de régénérer ces exécutables en utilisant <code>make clean_tests</code> puis la commande make précédente.</p>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Commentaires sur le projet</h1>
+<p><b>Ce qui ne marche pas dans le jeu</b></p><ul>
+<li>Les tranches ont parfois du mal à tomber lorsqu'on marche dessus</li>
+</ul>
+<p><b>Points d'interêt</b></p><ul>
+<li>Il a été difficile de régler la vitesse du jeu pour que la vitesse du jeu ne dépende pas de la vitesse de la machine sur laquelle on joue d'oû la méthode "update" de la classe <a class="el" href="class_updatable.html" title="Entités pouvant être mise à jour dans le jeu.">Updatable</a>. On utilise des entier pour les pixels, mais les événements (comme le fait d'appuyer sur une flèche directionnelle) arrvient en microsecondes et dépendent de la machine. Donc on les accumule juqu'à ce qu'ils dépassent un seuil, et on met à jour à ce moment là.</li>
+</ul>
+<p><b>Répartition du travail dans le binôme</b></p><ul>
+<li>Nous avons fait l'UML ensemble sur un draw.io partagé.</li>
+<li>Nous nous sommes réparti les classes à programmer à avons soumis les changements sur GitHub, nous avons cependant perdu une partie de l'historique de commits car nous avons par erreur créé une branche 'main' et une branche 'master' et faute de réussir à les merger nous avons du supprimer l'ancienne branche et son historique de commits.</li>
+<li>Nous tenons à préciser que nous avons reçu de l'aide pour la programmation (d'un parent fan de jeux d'arcade - et de programmation !), sans quoi nous n'auriont pas réussi à programmer un jeu aussi complet !</li>
+<li>Alice à réalisé la documentation sur Doxygen</li>
+<li>Louise à recolorisé les sprites d'origine et écrit les tests unitaires : ils sont relativement réduits faute de temps </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

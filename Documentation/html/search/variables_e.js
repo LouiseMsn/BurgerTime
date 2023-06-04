@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['s_5fempty_2313',['s_empty',['../class_catch_1_1_string_ref.html#a38d077e89f7f2ce666507ab28dd28653',1,'Catch::StringRef']]],
+  ['s_5finc_2314',['s_inc',['../class_catch_1_1_simple_pcg32.html#a34f89a8ee054db204c8cf17632ac4c03',1,'Catch::SimplePcg32']]],
+  ['sausages_2315',['sausages',['../_level_8cpp.html#aa532f335003afd93be9ffde2568ec871',1,'Level.cpp']]],
+  ['scoreshowtime_2316',['scoreShowTime',['../_constants_8h.html#a4df54a2397e6b12f93b57bdd1ea2992b',1,'Constants.h']]],
+  ['scorespeed_2317',['scoreSpeed',['../_constants_8h.html#a794025fdcdf8d1d759c8a135d2925c45',1,'Constants.h']]],
+  ['sectioninfo_2318',['sectionInfo',['../struct_catch_1_1_section_end_info.html#a2d44793392cb83735d086d726822abe9',1,'Catch::SectionEndInfo']]],
+  ['sequence_2319',['sequence',['../struct_catch_1_1_message_info.html#a7f4f57ea21e50160adefce7b68a781d6',1,'Catch::MessageInfo']]],
+  ['shoulddebugbreak_2320',['shouldDebugBreak',['../struct_catch_1_1_assertion_reaction.html#adcf30fb90ff20d9789df78d424652497',1,'Catch::AssertionReaction']]],
+  ['shouldthrow_2321',['shouldThrow',['../struct_catch_1_1_assertion_reaction.html#a82c8d95a2c1b6a331bde66982a8e090f',1,'Catch::AssertionReaction']]],
+  ['slicebouncespeedfactor_2322',['sliceBounceSpeedFactor',['../_constants_8h.html#abde477945be1f3a2c0cad0cd21c63dab',1,'Constants.h']]],
+  ['slicebouncey_2323',['sliceBounceY',['../_constants_8h.html#a8e93b1d9c742ead8b3053956c4b57d39',1,'Constants.h']]],
+  ['slicefallscore_2324',['sliceFallScore',['../_constants_8h.html#adddf2f568881e174f1345d142b69a7b6',1,'Constants.h']]],
+  ['slices_2325',['slices',['../_level_8cpp.html#a0b1493aa6f1823d7c5875ac7348a8546',1,'Level.cpp']]],
+  ['slicesizex_2326',['sliceSizeX',['../_constants_8h.html#a2dcdf022e52dcd02febee527670b07f9',1,'Constants.h']]],
+  ['slicesizey_2327',['sliceSizeY',['../_constants_8h.html#ac4c158e2e02f641675433ce58ebe09fe',1,'Constants.h']]],
+  ['slicespeed_2328',['sliceSpeed',['../_constants_8h.html#a2eb46afd258fbcc39300b80cb9c15575',1,'Constants.h']]],
+  ['soundenabled_2329',['soundEnabled',['../_main_8cpp.html#a93987fd774e83134c22ba47437f86b1c',1,'Main.cpp']]],
+  ['spritesizex_2330',['spriteSizeX',['../_constants_8h.html#ad543af7a63c20d253d97e8119e320689',1,'Constants.h']]],
+  ['startlevel_2331',['startLevel',['../_main_8cpp.html#a03aa44a70d6e0a9261edc4b77ee9f974',1,'Main.cpp']]],
+  ['storage_2332',['storage',['../class_catch_1_1_option.html#acdebca1b18bb8542c3f676b8dd805f23',1,'Catch::Option']]]
+];

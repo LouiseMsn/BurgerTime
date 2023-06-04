@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BurgerTech:  Fichier source de /home/smo/Documents/Polytech/BurgerTime/Headers/Enemy.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BurgerTech
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_enemy_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Enemy.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_enemy_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07ca">    3</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07ca">EnemyState</a></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="comment">// existe mais pas encore apparu</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa40a2ea52401699ebce426eec4d369ffb">    6</a></span>&#160;    <a class="code" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa40a2ea52401699ebce426eec4d369ffb">EnemyInLimbo</a>,</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa7460d041b4f369ff63de8e8b88531d2c">    8</a></span>&#160;    <a class="code" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa7460d041b4f369ff63de8e8b88531d2c">EnemyMovingLeft</a>,</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caabd3470624a4a9d0cf1eb68c33f7dbca2">    9</a></span>&#160;    <a class="code" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caabd3470624a4a9d0cf1eb68c33f7dbca2">EnemyMovingUp</a>,</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa10d1d9397fff8fee64bf205fc7d4e3a6">   10</a></span>&#160;    <a class="code" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa10d1d9397fff8fee64bf205fc7d4e3a6">EnemyMovingRight</a>,</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caae0ab4f2f11be8479137c0a87c65013fe">   11</a></span>&#160;    <a class="code" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caae0ab4f2f11be8479137c0a87c65013fe">EnemyMovingDown</a>,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caabd5a81fb4e45b146855556ab78e81e30">   13</a></span>&#160;    <a class="code" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caabd5a81fb4e45b146855556ab78e81e30">EnemyPeppered</a>,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa5a065ea1609f7e4fd40864d2506160b9">   15</a></span>&#160;    <a class="code" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa5a065ea1609f7e4fd40864d2506160b9">EnemyMashedRight</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caac9fd00da5d91985e13d637c3f28f5851">   16</a></span>&#160;    <a class="code" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caac9fd00da5d91985e13d637c3f28f5851">EnemyMashedLeft</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa2a215c3c49086bc600aa0352822b3f2f">   18</a></span>&#160;    <a class="code" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa2a215c3c49086bc600aa0352822b3f2f">EnemyDead</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caab081fbeaa096cb766e01c5d18ef046ba">   19</a></span>&#160;    <a class="code" href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caab081fbeaa096cb766e01c5d18ef046ba">EnemyLevelEnd</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70">   22</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70">EnemySubState</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a85ac54fd8748d39f8bc1b0583317c2fc">   24</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a85ac54fd8748d39f8bc1b0583317c2fc">EnemyDown1</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a94b686b99434804e324a75143e8b6153">   25</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a94b686b99434804e324a75143e8b6153">EnemyDown2</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a9313ce2f599247004043226d023bf1e6">   27</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a9313ce2f599247004043226d023bf1e6">EnemyLeft1</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70ac4aaa09cf788fe03191ebf6906821e36">   28</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70ac4aaa09cf788fe03191ebf6906821e36">EnemyLeft2</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// flipx</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70ad8763381061c0aefcc325c33b89b4bac">   31</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70ad8763381061c0aefcc325c33b89b4bac">EnemyRight1</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a71ac009271b621b146e6fc9b3e69b8e2">   32</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a71ac009271b621b146e6fc9b3e69b8e2">EnemyRight2</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70aba7f989595401775d4da0c1bc4fdc327">   34</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70aba7f989595401775d4da0c1bc4fdc327">EnemyUp1</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70af38e40acf3453e4858b97fd40e317977">   35</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70af38e40acf3453e4858b97fd40e317977">EnemyUp2</a>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a63735811a5cac610584b77566bdbe258">   37</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a63735811a5cac610584b77566bdbe258">EnemyMashedRight1</a>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a8dee0b42d82efc3d63b9b6c0dd32d5a4">   38</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a8dee0b42d82efc3d63b9b6c0dd32d5a4">EnemyMashedRight2</a>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a7ae34ae02767d3cad3adbd799fa3db1a">   39</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a7ae34ae02767d3cad3adbd799fa3db1a">EnemyMashedRight3</a>,</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a4ad4a69858ef18350b98f976ed7d7a74">   40</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a4ad4a69858ef18350b98f976ed7d7a74">EnemyMashedRight4</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a4e82bb48807e7c3a406980397405bb21">   42</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a4e82bb48807e7c3a406980397405bb21">EnemyPeppered1</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a9362c0c21b6a701da935c2921bfe8a72">   43</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a9362c0c21b6a701da935c2921bfe8a72">EnemyPeppered2</a>,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// flipx</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// le sprite n&#39;existe que pour la saucisse</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a125a8008d2462f875820c5fd64953add">   47</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a125a8008d2462f875820c5fd64953add">EnemyMashedLeft1</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a0ee98a7c931527ee8bb1efecfefb2935">   48</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a0ee98a7c931527ee8bb1efecfefb2935">EnemyMashedLeft2</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70acd8b3e674efa3ee5723eb641dac15a79">   49</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70acd8b3e674efa3ee5723eb641dac15a79">EnemyMashedLeft3</a>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70afcd1e38bd4f3c3bd5f9090f1bdd74156">   50</a></span>&#160;    <a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70afcd1e38bd4f3c3bd5f9090f1bdd74156">EnemyMashedLeft4</a>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_enemy.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_enemy.html">Enemy</a> : <span class="keyword">public</span> <a class="code" href="class_movable.html">Movable</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_enemy.html#a94fe84069e359990928ace836b37ce02">   59</a></span>&#160;    sf::Vector2i <a class="code" href="class_enemy.html#a94fe84069e359990928ace836b37ce02">_targetBlockPosition</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_enemy.html#a50ea04821160264daa8559a2061b66c5">   60</a></span>&#160;    sf::Clock <a class="code" href="class_enemy.html#a50ea04821160264daa8559a2061b66c5">_pepperedClock</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_enemy.html#afd402397a54a5b774fbe019d1491fda1">   61</a></span>&#160;    sf::Clock <a class="code" href="class_enemy.html#afd402397a54a5b774fbe019d1491fda1">_opacityClock</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_enemy.html#ac5d060feb62b1fc47f42785cc6ccfa71">   62</a></span>&#160;    sf::Sprite* <a class="code" href="class_enemy.html#ac5d060feb62b1fc47f42785cc6ccfa71">_lastOpacitySprite</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_enemy.html#a66a93e4c4b2e74137440de8cdef21ca3">   63</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_enemy.html#a66a93e4c4b2e74137440de8cdef21ca3">_peppered</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_enemy.html#aca192765914d7800048b0e46cb4b087c">   64</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_enemy.html#aca192765914d7800048b0e46cb4b087c">_beforeStopSpeed</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_enemy.html#a3ae6a144fa5b5a289b7b7acad0b7f44f">   65</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_slice.html">Slice</a>* <a class="code" href="class_enemy.html#a3ae6a144fa5b5a289b7b7acad0b7f44f">_fallingSlice</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_enemy.html#a74d7a8d7e4e6547210cb20df42cb89a9">   66</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_slice.html">Slice</a>* <a class="code" href="class_enemy.html#a74d7a8d7e4e6547210cb20df42cb89a9">_mashingSlice</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> <a class="code" href="class_enemy.html#a5f37c6212ddb462e6e777a33a5e5df4d">getNearestPlayerDirection</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_enemy.html#aca10f0abe5b7d38518568491e5a3e722">setPeppered</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_enemy.html#a57893bba9917a1540b23a72c742c4d5b">setUnPeppered</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_enemy.html#a04c451624958712b36546037fc25c601">die</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_enemy.html#a38a9501a825b68915c7a90013c939aea">Enemy</a>(<a class="code" href="class_game.html">Game</a>* game);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="class_enemy.html#ac0eec4755e28c02688065f9657150ac3">~Enemy</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_enemy.html#ae557d3ce34980a53d93c5bac32d7347e">   77</a></span>&#160;    <span class="keyword">virtual</span> sf::Sprite* <a class="code" href="class_enemy.html#ae557d3ce34980a53d93c5bac32d7347e">getSubStateSprite</a>(<a class="code" href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70">EnemySubState</a> subState) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_enemy.html#aaf26055ea4bfef57fcdad367008b0506">canKill</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_enemy.html#acc78895f695126088ca51624e4350afb">isPeppered</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_enemy.html#a6478662293f6a10d06d1e835327ac099">fallWithSlice</a>(<span class="keyword">const</span> <a class="code" href="class_slice.html">Slice</a>* slice);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_enemy.html#add50e81174e99c342b01ca348378a28f">mashBySlice</a>(<span class="keyword">const</span> <a class="code" href="class_slice.html">Slice</a>* slice);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// surchages</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_enemy.html#a3a84f3132760141ef5b4f122377c698b">setBlockPosition</a>(<span class="keyword">const</span> sf::Vector2i&amp; block, <span class="keywordtype">bool</span> checkBlocks);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_enemy.html#a794c3b8cc12cf4f2e350f3078e290d40">setMovingDirection</a>(<a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> direction);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_enemy.html#a0f6daa9ce3e5508105aa030da9f15295">setState</a>(<span class="keywordtype">int</span> state);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_enemy.html#acab99f0406062a6ced95b1c4beec8768">update</a>(sf::RenderWindow&amp; window, <span class="keyword">const</span> sf::Time&amp; deltaTime, <span class="keyword">const</span> sf::RenderStates&amp; states = sf::RenderStates::Default);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_enemy.html#a9a398f8d12234f02563b27440aff7891">move</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_enemy.html#a86aa17a6e156e2877f098ee8cb1855e6">finishLevel</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_enemy.html#ab8f585f62c66b721dab80113ad88eb5e">drawSprite</a>(sf::RenderWindow&amp; window, <span class="keyword">const</span> sf::Time&amp; deltaTime, <span class="keyword">const</span> sf::RenderStates&amp; states);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70">EnemySubState</a></div><div class="ttdeci">EnemySubState</div><div class="ttdef"><b>Definition:</b> Enemy.h:23</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a0ee98a7c931527ee8bb1efecfefb2935"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a0ee98a7c931527ee8bb1efecfefb2935">EnemyMashedLeft2</a></div><div class="ttdeci">@ EnemyMashedLeft2</div><div class="ttdef"><b>Definition:</b> Enemy.h:48</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a125a8008d2462f875820c5fd64953add"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a125a8008d2462f875820c5fd64953add">EnemyMashedLeft1</a></div><div class="ttdeci">@ EnemyMashedLeft1</div><div class="ttdef"><b>Definition:</b> Enemy.h:47</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a4ad4a69858ef18350b98f976ed7d7a74"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a4ad4a69858ef18350b98f976ed7d7a74">EnemyMashedRight4</a></div><div class="ttdeci">@ EnemyMashedRight4</div><div class="ttdef"><b>Definition:</b> Enemy.h:40</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a4e82bb48807e7c3a406980397405bb21"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a4e82bb48807e7c3a406980397405bb21">EnemyPeppered1</a></div><div class="ttdeci">@ EnemyPeppered1</div><div class="ttdef"><b>Definition:</b> Enemy.h:42</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a63735811a5cac610584b77566bdbe258"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a63735811a5cac610584b77566bdbe258">EnemyMashedRight1</a></div><div class="ttdeci">@ EnemyMashedRight1</div><div class="ttdef"><b>Definition:</b> Enemy.h:37</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a71ac009271b621b146e6fc9b3e69b8e2"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a71ac009271b621b146e6fc9b3e69b8e2">EnemyRight2</a></div><div class="ttdeci">@ EnemyRight2</div><div class="ttdef"><b>Definition:</b> Enemy.h:32</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a7ae34ae02767d3cad3adbd799fa3db1a"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a7ae34ae02767d3cad3adbd799fa3db1a">EnemyMashedRight3</a></div><div class="ttdeci">@ EnemyMashedRight3</div><div class="ttdef"><b>Definition:</b> Enemy.h:39</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a85ac54fd8748d39f8bc1b0583317c2fc"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a85ac54fd8748d39f8bc1b0583317c2fc">EnemyDown1</a></div><div class="ttdeci">@ EnemyDown1</div><div class="ttdef"><b>Definition:</b> Enemy.h:24</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a8dee0b42d82efc3d63b9b6c0dd32d5a4"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a8dee0b42d82efc3d63b9b6c0dd32d5a4">EnemyMashedRight2</a></div><div class="ttdeci">@ EnemyMashedRight2</div><div class="ttdef"><b>Definition:</b> Enemy.h:38</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a9313ce2f599247004043226d023bf1e6"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a9313ce2f599247004043226d023bf1e6">EnemyLeft1</a></div><div class="ttdeci">@ EnemyLeft1</div><div class="ttdef"><b>Definition:</b> Enemy.h:27</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a9362c0c21b6a701da935c2921bfe8a72"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a9362c0c21b6a701da935c2921bfe8a72">EnemyPeppered2</a></div><div class="ttdeci">@ EnemyPeppered2</div><div class="ttdef"><b>Definition:</b> Enemy.h:43</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70a94b686b99434804e324a75143e8b6153"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70a94b686b99434804e324a75143e8b6153">EnemyDown2</a></div><div class="ttdeci">@ EnemyDown2</div><div class="ttdef"><b>Definition:</b> Enemy.h:25</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70aba7f989595401775d4da0c1bc4fdc327"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70aba7f989595401775d4da0c1bc4fdc327">EnemyUp1</a></div><div class="ttdeci">@ EnemyUp1</div><div class="ttdef"><b>Definition:</b> Enemy.h:34</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70ac4aaa09cf788fe03191ebf6906821e36"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70ac4aaa09cf788fe03191ebf6906821e36">EnemyLeft2</a></div><div class="ttdeci">@ EnemyLeft2</div><div class="ttdef"><b>Definition:</b> Enemy.h:28</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70acd8b3e674efa3ee5723eb641dac15a79"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70acd8b3e674efa3ee5723eb641dac15a79">EnemyMashedLeft3</a></div><div class="ttdeci">@ EnemyMashedLeft3</div><div class="ttdef"><b>Definition:</b> Enemy.h:49</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70ad8763381061c0aefcc325c33b89b4bac"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70ad8763381061c0aefcc325c33b89b4bac">EnemyRight1</a></div><div class="ttdeci">@ EnemyRight1</div><div class="ttdef"><b>Definition:</b> Enemy.h:31</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70af38e40acf3453e4858b97fd40e317977"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70af38e40acf3453e4858b97fd40e317977">EnemyUp2</a></div><div class="ttdeci">@ EnemyUp2</div><div class="ttdef"><b>Definition:</b> Enemy.h:35</div></div>
+<div class="ttc" id="a_enemy_8h_html_abbb123269a745526136275f96d7cfd70afcd1e38bd4f3c3bd5f9090f1bdd74156"><div class="ttname"><a href="_enemy_8h.html#abbb123269a745526136275f96d7cfd70afcd1e38bd4f3c3bd5f9090f1bdd74156">EnemyMashedLeft4</a></div><div class="ttdeci">@ EnemyMashedLeft4</div><div class="ttdef"><b>Definition:</b> Enemy.h:50</div></div>
+<div class="ttc" id="a_enemy_8h_html_afa7c83b36b8a04d477dd0b7ce04e07ca"><div class="ttname"><a href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07ca">EnemyState</a></div><div class="ttdeci">EnemyState</div><div class="ttdef"><b>Definition:</b> Enemy.h:4</div></div>
+<div class="ttc" id="a_enemy_8h_html_afa7c83b36b8a04d477dd0b7ce04e07caa10d1d9397fff8fee64bf205fc7d4e3a6"><div class="ttname"><a href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa10d1d9397fff8fee64bf205fc7d4e3a6">EnemyMovingRight</a></div><div class="ttdeci">@ EnemyMovingRight</div><div class="ttdef"><b>Definition:</b> Enemy.h:10</div></div>
+<div class="ttc" id="a_enemy_8h_html_afa7c83b36b8a04d477dd0b7ce04e07caa2a215c3c49086bc600aa0352822b3f2f"><div class="ttname"><a href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa2a215c3c49086bc600aa0352822b3f2f">EnemyDead</a></div><div class="ttdeci">@ EnemyDead</div><div class="ttdef"><b>Definition:</b> Enemy.h:18</div></div>
+<div class="ttc" id="a_enemy_8h_html_afa7c83b36b8a04d477dd0b7ce04e07caa40a2ea52401699ebce426eec4d369ffb"><div class="ttname"><a href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa40a2ea52401699ebce426eec4d369ffb">EnemyInLimbo</a></div><div class="ttdeci">@ EnemyInLimbo</div><div class="ttdef"><b>Definition:</b> Enemy.h:6</div></div>
+<div class="ttc" id="a_enemy_8h_html_afa7c83b36b8a04d477dd0b7ce04e07caa5a065ea1609f7e4fd40864d2506160b9"><div class="ttname"><a href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa5a065ea1609f7e4fd40864d2506160b9">EnemyMashedRight</a></div><div class="ttdeci">@ EnemyMashedRight</div><div class="ttdef"><b>Definition:</b> Enemy.h:15</div></div>
+<div class="ttc" id="a_enemy_8h_html_afa7c83b36b8a04d477dd0b7ce04e07caa7460d041b4f369ff63de8e8b88531d2c"><div class="ttname"><a href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caa7460d041b4f369ff63de8e8b88531d2c">EnemyMovingLeft</a></div><div class="ttdeci">@ EnemyMovingLeft</div><div class="ttdef"><b>Definition:</b> Enemy.h:8</div></div>
+<div class="ttc" id="a_enemy_8h_html_afa7c83b36b8a04d477dd0b7ce04e07caab081fbeaa096cb766e01c5d18ef046ba"><div class="ttname"><a href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caab081fbeaa096cb766e01c5d18ef046ba">EnemyLevelEnd</a></div><div class="ttdeci">@ EnemyLevelEnd</div><div class="ttdef"><b>Definition:</b> Enemy.h:19</div></div>
+<div class="ttc" id="a_enemy_8h_html_afa7c83b36b8a04d477dd0b7ce04e07caabd3470624a4a9d0cf1eb68c33f7dbca2"><div class="ttname"><a href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caabd3470624a4a9d0cf1eb68c33f7dbca2">EnemyMovingUp</a></div><div class="ttdeci">@ EnemyMovingUp</div><div class="ttdef"><b>Definition:</b> Enemy.h:9</div></div>
+<div class="ttc" id="a_enemy_8h_html_afa7c83b36b8a04d477dd0b7ce04e07caabd5a81fb4e45b146855556ab78e81e30"><div class="ttname"><a href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caabd5a81fb4e45b146855556ab78e81e30">EnemyPeppered</a></div><div class="ttdeci">@ EnemyPeppered</div><div class="ttdef"><b>Definition:</b> Enemy.h:13</div></div>
+<div class="ttc" id="a_enemy_8h_html_afa7c83b36b8a04d477dd0b7ce04e07caac9fd00da5d91985e13d637c3f28f5851"><div class="ttname"><a href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caac9fd00da5d91985e13d637c3f28f5851">EnemyMashedLeft</a></div><div class="ttdeci">@ EnemyMashedLeft</div><div class="ttdef"><b>Definition:</b> Enemy.h:16</div></div>
+<div class="ttc" id="a_enemy_8h_html_afa7c83b36b8a04d477dd0b7ce04e07caae0ab4f2f11be8479137c0a87c65013fe"><div class="ttname"><a href="_enemy_8h.html#afa7c83b36b8a04d477dd0b7ce04e07caae0ab4f2f11be8479137c0a87c65013fe">EnemyMovingDown</a></div><div class="ttdeci">@ EnemyMovingDown</div><div class="ttdef"><b>Definition:</b> Enemy.h:11</div></div>
+<div class="ttc" id="a_level_8h_html_a7159287e6fc98c7998c6b67a74d157f8"><div class="ttname"><a href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a></div><div class="ttdeci">MoveDirection</div><div class="ttdef"><b>Definition:</b> Level.h:4</div></div>
+<div class="ttc" id="aclass_enemy_html"><div class="ttname"><a href="class_enemy.html">Enemy</a></div><div class="ttdoc">Ennemi (oeuf au plat, cornichon ou saucisse)</div><div class="ttdef"><b>Definition:</b> Enemy.h:58</div></div>
+<div class="ttc" id="aclass_enemy_html_a04c451624958712b36546037fc25c601"><div class="ttname"><a href="class_enemy.html#a04c451624958712b36546037fc25c601">Enemy::die</a></div><div class="ttdeci">void die()</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:62</div></div>
+<div class="ttc" id="aclass_enemy_html_a0f6daa9ce3e5508105aa030da9f15295"><div class="ttname"><a href="class_enemy.html#a0f6daa9ce3e5508105aa030da9f15295">Enemy::setState</a></div><div class="ttdeci">bool setState(int state)</div><div class="ttdoc">setter de l'état retourne false si l'état était déjà le bon retourne true sinon</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:103</div></div>
+<div class="ttc" id="aclass_enemy_html_a38a9501a825b68915c7a90013c939aea"><div class="ttname"><a href="class_enemy.html#a38a9501a825b68915c7a90013c939aea">Enemy::Enemy</a></div><div class="ttdeci">Enemy(Game *game)</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:16</div></div>
+<div class="ttc" id="aclass_enemy_html_a3a84f3132760141ef5b4f122377c698b"><div class="ttname"><a href="class_enemy.html#a3a84f3132760141ef5b4f122377c698b">Enemy::setBlockPosition</a></div><div class="ttdeci">void setBlockPosition(const sf::Vector2i &amp;block, bool checkBlocks)</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:41</div></div>
+<div class="ttc" id="aclass_enemy_html_a3ae6a144fa5b5a289b7b7acad0b7f44f"><div class="ttname"><a href="class_enemy.html#a3ae6a144fa5b5a289b7b7acad0b7f44f">Enemy::_fallingSlice</a></div><div class="ttdeci">const Slice * _fallingSlice</div><div class="ttdef"><b>Definition:</b> Enemy.h:65</div></div>
+<div class="ttc" id="aclass_enemy_html_a50ea04821160264daa8559a2061b66c5"><div class="ttname"><a href="class_enemy.html#a50ea04821160264daa8559a2061b66c5">Enemy::_pepperedClock</a></div><div class="ttdeci">sf::Clock _pepperedClock</div><div class="ttdef"><b>Definition:</b> Enemy.h:60</div></div>
+<div class="ttc" id="aclass_enemy_html_a57893bba9917a1540b23a72c742c4d5b"><div class="ttname"><a href="class_enemy.html#a57893bba9917a1540b23a72c742c4d5b">Enemy::setUnPeppered</a></div><div class="ttdeci">void setUnPeppered()</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:207</div></div>
+<div class="ttc" id="aclass_enemy_html_a5f37c6212ddb462e6e777a33a5e5df4d"><div class="ttname"><a href="class_enemy.html#a5f37c6212ddb462e6e777a33a5e5df4d">Enemy::getNearestPlayerDirection</a></div><div class="ttdeci">MoveDirection getNearestPlayerDirection() const</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:138</div></div>
+<div class="ttc" id="aclass_enemy_html_a6478662293f6a10d06d1e835327ac099"><div class="ttname"><a href="class_enemy.html#a6478662293f6a10d06d1e835327ac099">Enemy::fallWithSlice</a></div><div class="ttdeci">bool fallWithSlice(const Slice *slice)</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:83</div></div>
+<div class="ttc" id="aclass_enemy_html_a66a93e4c4b2e74137440de8cdef21ca3"><div class="ttname"><a href="class_enemy.html#a66a93e4c4b2e74137440de8cdef21ca3">Enemy::_peppered</a></div><div class="ttdeci">bool _peppered</div><div class="ttdef"><b>Definition:</b> Enemy.h:63</div></div>
+<div class="ttc" id="aclass_enemy_html_a74d7a8d7e4e6547210cb20df42cb89a9"><div class="ttname"><a href="class_enemy.html#a74d7a8d7e4e6547210cb20df42cb89a9">Enemy::_mashingSlice</a></div><div class="ttdeci">const Slice * _mashingSlice</div><div class="ttdef"><b>Definition:</b> Enemy.h:66</div></div>
+<div class="ttc" id="aclass_enemy_html_a794c3b8cc12cf4f2e350f3078e290d40"><div class="ttname"><a href="class_enemy.html#a794c3b8cc12cf4f2e350f3078e290d40">Enemy::setMovingDirection</a></div><div class="ttdeci">bool setMovingDirection(MoveDirection direction)</div><div class="ttdoc">setter de la direction du mouvement retourne false si la movingDirection est déjà égale à la directio...</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:314</div></div>
+<div class="ttc" id="aclass_enemy_html_a86aa17a6e156e2877f098ee8cb1855e6"><div class="ttname"><a href="class_enemy.html#a86aa17a6e156e2877f098ee8cb1855e6">Enemy::finishLevel</a></div><div class="ttdeci">void finishLevel()</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:95</div></div>
+<div class="ttc" id="aclass_enemy_html_a94fe84069e359990928ace836b37ce02"><div class="ttname"><a href="class_enemy.html#a94fe84069e359990928ace836b37ce02">Enemy::_targetBlockPosition</a></div><div class="ttdeci">sf::Vector2i _targetBlockPosition</div><div class="ttdef"><b>Definition:</b> Enemy.h:59</div></div>
+<div class="ttc" id="aclass_enemy_html_a9a398f8d12234f02563b27440aff7891"><div class="ttname"><a href="class_enemy.html#a9a398f8d12234f02563b27440aff7891">Enemy::move</a></div><div class="ttdeci">void move()</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:223</div></div>
+<div class="ttc" id="aclass_enemy_html_aaf26055ea4bfef57fcdad367008b0506"><div class="ttname"><a href="class_enemy.html#aaf26055ea4bfef57fcdad367008b0506">Enemy::canKill</a></div><div class="ttdeci">bool canKill() const</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:52</div></div>
+<div class="ttc" id="aclass_enemy_html_ab8f585f62c66b721dab80113ad88eb5e"><div class="ttname"><a href="class_enemy.html#ab8f585f62c66b721dab80113ad88eb5e">Enemy::drawSprite</a></div><div class="ttdeci">void drawSprite(sf::RenderWindow &amp;window, const sf::Time &amp;deltaTime, const sf::RenderStates &amp;states)</div><div class="ttdoc">dessine le sprite sur la fenêtre</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:340</div></div>
+<div class="ttc" id="aclass_enemy_html_ac0eec4755e28c02688065f9657150ac3"><div class="ttname"><a href="class_enemy.html#ac0eec4755e28c02688065f9657150ac3">Enemy::~Enemy</a></div><div class="ttdeci">~Enemy()</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:30</div></div>
+<div class="ttc" id="aclass_enemy_html_ac5d060feb62b1fc47f42785cc6ccfa71"><div class="ttname"><a href="class_enemy.html#ac5d060feb62b1fc47f42785cc6ccfa71">Enemy::_lastOpacitySprite</a></div><div class="ttdeci">sf::Sprite * _lastOpacitySprite</div><div class="ttdef"><b>Definition:</b> Enemy.h:62</div></div>
+<div class="ttc" id="aclass_enemy_html_aca10f0abe5b7d38518568491e5a3e722"><div class="ttname"><a href="class_enemy.html#aca10f0abe5b7d38518568491e5a3e722">Enemy::setPeppered</a></div><div class="ttdeci">void setPeppered()</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:192</div></div>
+<div class="ttc" id="aclass_enemy_html_aca192765914d7800048b0e46cb4b087c"><div class="ttname"><a href="class_enemy.html#aca192765914d7800048b0e46cb4b087c">Enemy::_beforeStopSpeed</a></div><div class="ttdeci">float _beforeStopSpeed</div><div class="ttdef"><b>Definition:</b> Enemy.h:64</div></div>
+<div class="ttc" id="aclass_enemy_html_acab99f0406062a6ced95b1c4beec8768"><div class="ttname"><a href="class_enemy.html#acab99f0406062a6ced95b1c4beec8768">Enemy::update</a></div><div class="ttdeci">void update(sf::RenderWindow &amp;window, const sf::Time &amp;deltaTime, const sf::RenderStates &amp;states=sf::RenderStates::Default)</div><div class="ttdoc">mise à jour de l'updatable On utilise le temps afin que la vitesse du jeu ne dépende pas de la vitess...</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:362</div></div>
+<div class="ttc" id="aclass_enemy_html_acc78895f695126088ca51624e4350afb"><div class="ttname"><a href="class_enemy.html#acc78895f695126088ca51624e4350afb">Enemy::isPeppered</a></div><div class="ttdeci">bool isPeppered() const</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:47</div></div>
+<div class="ttc" id="aclass_enemy_html_add50e81174e99c342b01ca348378a28f"><div class="ttname"><a href="class_enemy.html#add50e81174e99c342b01ca348378a28f">Enemy::mashBySlice</a></div><div class="ttdeci">bool mashBySlice(const Slice *slice)</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:69</div></div>
+<div class="ttc" id="aclass_enemy_html_ae557d3ce34980a53d93c5bac32d7347e"><div class="ttname"><a href="class_enemy.html#ae557d3ce34980a53d93c5bac32d7347e">Enemy::getSubStateSprite</a></div><div class="ttdeci">virtual sf::Sprite * getSubStateSprite(EnemySubState subState) const =0</div></div>
+<div class="ttc" id="aclass_enemy_html_afd402397a54a5b774fbe019d1491fda1"><div class="ttname"><a href="class_enemy.html#afd402397a54a5b774fbe019d1491fda1">Enemy::_opacityClock</a></div><div class="ttdeci">sf::Clock _opacityClock</div><div class="ttdef"><b>Definition:</b> Enemy.h:61</div></div>
+<div class="ttc" id="aclass_game_html"><div class="ttname"><a href="class_game.html">Game</a></div><div class="ttdoc">Le jeu.</div><div class="ttdef"><b>Definition:</b> Game.h:62</div></div>
+<div class="ttc" id="aclass_movable_html"><div class="ttname"><a href="class_movable.html">Movable</a></div><div class="ttdoc">Objet qui bouge sur l'écran.</div><div class="ttdef"><b>Definition:</b> Movable.h:21</div></div>
+<div class="ttc" id="aclass_slice_html"><div class="ttname"><a href="class_slice.html">Slice</a></div><div class="ttdoc">Tranche de hamburger.</div><div class="ttdef"><b>Definition:</b> Slice.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2b298ba2fe274a0e79ead9f59c761ae6.html">BurgerTime</a></li><li class="navelem"><a class="el" href="dir_7dfc6200125ba505770d11d2abcc3b77.html">Headers</a></li><li class="navelem"><a class="el" href="_enemy_8h.html">Enemy.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

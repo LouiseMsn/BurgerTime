@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BurgerTech:  Fichier source de /home/smo/Documents/Polytech/BurgerTime/Headers/Movable.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BurgerTech
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_movable_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Movable.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_movable_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="_movable_8h.html#ac0484bd82bb121a5591b3f2a998db491">    3</a></span>&#160;<span class="preprocessor">#define SPRITE(x) (getGame()-&gt;getSpriteSheet().getSprite(x))</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dd">    5</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dd">MovableType</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda22565f545d00adc271479a441d162fd8">    7</a></span>&#160;    <a class="code" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda22565f545d00adc271479a441d162fd8">MovableTypeUnspecified</a>,</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda7b9342fcfc31421c9c9eaf0674be20b1">    8</a></span>&#160;    <a class="code" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda7b9342fcfc31421c9c9eaf0674be20b1">MovableTypePlayer</a>,</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda544fc5ce9cda78c5010c959ca996b8b1">    9</a></span>&#160;    <a class="code" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda544fc5ce9cda78c5010c959ca996b8b1">MovableTypeEnemy</a>,</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda38277594fba4fa5a342656f686dbd69e">   10</a></span>&#160;    <a class="code" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda38277594fba4fa5a342656f686dbd69e">MovableTypePepper</a>,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_game.html">Game</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">enum</span> <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> : int;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_movable.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_movable.html">Movable</a> : <span class="keyword">public</span> <a class="code" href="class_updatable.html">Updatable</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_movable.html#ae72e2bdfeef4edddac3508300aaa1250">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_movable.html#ae72e2bdfeef4edddac3508300aaa1250">_state</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_movable.html#a0316873351140fe1534a8eebcfaaada0">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_movable.html#a0316873351140fe1534a8eebcfaaada0">_subState</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_movable.html#aba90b335fa8d02c5e640564777f7d533">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_movable.html#aba90b335fa8d02c5e640564777f7d533">_subStateChangeDelay</a>; <span class="comment">// milliseconds</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_movable.html#a9b3ea5197f7e6e86cc9d553d1eb96b46">   25</a></span>&#160;    sf::Sprite* <a class="code" href="class_movable.html#a9b3ea5197f7e6e86cc9d553d1eb96b46">_sprite</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_movable.html#a07d3c1a135a744c4bd677c2704015108">   26</a></span>&#160;    sf::Clock <a class="code" href="class_movable.html#a07d3c1a135a744c4bd677c2704015108">_subStateClock</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_movable.html#a2bbdf786aad1334cdf38d8219c96a25f">   27</a></span>&#160;    <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> <a class="code" href="class_movable.html#a2bbdf786aad1334cdf38d8219c96a25f">_movingDirection</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_movable.html#a459a83632fbb103b58b5192e003d27ee">   28</a></span>&#160;    <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> <a class="code" href="class_movable.html#a459a83632fbb103b58b5192e003d27ee">_lastMovingDirection</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_movable.html#a9ee93f01dbd5076202ce468a148d93da">   29</a></span>&#160;    <a class="code" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dd">MovableType</a> <a class="code" href="class_movable.html#a9ee93f01dbd5076202ce468a148d93da">_type</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_movable.html#a7b2c3ede50fcb8bff2bff6e8c0136c77">   32</a></span>&#160;    sf::Vector2i <a class="code" href="class_movable.html#a7b2c3ede50fcb8bff2bff6e8c0136c77">_pixelPosition</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_movable.html#a77c5a3e5d1ee6468d745662685d25ff3">   33</a></span>&#160;    sf::Vector2i <a class="code" href="class_movable.html#a77c5a3e5d1ee6468d745662685d25ff3">_size</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_movable.html#a2d7aca8e0f3cdae113b61f12c30d3731">drawSprite</a>(sf::RenderWindow&amp; window, <span class="keyword">const</span> sf::Time&amp; deltaTime, <span class="keyword">const</span> sf::RenderStates&amp; states);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_movable.html#aa8f152365791114f3748c9d4d521a61f">Movable</a>(<a class="code" href="class_game.html">Game</a>* game);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> <a class="code" href="class_movable.html#ac39eb34f2f4cc47ae0e9e05851fe56e3">getOppositeDirection</a>(<a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> direction);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_movable.html#a40e700e902fceeedae049a4a7016402a">areOppositeDirection</a>(<a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> dir1, <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> dir2);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_movable.html#a31c51d1e07e2c1f543daa8e801aa1988">removeDirection</a>(std::vector&lt;MoveDirection&gt;&amp; directions, <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> direction);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_movable.html#a44fbd900f7a6fad1d7fa75c0ac293ee7">restartSubStateClock</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_movable.html#a35605ab7d25a801dd2ba15a41c0fb74a">getSubStateElapsedMilliseconds</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_movable.html#a344f40d2bbac35a756af34c4896ce13a">getSubStateChangeDelay</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_movable.html#ab8a14055f4e0c25755ebc35276a8b4fb">setSubStateChangeDelay</a>(<span class="keywordtype">int</span> subStateChangeDelay);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_movable.html#adc8b1e7488b75a07f8b4ce806cac1ae1">getSubState</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_movable.html#ac446ca038cf9c79f524cc31ebc75f49b">setSubState</a>(<span class="keywordtype">int</span> subState);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> <a class="code" href="class_movable.html#a48a505c365f6f3007e10c1b6b9962792">getLastMovingDirection</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_movable.html#a61ebface551ef57be4102f288557e11c">setLastMovingDirection</a>(<a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> direction);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> <a class="code" href="class_movable.html#ab2235ad2ea379a26082aa1d29310382a">getMovingDirection</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_movable.html#abd59517c37bcf95849be30951c2530b0">setMovingDirection</a>(<a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> direction);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> std::vector&lt;MoveDirection&gt; <a class="code" href="class_movable.html#a9cd7331129fec587820b26e7cafd70c6">getAvailableDirections</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_movable.html#a4af73b62ec2913b7fac9d8652476f94e">setType</a>(<a class="code" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dd">MovableType</a> type);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dd">MovableType</a> <a class="code" href="class_movable.html#a84ecb19a91a1eaa75b18ce43bd53fb42">getType</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_movable.html#a4d21bbf17d497ce904c82c03b62052ba">getState</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_movable.html#ab8d6fc3b1907442dfead24116a6920d9">setState</a>(<span class="keywordtype">int</span> state);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    sf::Sprite* <a class="code" href="class_movable.html#af83dcd9f56e47eba45b72475a1e7ef85">getSprite</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_movable.html#aa5cf1c19e0ad51b76f1c6c702024011d">setSprite</a>(sf::Sprite* sprite);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_movable.html#a323ac5341ba0bc4c57b72925f4c86b69">setSize</a>(<span class="keyword">const</span> sf::Vector2i&amp; size);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_movable.html#aece1d45664826bc8a315b13c09e6ec8d">collides</a>(<span class="keyword">const</span> sf::IntRect pixelBounds, <span class="keywordtype">int</span> tolerance = 4) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_movable.html#aece1d45664826bc8a315b13c09e6ec8d">collides</a>(<span class="keyword">const</span> <a class="code" href="class_movable.html">Movable</a>* movable, <span class="keywordtype">int</span> tolerance = 4) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_movable.html#a139f7fc90ae122b4d74af945dae2d646">isAtBlock</a>(<span class="keyword">const</span> sf::Vector2i&amp; blockPosition) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    sf::Vector2i <a class="code" href="class_movable.html#a4e3bb4766ff8b7f5025a770996fd0e23">getBlockPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_movable.html#a10501bacdd27b597761b3df24cfda4c5">setBlockPosition</a>(<span class="keyword">const</span> sf::Vector2i&amp; block, <span class="keywordtype">bool</span> checkBlocks = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    sf::IntRect <a class="code" href="class_movable.html#a8d27487bf678b6d3d12fa049180e6056">getPixelBounds</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    sf::Vector2i <a class="code" href="class_movable.html#a6999570f9d4f364fe8f0d8201e7fee0b">getPixelPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    sf::Vector2i <a class="code" href="class_movable.html#aa6387aa15291f6cff219c5a28a05e3db">getCenterPixelPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_movable.html#a74d901d08339015a6e1213ec3aad27da">setPixelPosition</a>(<span class="keyword">const</span> sf::Vector2i&amp; pixelPosition, <span class="keywordtype">bool</span> checkBlocks = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_movable.html#a77cc7ea1a7e81ffc4a0f867a1d0b316c">updateWhenMoved</a>(<span class="keywordtype">int</span> speed);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_movable.html#a49c8a515686ce5e8126567b5537452cb">moveFromKey</a>(sf::Keyboard::Key key);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_movable.html#a788bccef8ab09ab878f06b2b3f364479">finishLevel</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_movable.html#a3de4cd0406fac9837ee0638a90bb901c">update</a>(sf::RenderWindow&amp; window, <span class="keyword">const</span> sf::Time&amp; deltaTime, <span class="keyword">const</span> sf::RenderStates&amp; states = sf::RenderStates::Default);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="ttc" id="a_level_8h_html_a7159287e6fc98c7998c6b67a74d157f8"><div class="ttname"><a href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a></div><div class="ttdeci">MoveDirection</div><div class="ttdef"><b>Definition:</b> Level.h:4</div></div>
+<div class="ttc" id="a_movable_8h_html_ae750982145205b58171d3ab73cbf51dd"><div class="ttname"><a href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dd">MovableType</a></div><div class="ttdeci">MovableType</div><div class="ttdef"><b>Definition:</b> Movable.h:6</div></div>
+<div class="ttc" id="a_movable_8h_html_ae750982145205b58171d3ab73cbf51dda22565f545d00adc271479a441d162fd8"><div class="ttname"><a href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda22565f545d00adc271479a441d162fd8">MovableTypeUnspecified</a></div><div class="ttdeci">@ MovableTypeUnspecified</div><div class="ttdef"><b>Definition:</b> Movable.h:7</div></div>
+<div class="ttc" id="a_movable_8h_html_ae750982145205b58171d3ab73cbf51dda38277594fba4fa5a342656f686dbd69e"><div class="ttname"><a href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda38277594fba4fa5a342656f686dbd69e">MovableTypePepper</a></div><div class="ttdeci">@ MovableTypePepper</div><div class="ttdef"><b>Definition:</b> Movable.h:10</div></div>
+<div class="ttc" id="a_movable_8h_html_ae750982145205b58171d3ab73cbf51dda544fc5ce9cda78c5010c959ca996b8b1"><div class="ttname"><a href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda544fc5ce9cda78c5010c959ca996b8b1">MovableTypeEnemy</a></div><div class="ttdeci">@ MovableTypeEnemy</div><div class="ttdef"><b>Definition:</b> Movable.h:9</div></div>
+<div class="ttc" id="a_movable_8h_html_ae750982145205b58171d3ab73cbf51dda7b9342fcfc31421c9c9eaf0674be20b1"><div class="ttname"><a href="_movable_8h.html#ae750982145205b58171d3ab73cbf51dda7b9342fcfc31421c9c9eaf0674be20b1">MovableTypePlayer</a></div><div class="ttdeci">@ MovableTypePlayer</div><div class="ttdef"><b>Definition:</b> Movable.h:8</div></div>
+<div class="ttc" id="aclass_game_html"><div class="ttname"><a href="class_game.html">Game</a></div><div class="ttdoc">Le jeu.</div><div class="ttdef"><b>Definition:</b> Game.h:62</div></div>
+<div class="ttc" id="aclass_movable_html"><div class="ttname"><a href="class_movable.html">Movable</a></div><div class="ttdoc">Objet qui bouge sur l'écran.</div><div class="ttdef"><b>Definition:</b> Movable.h:21</div></div>
+<div class="ttc" id="aclass_movable_html_a0316873351140fe1534a8eebcfaaada0"><div class="ttname"><a href="class_movable.html#a0316873351140fe1534a8eebcfaaada0">Movable::_subState</a></div><div class="ttdeci">int _subState</div><div class="ttdef"><b>Definition:</b> Movable.h:23</div></div>
+<div class="ttc" id="aclass_movable_html_a07d3c1a135a744c4bd677c2704015108"><div class="ttname"><a href="class_movable.html#a07d3c1a135a744c4bd677c2704015108">Movable::_subStateClock</a></div><div class="ttdeci">sf::Clock _subStateClock</div><div class="ttdef"><b>Definition:</b> Movable.h:26</div></div>
+<div class="ttc" id="aclass_movable_html_a10501bacdd27b597761b3df24cfda4c5"><div class="ttname"><a href="class_movable.html#a10501bacdd27b597761b3df24cfda4c5">Movable::setBlockPosition</a></div><div class="ttdeci">virtual void setBlockPosition(const sf::Vector2i &amp;block, bool checkBlocks=true)</div><div class="ttdef"><b>Definition:</b> Movable.cpp:597</div></div>
+<div class="ttc" id="aclass_movable_html_a139f7fc90ae122b4d74af945dae2d646"><div class="ttname"><a href="class_movable.html#a139f7fc90ae122b4d74af945dae2d646">Movable::isAtBlock</a></div><div class="ttdeci">bool isAtBlock(const sf::Vector2i &amp;blockPosition) const</div><div class="ttdoc">vérifie que l'objet Movable se trouve au bloc spécifié par blockPosition</div><div class="ttdef"><b>Definition:</b> Movable.cpp:325</div></div>
+<div class="ttc" id="aclass_movable_html_a2bbdf786aad1334cdf38d8219c96a25f"><div class="ttname"><a href="class_movable.html#a2bbdf786aad1334cdf38d8219c96a25f">Movable::_movingDirection</a></div><div class="ttdeci">MoveDirection _movingDirection</div><div class="ttdef"><b>Definition:</b> Movable.h:27</div></div>
+<div class="ttc" id="aclass_movable_html_a2d7aca8e0f3cdae113b61f12c30d3731"><div class="ttname"><a href="class_movable.html#a2d7aca8e0f3cdae113b61f12c30d3731">Movable::drawSprite</a></div><div class="ttdeci">virtual void drawSprite(sf::RenderWindow &amp;window, const sf::Time &amp;deltaTime, const sf::RenderStates &amp;states)</div><div class="ttdoc">dessine le sprite sur la fenêtre</div><div class="ttdef"><b>Definition:</b> Movable.cpp:539</div></div>
+<div class="ttc" id="aclass_movable_html_a31c51d1e07e2c1f543daa8e801aa1988"><div class="ttname"><a href="class_movable.html#a31c51d1e07e2c1f543daa8e801aa1988">Movable::removeDirection</a></div><div class="ttdeci">static bool removeDirection(std::vector&lt; MoveDirection &gt; &amp;directions, MoveDirection direction)</div><div class="ttdoc">enlève une direction spécifiée en paramètre ou retourne false</div><div class="ttdef"><b>Definition:</b> Movable.cpp:64</div></div>
+<div class="ttc" id="aclass_movable_html_a323ac5341ba0bc4c57b72925f4c86b69"><div class="ttname"><a href="class_movable.html#a323ac5341ba0bc4c57b72925f4c86b69">Movable::setSize</a></div><div class="ttdeci">void setSize(const sf::Vector2i &amp;size)</div><div class="ttdoc">setter de la taille de l'objet Movable</div><div class="ttdef"><b>Definition:</b> Movable.cpp:371</div></div>
+<div class="ttc" id="aclass_movable_html_a344f40d2bbac35a756af34c4896ce13a"><div class="ttname"><a href="class_movable.html#a344f40d2bbac35a756af34c4896ce13a">Movable::getSubStateChangeDelay</a></div><div class="ttdeci">int getSubStateChangeDelay() const</div><div class="ttdoc">récupère le délai du changement de sous-état</div><div class="ttdef"><b>Definition:</b> Movable.cpp:172</div></div>
+<div class="ttc" id="aclass_movable_html_a35605ab7d25a801dd2ba15a41c0fb74a"><div class="ttname"><a href="class_movable.html#a35605ab7d25a801dd2ba15a41c0fb74a">Movable::getSubStateElapsedMilliseconds</a></div><div class="ttdeci">int getSubStateElapsedMilliseconds() const</div><div class="ttdoc">retourne le temps écoulé en millisecodndes pour le sous état</div><div class="ttdef"><b>Definition:</b> Movable.cpp:201</div></div>
+<div class="ttc" id="aclass_movable_html_a3de4cd0406fac9837ee0638a90bb901c"><div class="ttname"><a href="class_movable.html#a3de4cd0406fac9837ee0638a90bb901c">Movable::update</a></div><div class="ttdeci">void update(sf::RenderWindow &amp;window, const sf::Time &amp;deltaTime, const sf::RenderStates &amp;states=sf::RenderStates::Default)</div><div class="ttdoc">mise à jour du Movable</div><div class="ttdef"><b>Definition:</b> Movable.cpp:591</div></div>
+<div class="ttc" id="aclass_movable_html_a40e700e902fceeedae049a4a7016402a"><div class="ttname"><a href="class_movable.html#a40e700e902fceeedae049a4a7016402a">Movable::areOppositeDirection</a></div><div class="ttdeci">static bool areOppositeDirection(MoveDirection dir1, MoveDirection dir2)</div><div class="ttdoc">vérifie que 2 directions passées en paramètre sont opposée</div><div class="ttdef"><b>Definition:</b> Movable.cpp:83</div></div>
+<div class="ttc" id="aclass_movable_html_a44fbd900f7a6fad1d7fa75c0ac293ee7"><div class="ttname"><a href="class_movable.html#a44fbd900f7a6fad1d7fa75c0ac293ee7">Movable::restartSubStateClock</a></div><div class="ttdeci">void restartSubStateClock()</div><div class="ttdoc">redémarre la clock des sous-état</div><div class="ttdef"><b>Definition:</b> Movable.cpp:191</div></div>
+<div class="ttc" id="aclass_movable_html_a459a83632fbb103b58b5192e003d27ee"><div class="ttname"><a href="class_movable.html#a459a83632fbb103b58b5192e003d27ee">Movable::_lastMovingDirection</a></div><div class="ttdeci">MoveDirection _lastMovingDirection</div><div class="ttdef"><b>Definition:</b> Movable.h:28</div></div>
+<div class="ttc" id="aclass_movable_html_a48a505c365f6f3007e10c1b6b9962792"><div class="ttname"><a href="class_movable.html#a48a505c365f6f3007e10c1b6b9962792">Movable::getLastMovingDirection</a></div><div class="ttdeci">MoveDirection getLastMovingDirection() const</div><div class="ttdoc">récupère la dernière direction du mouvement</div><div class="ttdef"><b>Definition:</b> Movable.cpp:148</div></div>
+<div class="ttc" id="aclass_movable_html_a49c8a515686ce5e8126567b5537452cb"><div class="ttname"><a href="class_movable.html#a49c8a515686ce5e8126567b5537452cb">Movable::moveFromKey</a></div><div class="ttdeci">virtual void moveFromKey(sf::Keyboard::Key key)</div><div class="ttdoc">mouvement en fonction de la touche appuyée par l'utilisateur, passée en paramètre</div><div class="ttdef"><b>Definition:</b> Movable.cpp:506</div></div>
+<div class="ttc" id="aclass_movable_html_a4af73b62ec2913b7fac9d8652476f94e"><div class="ttname"><a href="class_movable.html#a4af73b62ec2913b7fac9d8652476f94e">Movable::setType</a></div><div class="ttdeci">void setType(MovableType type)</div><div class="ttdoc">setter du type d'objet Movable</div><div class="ttdef"><b>Definition:</b> Movable.cpp:96</div></div>
+<div class="ttc" id="aclass_movable_html_a4d21bbf17d497ce904c82c03b62052ba"><div class="ttname"><a href="class_movable.html#a4d21bbf17d497ce904c82c03b62052ba">Movable::getState</a></div><div class="ttdeci">int getState() const</div><div class="ttdoc">récupère l'état</div><div class="ttdef"><b>Definition:</b> Movable.cpp:211</div></div>
+<div class="ttc" id="aclass_movable_html_a4e3bb4766ff8b7f5025a770996fd0e23"><div class="ttname"><a href="class_movable.html#a4e3bb4766ff8b7f5025a770996fd0e23">Movable::getBlockPosition</a></div><div class="ttdeci">sf::Vector2i getBlockPosition() const</div><div class="ttdoc">récupère la position du bloc</div><div class="ttdef"><b>Definition:</b> Movable.cpp:313</div></div>
+<div class="ttc" id="aclass_movable_html_a61ebface551ef57be4102f288557e11c"><div class="ttname"><a href="class_movable.html#a61ebface551ef57be4102f288557e11c">Movable::setLastMovingDirection</a></div><div class="ttdeci">bool setLastMovingDirection(MoveDirection direction)</div><div class="ttdoc">setter de la dernière direction du mouvement retourne true</div><div class="ttdef"><b>Definition:</b> Movable.cpp:161</div></div>
+<div class="ttc" id="aclass_movable_html_a6999570f9d4f364fe8f0d8201e7fee0b"><div class="ttname"><a href="class_movable.html#a6999570f9d4f364fe8f0d8201e7fee0b">Movable::getPixelPosition</a></div><div class="ttdeci">sf::Vector2i getPixelPosition() const</div><div class="ttdoc">récupère la position en pixels</div><div class="ttdef"><b>Definition:</b> Movable.cpp:290</div></div>
+<div class="ttc" id="aclass_movable_html_a74d901d08339015a6e1213ec3aad27da"><div class="ttname"><a href="class_movable.html#a74d901d08339015a6e1213ec3aad27da">Movable::setPixelPosition</a></div><div class="ttdeci">virtual bool setPixelPosition(const sf::Vector2i &amp;pixelPosition, bool checkBlocks=true)</div><div class="ttdoc">change la position en pixel à celle spécifiée en paramètre retourne false si la position actuelle est...</div><div class="ttdef"><b>Definition:</b> Movable.cpp:397</div></div>
+<div class="ttc" id="aclass_movable_html_a77c5a3e5d1ee6468d745662685d25ff3"><div class="ttname"><a href="class_movable.html#a77c5a3e5d1ee6468d745662685d25ff3">Movable::_size</a></div><div class="ttdeci">sf::Vector2i _size</div><div class="ttdef"><b>Definition:</b> Movable.h:33</div></div>
+<div class="ttc" id="aclass_movable_html_a77cc7ea1a7e81ffc4a0f867a1d0b316c"><div class="ttname"><a href="class_movable.html#a77cc7ea1a7e81ffc4a0f867a1d0b316c">Movable::updateWhenMoved</a></div><div class="ttdeci">virtual void updateWhenMoved(int speed)</div><div class="ttdoc">met à jour lorsque le Movable bouge se termine si il n'y à pas de movingDirection (qu'elle vaut none)</div><div class="ttdef"><b>Definition:</b> Movable.cpp:557</div></div>
+<div class="ttc" id="aclass_movable_html_a788bccef8ab09ab878f06b2b3f364479"><div class="ttname"><a href="class_movable.html#a788bccef8ab09ab878f06b2b3f364479">Movable::finishLevel</a></div><div class="ttdeci">virtual void finishLevel()</div><div class="ttdef"><b>Definition:</b> Movable.cpp:604</div></div>
+<div class="ttc" id="aclass_movable_html_a7b2c3ede50fcb8bff2bff6e8c0136c77"><div class="ttname"><a href="class_movable.html#a7b2c3ede50fcb8bff2bff6e8c0136c77">Movable::_pixelPosition</a></div><div class="ttdeci">sf::Vector2i _pixelPosition</div><div class="ttdef"><b>Definition:</b> Movable.h:32</div></div>
+<div class="ttc" id="aclass_movable_html_a84ecb19a91a1eaa75b18ce43bd53fb42"><div class="ttname"><a href="class_movable.html#a84ecb19a91a1eaa75b18ce43bd53fb42">Movable::getType</a></div><div class="ttdeci">MovableType getType() const</div><div class="ttdoc">récupère le type d'objet movable</div><div class="ttdef"><b>Definition:</b> Movable.cpp:106</div></div>
+<div class="ttc" id="aclass_movable_html_a8d27487bf678b6d3d12fa049180e6056"><div class="ttname"><a href="class_movable.html#a8d27487bf678b6d3d12fa049180e6056">Movable::getPixelBounds</a></div><div class="ttdeci">sf::IntRect getPixelBounds() const</div><div class="ttdoc">récupère les bords</div><div class="ttdef"><b>Definition:</b> Movable.cpp:279</div></div>
+<div class="ttc" id="aclass_movable_html_a9b3ea5197f7e6e86cc9d553d1eb96b46"><div class="ttname"><a href="class_movable.html#a9b3ea5197f7e6e86cc9d553d1eb96b46">Movable::_sprite</a></div><div class="ttdeci">sf::Sprite * _sprite</div><div class="ttdef"><b>Definition:</b> Movable.h:25</div></div>
+<div class="ttc" id="aclass_movable_html_a9cd7331129fec587820b26e7cafd70c6"><div class="ttname"><a href="class_movable.html#a9cd7331129fec587820b26e7cafd70c6">Movable::getAvailableDirections</a></div><div class="ttdeci">virtual std::vector&lt; MoveDirection &gt; getAvailableDirections() const</div><div class="ttdoc">récupère toutes les directions disponibles selon la position du Movable</div><div class="ttdef"><b>Definition:</b> Movable.cpp:494</div></div>
+<div class="ttc" id="aclass_movable_html_a9ee93f01dbd5076202ce468a148d93da"><div class="ttname"><a href="class_movable.html#a9ee93f01dbd5076202ce468a148d93da">Movable::_type</a></div><div class="ttdeci">MovableType _type</div><div class="ttdef"><b>Definition:</b> Movable.h:29</div></div>
+<div class="ttc" id="aclass_movable_html_aa5cf1c19e0ad51b76f1c6c702024011d"><div class="ttname"><a href="class_movable.html#aa5cf1c19e0ad51b76f1c6c702024011d">Movable::setSprite</a></div><div class="ttdeci">void setSprite(sf::Sprite *sprite)</div><div class="ttdoc">setter du sprite du Movable</div><div class="ttdef"><b>Definition:</b> Movable.cpp:381</div></div>
+<div class="ttc" id="aclass_movable_html_aa6387aa15291f6cff219c5a28a05e3db"><div class="ttname"><a href="class_movable.html#aa6387aa15291f6cff219c5a28a05e3db">Movable::getCenterPixelPosition</a></div><div class="ttdeci">sf::Vector2i getCenterPixelPosition() const</div><div class="ttdoc">récupère la position en pixel du centre</div><div class="ttdef"><b>Definition:</b> Movable.cpp:300</div></div>
+<div class="ttc" id="aclass_movable_html_aa8f152365791114f3748c9d4d521a61f"><div class="ttname"><a href="class_movable.html#aa8f152365791114f3748c9d4d521a61f">Movable::Movable</a></div><div class="ttdeci">Movable(Game *game)</div><div class="ttdoc">Construit un nouveau Movable (entité qui peut bouger dans le jeu)</div><div class="ttdef"><b>Definition:</b> Movable.cpp:17</div></div>
+<div class="ttc" id="aclass_movable_html_ab2235ad2ea379a26082aa1d29310382a"><div class="ttname"><a href="class_movable.html#ab2235ad2ea379a26082aa1d29310382a">Movable::getMovingDirection</a></div><div class="ttdeci">MoveDirection getMovingDirection() const</div><div class="ttdoc">récupère la direction du mouvement</div><div class="ttdef"><b>Definition:</b> Movable.cpp:116</div></div>
+<div class="ttc" id="aclass_movable_html_ab8a14055f4e0c25755ebc35276a8b4fb"><div class="ttname"><a href="class_movable.html#ab8a14055f4e0c25755ebc35276a8b4fb">Movable::setSubStateChangeDelay</a></div><div class="ttdeci">void setSubStateChangeDelay(int subStateChangeDelay)</div><div class="ttdoc">setter du délai du changement de sous-état</div><div class="ttdef"><b>Definition:</b> Movable.cpp:182</div></div>
+<div class="ttc" id="aclass_movable_html_ab8d6fc3b1907442dfead24116a6920d9"><div class="ttname"><a href="class_movable.html#ab8d6fc3b1907442dfead24116a6920d9">Movable::setState</a></div><div class="ttdeci">virtual bool setState(int state)</div><div class="ttdoc">setter de l'état retourne false si l'état était déjà le bon retourne true sinon</div><div class="ttdef"><b>Definition:</b> Movable.cpp:235</div></div>
+<div class="ttc" id="aclass_movable_html_aba90b335fa8d02c5e640564777f7d533"><div class="ttname"><a href="class_movable.html#aba90b335fa8d02c5e640564777f7d533">Movable::_subStateChangeDelay</a></div><div class="ttdeci">int _subStateChangeDelay</div><div class="ttdef"><b>Definition:</b> Movable.h:24</div></div>
+<div class="ttc" id="aclass_movable_html_abd59517c37bcf95849be30951c2530b0"><div class="ttname"><a href="class_movable.html#abd59517c37bcf95849be30951c2530b0">Movable::setMovingDirection</a></div><div class="ttdeci">virtual bool setMovingDirection(MoveDirection direction)</div><div class="ttdoc">setter de la direction du mouvement retourne false si la movingDirection est déjà égale à la directio...</div><div class="ttdef"><b>Definition:</b> Movable.cpp:130</div></div>
+<div class="ttc" id="aclass_movable_html_ac39eb34f2f4cc47ae0e9e05851fe56e3"><div class="ttname"><a href="class_movable.html#ac39eb34f2f4cc47ae0e9e05851fe56e3">Movable::getOppositeDirection</a></div><div class="ttdeci">static MoveDirection getOppositeDirection(MoveDirection direction)</div><div class="ttdoc">récupère la direction opposée à celle passée en paramètre</div><div class="ttdef"><b>Definition:</b> Movable.cpp:35</div></div>
+<div class="ttc" id="aclass_movable_html_ac446ca038cf9c79f524cc31ebc75f49b"><div class="ttname"><a href="class_movable.html#ac446ca038cf9c79f524cc31ebc75f49b">Movable::setSubState</a></div><div class="ttdeci">virtual bool setSubState(int subState)</div><div class="ttdoc">setter du sous-état une fois fait, la clock redémarre retourne false si l'état était déjà le bon reto...</div><div class="ttdef"><b>Definition:</b> Movable.cpp:254</div></div>
+<div class="ttc" id="aclass_movable_html_adc8b1e7488b75a07f8b4ce806cac1ae1"><div class="ttname"><a href="class_movable.html#adc8b1e7488b75a07f8b4ce806cac1ae1">Movable::getSubState</a></div><div class="ttdeci">int getSubState() const</div><div class="ttdoc">récupère le sous état (plusieurs animations pour un état donné)</div><div class="ttdef"><b>Definition:</b> Movable.cpp:221</div></div>
+<div class="ttc" id="aclass_movable_html_ae72e2bdfeef4edddac3508300aaa1250"><div class="ttname"><a href="class_movable.html#ae72e2bdfeef4edddac3508300aaa1250">Movable::_state</a></div><div class="ttdeci">int _state</div><div class="ttdef"><b>Definition:</b> Movable.h:22</div></div>
+<div class="ttc" id="aclass_movable_html_aece1d45664826bc8a315b13c09e6ec8d"><div class="ttname"><a href="class_movable.html#aece1d45664826bc8a315b13c09e6ec8d">Movable::collides</a></div><div class="ttdeci">virtual bool collides(const sf::IntRect pixelBounds, int tolerance=4) const</div><div class="ttdef"><b>Definition:</b> Movable.cpp:331</div></div>
+<div class="ttc" id="aclass_movable_html_af83dcd9f56e47eba45b72475a1e7ef85"><div class="ttname"><a href="class_movable.html#af83dcd9f56e47eba45b72475a1e7ef85">Movable::getSprite</a></div><div class="ttdeci">sf::Sprite * getSprite() const</div><div class="ttdoc">récupère le sprite</div><div class="ttdef"><b>Definition:</b> Movable.cpp:269</div></div>
+<div class="ttc" id="aclass_updatable_html"><div class="ttname"><a href="class_updatable.html">Updatable</a></div><div class="ttdoc">Entités pouvant être mise à jour dans le jeu.</div><div class="ttdef"><b>Definition:</b> Updatable.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2b298ba2fe274a0e79ead9f59c761ae6.html">BurgerTime</a></li><li class="navelem"><a class="el" href="dir_7dfc6200125ba505770d11d2abcc3b77.html">Headers</a></li><li class="navelem"><a class="el" href="_movable_8h.html">Movable.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

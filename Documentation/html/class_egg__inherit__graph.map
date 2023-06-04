@@ -1,0 +1,6 @@
+<map id="Egg" name="Egg">
+<area shape="rect" id="node1" title="Oeuf : ennemis." alt="" coords="27,229,73,256"/>
+<area shape="rect" id="node2" href="$class_enemy.html" title="Ennemi (oeuf au plat, cornichon ou saucisse)" alt="" coords="17,155,83,181"/>
+<area shape="rect" id="node3" href="$class_movable.html" title="Objet qui bouge sur l&#39;écran." alt="" coords="11,80,89,107"/>
+<area shape="rect" id="node4" href="$class_updatable.html" title="Entités pouvant être mise à jour dans le jeu." alt="" coords="5,5,95,32"/>
+</map>

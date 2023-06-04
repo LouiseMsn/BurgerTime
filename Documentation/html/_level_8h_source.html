@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BurgerTech:  Fichier source de /home/smo/Documents/Polytech/BurgerTime/Headers/Level.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BurgerTech
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_level_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Level.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_level_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">    3</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> : <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8ac9d3e887722f2bc482bcca9d41c512af">    5</a></span>&#160;    <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8ac9d3e887722f2bc482bcca9d41c512af">None</a>,</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8a9d4d8b0b72fc2659da772d761a3c5ecb">    6</a></span>&#160;    <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8a9d4d8b0b72fc2659da772d761a3c5ecb">Left</a>,</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8ad48f7af8c070184f3774c8e85854eb66">    7</a></span>&#160;    <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8ad48f7af8c070184f3774c8e85854eb66">Right</a>,</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8a57a7edcbc04d6175683383cad5c3e0a2">    8</a></span>&#160;    <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8a57a7edcbc04d6175683383cad5c3e0a2">Up</a>,</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8abcf8c79e9a5f5f9d606fb35645a0fb27">Down</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8abcf8c79e9a5f5f9d606fb35645a0fb27">   10</a></span>&#160;};</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_burger.html">Burger</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_game.html">Game</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_slice.html">Slice</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_movable.html">Movable</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_enemy.html">Enemy</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="class_player.html">Player</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="class_bonus.html">Bonus</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="class_pepper.html">Pepper</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="class_score.html">Score</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span><a class="code" href="class_updatable.html">Updatable</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_level.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_level.html">Level</a> : <span class="keyword">public</span> <a class="code" href="class_updatable.html">Updatable</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_level.html#a388ae3f429c5b32986e8e40312f7712e">   32</a></span>&#160;    std::vector&lt;sf::Vector2i*&gt; <a class="code" href="class_level.html#a388ae3f429c5b32986e8e40312f7712e">_enemiesEntryPositions</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_level.html#a926682491fb9082e646611465ca72ee8">   33</a></span>&#160;    sf::Sprite* <a class="code" href="class_level.html#a926682491fb9082e646611465ca72ee8">_sprite</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_level.html#aad1e8d8be98716e1ac17bb7dd058cf95">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_level.html#aad1e8d8be98716e1ac17bb7dd058cf95">_number</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_level.html#a183a30066d8c87877fcbd1470e161920">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_level.html#a183a30066d8c87877fcbd1470e161920">_stackableSlices</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_level.html#a9a26d3c5a55bc6423b6d0d22930ea58d">   37</a></span>&#160;    <a class="code" href="class_player.html">Player</a>* <a class="code" href="class_level.html#a9a26d3c5a55bc6423b6d0d22930ea58d">_finishingPlayer</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_level.html#afd66cc72865016f765769fcd800cbea0">   38</a></span>&#160;    sf::Clock <a class="code" href="class_level.html#afd66cc72865016f765769fcd800cbea0">_bonusClock</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_level.html#a40de1ec6fb6775dd9adbedaaf2f62072">   39</a></span>&#160;    std::vector&lt;Enemy*&gt; <a class="code" href="class_level.html#a40de1ec6fb6775dd9adbedaaf2f62072">_enemies</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_level.html#a239d367a2f237f704adf7e2d5f638448">   40</a></span>&#160;    std::vector&lt;Burger*&gt; <a class="code" href="class_level.html#a239d367a2f237f704adf7e2d5f638448">_burgers</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_level.html#a7de8c882a44b6dd8efa658def0672303">   41</a></span>&#160;    std::vector&lt;Pepper*&gt; <a class="code" href="class_level.html#a7de8c882a44b6dd8efa658def0672303">_peppers</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_level.html#ad505fb672f549f1b6262527313813975">   42</a></span>&#160;    std::vector&lt;Score*&gt; <a class="code" href="class_level.html#ad505fb672f549f1b6262527313813975">_scores</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_level.html#a49c43c3eeeb6c083f0b63f9e8b63bcbe">   43</a></span>&#160;    std::vector&lt;Movable*&gt; <a class="code" href="class_level.html#a49c43c3eeeb6c083f0b63f9e8b63bcbe">_movables</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_level.html#ae43e335c36be0509f0827086da5a6861">   44</a></span>&#160;    <a class="code" href="class_bonus.html">Bonus</a>* <a class="code" href="class_level.html#ae43e335c36be0509f0827086da5a6861">_bonus</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a58e1ff8caf1bb3d1213e10ec0273aedf">addBonus</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#aea750a8551da52d4c5cdabcb456d7f40">removeBonus</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a6dd82a8c03072bf4dd2f3e6a179d7239">destroy</a>(<span class="keywordtype">bool</span> gameStart);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_level.html#a91ece8dee4b81d6f18f514a121e3b214">isThereAnyEnemyAtBlock</a>(<span class="keyword">const</span> sf::Vector2i blockPosition, <span class="keyword">const</span> <a class="code" href="class_enemy.html">Enemy</a>* except) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a26c1c10f67cb3874ab7b84370a0cc255">spawnEnemy</a>(<a class="code" href="class_enemy.html">Enemy</a>* enemy) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a994e1930727e72c2e03ef9e47709d871">killEnemy</a>(<a class="code" href="class_enemy.html">Enemy</a>* enemy, <span class="keywordtype">bool</span> spawnNewOne);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#ad4ad71805bedb832d12fcc0235b45fbd">killPepper</a>(<a class="code" href="class_pepper.html">Pepper</a>* pepper);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a980a8814f44d66b7ab8c5a11009eb42a">killScore</a>(<a class="code" href="class_score.html">Score</a>* score);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a6db2d16348e6075c42323a63601f275a">addMovable</a>(<a class="code" href="class_movable.html">Movable</a>*);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a5999876e52cdd1c6951e3f18c0c88b90">removeMovable</a>(<a class="code" href="class_movable.html">Movable</a>*);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_level.html#adaadd6467714cf31125a5f92af1961a8">Level</a>(<a class="code" href="class_game.html">Game</a>* game, sf::Sprite* sprite, <span class="keywordtype">int</span> number);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_level.html#a249eac1e8f19ff44134efa5e986feaca">~Level</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_level.html#ab20cc64ab9311b4413bd75479585aaaa">getBlockXFromPixelPositionX</a>(<span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_level.html#aa7bafbc1c3dc77ceb2fc623124b6524c">getBlockYFromPixelPositionY</a>(<span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> sf::Vector2i <a class="code" href="class_level.html#a55981afaafe284ab2b63b9d378d0fc93">getBlockPosition</a>(<span class="keyword">const</span> sf::Vector2i&amp; pixelPosition);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> sf::Vector2i <a class="code" href="class_level.html#a84ce55b7f4af73c2951621f03d15126c">getBlockPixelPosition</a>(<span class="keyword">const</span> sf::Vector2i&amp; blockPosition);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">static</span> sf::IntRect <a class="code" href="class_level.html#a3c9761ca2381f35c4320014255dd9020">getBlockPixelBounds</a>(<span class="keyword">const</span> sf::Vector2i&amp; blockPosition);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_level.html#af6eaa54176d26c1534a4853bcd96ebb6">getNumber</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_level.html#aa309bdd913240cd6ed6586e910bb506d">isFinished</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#ab80fbf3aa9802fccd684f009d3fe2f80">processEvents</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a902379bd4a5adc3969863452d405c020">prepareForPlay</a>(<span class="keywordtype">bool</span> gameStart, <span class="keywordtype">bool</span> resetSlices);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_level.html#a2d3ee817df878ca77ca29a65c78c3bdc">areAllBurgersPrepared</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#ae3ff9313da953d36f80071e836d232a0">finish</a>(<a class="code" href="class_player.html">Player</a>* finishingPlayer, <span class="keywordtype">bool</span> resetSlices);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a60c3836636cf8134695d06d9a00a9673">addStackedSlice</a>(<a class="code" href="class_slice.html">Slice</a>* slice, <a class="code" href="class_player.html">Player</a>* steppingPlayer);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a6f3a903a96ee0ac1a2f4e154e584fa44">addScore</a>(<span class="keywordtype">int</span> <a class="code" href="namespace_catch_1_1_generators.html#a3c4989dd0dca44455f55484cedaa18da">value</a>, <span class="keyword">const</span> sf::Vector2i&amp; pixelPosition, <span class="keyword">const</span> sf::Color&amp; color);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_enemy.html">Enemy</a>* <a class="code" href="class_level.html#a36b9ae7e3eddd6a97a9ab4063b764259">spawnNewEnemy</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// debug</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a68c3e0ae1624a9dd00a59ea567eea5b9">killRandomEnemy</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::vector&lt;Enemy*&gt; <a class="code" href="class_level.html#a32a3da8fee743d3363823b664ce3b9ff">getEnemiesAround</a>(<span class="keyword">const</span> sf::IntRect pixelBounds) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_level.html#a252c550d246b54786d591ab6d73b18ae">isPeppered</a>(<span class="keyword">const</span> sf::IntRect pixelBounds) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a80992ee1dd686e0ece5c836cc26eb91d">sprayPepper</a>(<span class="keyword">const</span> sf::Vector2i pixelPosition, <a class="code" href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a> direction);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_player.html">Player</a>* <a class="code" href="class_level.html#a6afd58be1f4db4539b946b848e8b7410">getFinishingPlayer</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#a8ec15f3f35e3567cfa9cbf426eeafdb3">playerStep</a>(<span class="keyword">const</span> sf::IntRect&amp; pixelPosition, <a class="code" href="class_player.html">Player</a>* player) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::vector&lt;MoveDirection&gt; <a class="code" href="class_level.html#a996df2f6e173082f08d8197c8b4eb4d3">getAvailableDirections</a>(<span class="keyword">const</span> sf::Vector2i blockPosition) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_level.html#a2e8cfbe28c62420197319d4a187a6861">isBlockOpen</a>(<span class="keyword">const</span> sf::Vector2i&amp; blockPosition) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_level.html#a2e8cfbe28c62420197319d4a187a6861">isBlockOpen</a>(<span class="keyword">const</span> sf::IntRect&amp; pixelBounds, <span class="keywordtype">int</span> tolerance) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_level.html#a9db54e0bb482255744c8e00a42f502bd">isBlockGround</a>(<span class="keyword">const</span> sf::Vector2i&amp; blockPosition) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level.html#adfa9bbfd0ea8ae107e9138d4b0250b4a">update</a>(sf::RenderWindow&amp; window, <span class="keyword">const</span> sf::Time&amp; deltaTime, <span class="keyword">const</span> sf::RenderStates&amp; states = sf::RenderStates::Default);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="ttc" id="a_level_8h_html_a7159287e6fc98c7998c6b67a74d157f8"><div class="ttname"><a href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8">MoveDirection</a></div><div class="ttdeci">MoveDirection</div><div class="ttdef"><b>Definition:</b> Level.h:4</div></div>
+<div class="ttc" id="a_level_8h_html_a7159287e6fc98c7998c6b67a74d157f8a57a7edcbc04d6175683383cad5c3e0a2"><div class="ttname"><a href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8a57a7edcbc04d6175683383cad5c3e0a2">Up</a></div><div class="ttdeci">@ Up</div><div class="ttdef"><b>Definition:</b> Level.h:8</div></div>
+<div class="ttc" id="a_level_8h_html_a7159287e6fc98c7998c6b67a74d157f8a9d4d8b0b72fc2659da772d761a3c5ecb"><div class="ttname"><a href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8a9d4d8b0b72fc2659da772d761a3c5ecb">Left</a></div><div class="ttdeci">@ Left</div><div class="ttdef"><b>Definition:</b> Level.h:6</div></div>
+<div class="ttc" id="a_level_8h_html_a7159287e6fc98c7998c6b67a74d157f8abcf8c79e9a5f5f9d606fb35645a0fb27"><div class="ttname"><a href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8abcf8c79e9a5f5f9d606fb35645a0fb27">Down</a></div><div class="ttdeci">@ Down</div><div class="ttdef"><b>Definition:</b> Level.h:9</div></div>
+<div class="ttc" id="a_level_8h_html_a7159287e6fc98c7998c6b67a74d157f8ac9d3e887722f2bc482bcca9d41c512af"><div class="ttname"><a href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8ac9d3e887722f2bc482bcca9d41c512af">None</a></div><div class="ttdeci">@ None</div><div class="ttdef"><b>Definition:</b> Level.h:5</div></div>
+<div class="ttc" id="a_level_8h_html_a7159287e6fc98c7998c6b67a74d157f8ad48f7af8c070184f3774c8e85854eb66"><div class="ttname"><a href="_level_8h.html#a7159287e6fc98c7998c6b67a74d157f8ad48f7af8c070184f3774c8e85854eb66">Right</a></div><div class="ttdeci">@ Right</div><div class="ttdef"><b>Definition:</b> Level.h:7</div></div>
+<div class="ttc" id="aclass_bonus_html"><div class="ttname"><a href="class_bonus.html">Bonus</a></div><div class="ttdoc">Bonus pour les joueur.</div><div class="ttdef"><b>Definition:</b> Bonus.h:8</div></div>
+<div class="ttc" id="aclass_burger_html"><div class="ttname"><a href="class_burger.html">Burger</a></div><div class="ttdoc">Hamburger composé de tranche à compléter pour terminer les niveaux.</div><div class="ttdef"><b>Definition:</b> Burger.h:8</div></div>
+<div class="ttc" id="aclass_enemy_html"><div class="ttname"><a href="class_enemy.html">Enemy</a></div><div class="ttdoc">Ennemi (oeuf au plat, cornichon ou saucisse)</div><div class="ttdef"><b>Definition:</b> Enemy.h:58</div></div>
+<div class="ttc" id="aclass_game_html"><div class="ttname"><a href="class_game.html">Game</a></div><div class="ttdoc">Le jeu.</div><div class="ttdef"><b>Definition:</b> Game.h:62</div></div>
+<div class="ttc" id="aclass_level_html"><div class="ttname"><a href="class_level.html">Level</a></div><div class="ttdoc">Niveau du jeu.</div><div class="ttdef"><b>Definition:</b> Level.h:28</div></div>
+<div class="ttc" id="aclass_level_html_a183a30066d8c87877fcbd1470e161920"><div class="ttname"><a href="class_level.html#a183a30066d8c87877fcbd1470e161920">Level::_stackableSlices</a></div><div class="ttdeci">int _stackableSlices</div><div class="ttdef"><b>Definition:</b> Level.h:36</div></div>
+<div class="ttc" id="aclass_level_html_a239d367a2f237f704adf7e2d5f638448"><div class="ttname"><a href="class_level.html#a239d367a2f237f704adf7e2d5f638448">Level::_burgers</a></div><div class="ttdeci">std::vector&lt; Burger * &gt; _burgers</div><div class="ttdef"><b>Definition:</b> Level.h:40</div></div>
+<div class="ttc" id="aclass_level_html_a249eac1e8f19ff44134efa5e986feaca"><div class="ttname"><a href="class_level.html#a249eac1e8f19ff44134efa5e986feaca">Level::~Level</a></div><div class="ttdeci">~Level()</div><div class="ttdoc">détruit le niveau</div><div class="ttdef"><b>Definition:</b> Level.cpp:422</div></div>
+<div class="ttc" id="aclass_level_html_a252c550d246b54786d591ab6d73b18ae"><div class="ttname"><a href="class_level.html#a252c550d246b54786d591ab6d73b18ae">Level::isPeppered</a></div><div class="ttdeci">bool isPeppered(const sf::IntRect pixelBounds) const</div><div class="ttdoc">est ce qu'un ennemi est empoivré</div><div class="ttdef"><b>Definition:</b> Level.cpp:1100</div></div>
+<div class="ttc" id="aclass_level_html_a26c1c10f67cb3874ab7b84370a0cc255"><div class="ttname"><a href="class_level.html#a26c1c10f67cb3874ab7b84370a0cc255">Level::spawnEnemy</a></div><div class="ttdeci">void spawnEnemy(Enemy *enemy) const</div><div class="ttdoc">fait apparaître un ennemi on essaye de ne pas mettre 2 ennemis au même endroit</div><div class="ttdef"><b>Definition:</b> Level.cpp:813</div></div>
+<div class="ttc" id="aclass_level_html_a2d3ee817df878ca77ca29a65c78c3bdc"><div class="ttname"><a href="class_level.html#a2d3ee817df878ca77ca29a65c78c3bdc">Level::areAllBurgersPrepared</a></div><div class="ttdeci">bool areAllBurgersPrepared() const</div><div class="ttdoc">vérifie si tout les burgers ont été complétés</div><div class="ttdef"><b>Definition:</b> Level.cpp:658</div></div>
+<div class="ttc" id="aclass_level_html_a2e8cfbe28c62420197319d4a187a6861"><div class="ttname"><a href="class_level.html#a2e8cfbe28c62420197319d4a187a6861">Level::isBlockOpen</a></div><div class="ttdeci">bool isBlockOpen(const sf::Vector2i &amp;blockPosition) const</div><div class="ttdoc">est ce que le bloc est ouvert</div><div class="ttdef"><b>Definition:</b> Level.cpp:1040</div></div>
+<div class="ttc" id="aclass_level_html_a32a3da8fee743d3363823b664ce3b9ff"><div class="ttname"><a href="class_level.html#a32a3da8fee743d3363823b664ce3b9ff">Level::getEnemiesAround</a></div><div class="ttdeci">std::vector&lt; Enemy * &gt; getEnemiesAround(const sf::IntRect pixelBounds) const</div><div class="ttdoc">récupère les ennemis dans le coin</div><div class="ttdef"><b>Definition:</b> Level.cpp:1080</div></div>
+<div class="ttc" id="aclass_level_html_a36b9ae7e3eddd6a97a9ab4063b764259"><div class="ttname"><a href="class_level.html#a36b9ae7e3eddd6a97a9ab4063b764259">Level::spawnNewEnemy</a></div><div class="ttdeci">const Enemy * spawnNewEnemy()</div><div class="ttdoc">fait apparaître un nouvel ennemi</div><div class="ttdef"><b>Definition:</b> Level.cpp:756</div></div>
+<div class="ttc" id="aclass_level_html_a388ae3f429c5b32986e8e40312f7712e"><div class="ttname"><a href="class_level.html#a388ae3f429c5b32986e8e40312f7712e">Level::_enemiesEntryPositions</a></div><div class="ttdeci">std::vector&lt; sf::Vector2i * &gt; _enemiesEntryPositions</div><div class="ttdef"><b>Definition:</b> Level.h:32</div></div>
+<div class="ttc" id="aclass_level_html_a3c9761ca2381f35c4320014255dd9020"><div class="ttname"><a href="class_level.html#a3c9761ca2381f35c4320014255dd9020">Level::getBlockPixelBounds</a></div><div class="ttdeci">static sf::IntRect getBlockPixelBounds(const sf::Vector2i &amp;blockPosition)</div><div class="ttdoc">récupère les bords d'un block</div><div class="ttdef"><b>Definition:</b> Level.cpp:955</div></div>
+<div class="ttc" id="aclass_level_html_a40de1ec6fb6775dd9adbedaaf2f62072"><div class="ttname"><a href="class_level.html#a40de1ec6fb6775dd9adbedaaf2f62072">Level::_enemies</a></div><div class="ttdeci">std::vector&lt; Enemy * &gt; _enemies</div><div class="ttdef"><b>Definition:</b> Level.h:39</div></div>
+<div class="ttc" id="aclass_level_html_a49c43c3eeeb6c083f0b63f9e8b63bcbe"><div class="ttname"><a href="class_level.html#a49c43c3eeeb6c083f0b63f9e8b63bcbe">Level::_movables</a></div><div class="ttdeci">std::vector&lt; Movable * &gt; _movables</div><div class="ttdef"><b>Definition:</b> Level.h:43</div></div>
+<div class="ttc" id="aclass_level_html_a55981afaafe284ab2b63b9d378d0fc93"><div class="ttname"><a href="class_level.html#a55981afaafe284ab2b63b9d378d0fc93">Level::getBlockPosition</a></div><div class="ttdeci">static sf::Vector2i getBlockPosition(const sf::Vector2i &amp;pixelPosition)</div><div class="ttdoc">récupère la position d'un bloc</div><div class="ttdef"><b>Definition:</b> Level.cpp:899</div></div>
+<div class="ttc" id="aclass_level_html_a58e1ff8caf1bb3d1213e10ec0273aedf"><div class="ttname"><a href="class_level.html#a58e1ff8caf1bb3d1213e10ec0273aedf">Level::addBonus</a></div><div class="ttdeci">void addBonus()</div><div class="ttdoc">ajoute un bonus</div><div class="ttdef"><b>Definition:</b> Level.cpp:1141</div></div>
+<div class="ttc" id="aclass_level_html_a5999876e52cdd1c6951e3f18c0c88b90"><div class="ttname"><a href="class_level.html#a5999876e52cdd1c6951e3f18c0c88b90">Level::removeMovable</a></div><div class="ttdeci">void removeMovable(Movable *)</div><div class="ttdoc">enlève un objet de classe Movable du niveau, passé en paramètre</div><div class="ttdef"><b>Definition:</b> Level.cpp:647</div></div>
+<div class="ttc" id="aclass_level_html_a60c3836636cf8134695d06d9a00a9673"><div class="ttname"><a href="class_level.html#a60c3836636cf8134695d06d9a00a9673">Level::addStackedSlice</a></div><div class="ttdeci">void addStackedSlice(Slice *slice, Player *steppingPlayer)</div><div class="ttdoc">ajoute une tranche si le burger est complet, on gagne des points à 2 joueur, le joueur qui finit le n...</div><div class="ttdef"><b>Definition:</b> Level.cpp:840</div></div>
+<div class="ttc" id="aclass_level_html_a68c3e0ae1624a9dd00a59ea567eea5b9"><div class="ttname"><a href="class_level.html#a68c3e0ae1624a9dd00a59ea567eea5b9">Level::killRandomEnemy</a></div><div class="ttdeci">void killRandomEnemy()</div><div class="ttdoc">enlève un ennemi au hasard dans ceux présents</div><div class="ttdef"><b>Definition:</b> Level.cpp:742</div></div>
+<div class="ttc" id="aclass_level_html_a6afd58be1f4db4539b946b848e8b7410"><div class="ttname"><a href="class_level.html#a6afd58be1f4db4539b946b848e8b7410">Level::getFinishingPlayer</a></div><div class="ttdeci">Player * getFinishingPlayer() const</div><div class="ttdoc">retourne le joueur qui termine</div><div class="ttdef"><b>Definition:</b> Level.cpp:627</div></div>
+<div class="ttc" id="aclass_level_html_a6db2d16348e6075c42323a63601f275a"><div class="ttname"><a href="class_level.html#a6db2d16348e6075c42323a63601f275a">Level::addMovable</a></div><div class="ttdeci">void addMovable(Movable *)</div><div class="ttdoc">ajoute au niveau un objet de classe Movable passé en paramètre</div><div class="ttdef"><b>Definition:</b> Level.cpp:637</div></div>
+<div class="ttc" id="aclass_level_html_a6dd82a8c03072bf4dd2f3e6a179d7239"><div class="ttname"><a href="class_level.html#a6dd82a8c03072bf4dd2f3e6a179d7239">Level::destroy</a></div><div class="ttdeci">void destroy(bool gameStart)</div><div class="ttdoc">on détruit les burger si gameStart est true</div><div class="ttdef"><b>Definition:</b> Level.cpp:436</div></div>
+<div class="ttc" id="aclass_level_html_a6f3a903a96ee0ac1a2f4e154e584fa44"><div class="ttname"><a href="class_level.html#a6f3a903a96ee0ac1a2f4e154e584fa44">Level::addScore</a></div><div class="ttdeci">void addScore(int value, const sf::Vector2i &amp;pixelPosition, const sf::Color &amp;color)</div><div class="ttdoc">ajoute le score de la valeur passée en paramètre</div><div class="ttdef"><b>Definition:</b> Level.cpp:1131</div></div>
+<div class="ttc" id="aclass_level_html_a7de8c882a44b6dd8efa658def0672303"><div class="ttname"><a href="class_level.html#a7de8c882a44b6dd8efa658def0672303">Level::_peppers</a></div><div class="ttdeci">std::vector&lt; Pepper * &gt; _peppers</div><div class="ttdef"><b>Definition:</b> Level.h:41</div></div>
+<div class="ttc" id="aclass_level_html_a80992ee1dd686e0ece5c836cc26eb91d"><div class="ttname"><a href="class_level.html#a80992ee1dd686e0ece5c836cc26eb91d">Level::sprayPepper</a></div><div class="ttdeci">void sprayPepper(const sf::Vector2i pixelPosition, MoveDirection direction)</div><div class="ttdoc">jette du poivre</div><div class="ttdef"><b>Definition:</b> Level.cpp:1116</div></div>
+<div class="ttc" id="aclass_level_html_a84ce55b7f4af73c2951621f03d15126c"><div class="ttname"><a href="class_level.html#a84ce55b7f4af73c2951621f03d15126c">Level::getBlockPixelPosition</a></div><div class="ttdeci">static sf::Vector2i getBlockPixelPosition(const sf::Vector2i &amp;blockPosition)</div><div class="ttdoc">récupère la position en pixel d'un bloc</div><div class="ttdef"><b>Definition:</b> Level.cpp:937</div></div>
+<div class="ttc" id="aclass_level_html_a8ec15f3f35e3567cfa9cbf426eeafdb3"><div class="ttname"><a href="class_level.html#a8ec15f3f35e3567cfa9cbf426eeafdb3">Level::playerStep</a></div><div class="ttdeci">void playerStep(const sf::IntRect &amp;pixelPosition, Player *player) const</div><div class="ttdoc">parcours du joueur on vérifie si on marche sur un bonus on parcourt les burgers et les tranches pour ...</div><div class="ttdef"><b>Definition:</b> Level.cpp:869</div></div>
+<div class="ttc" id="aclass_level_html_a902379bd4a5adc3969863452d405c020"><div class="ttname"><a href="class_level.html#a902379bd4a5adc3969863452d405c020">Level::prepareForPlay</a></div><div class="ttdeci">void prepareForPlay(bool gameStart, bool resetSlices)</div><div class="ttdoc">prépare pour le jeu</div><div class="ttdef"><b>Definition:</b> Level.cpp:479</div></div>
+<div class="ttc" id="aclass_level_html_a91ece8dee4b81d6f18f514a121e3b214"><div class="ttname"><a href="class_level.html#a91ece8dee4b81d6f18f514a121e3b214">Level::isThereAnyEnemyAtBlock</a></div><div class="ttdeci">bool isThereAnyEnemyAtBlock(const sf::Vector2i blockPosition, const Enemy *except) const</div><div class="ttdoc">vérifie si un ennemi se trouve sur un certain bloc passé en paramètre</div><div class="ttdef"><b>Definition:</b> Level.cpp:792</div></div>
+<div class="ttc" id="aclass_level_html_a926682491fb9082e646611465ca72ee8"><div class="ttname"><a href="class_level.html#a926682491fb9082e646611465ca72ee8">Level::_sprite</a></div><div class="ttdeci">sf::Sprite * _sprite</div><div class="ttdef"><b>Definition:</b> Level.h:33</div></div>
+<div class="ttc" id="aclass_level_html_a980a8814f44d66b7ab8c5a11009eb42a"><div class="ttname"><a href="class_level.html#a980a8814f44d66b7ab8c5a11009eb42a">Level::killScore</a></div><div class="ttdeci">void killScore(Score *score)</div><div class="ttdoc">enlève le score passé en paramètre</div><div class="ttdef"><b>Definition:</b> Level.cpp:703</div></div>
+<div class="ttc" id="aclass_level_html_a994e1930727e72c2e03ef9e47709d871"><div class="ttname"><a href="class_level.html#a994e1930727e72c2e03ef9e47709d871">Level::killEnemy</a></div><div class="ttdeci">void killEnemy(Enemy *enemy, bool spawnNewOne)</div><div class="ttdoc">enlève l'ennemi passé en paramètre et fait apparaître un nouvel ennemi si spawNewOne est true</div><div class="ttdef"><b>Definition:</b> Level.cpp:727</div></div>
+<div class="ttc" id="aclass_level_html_a996df2f6e173082f08d8197c8b4eb4d3"><div class="ttname"><a href="class_level.html#a996df2f6e173082f08d8197c8b4eb4d3">Level::getAvailableDirections</a></div><div class="ttdeci">std::vector&lt; MoveDirection &gt; getAvailableDirections(const sf::Vector2i blockPosition) const</div><div class="ttdoc">récupère les directions disponibles (dans lequelles on peut se rendre) selon ou on se trouve</div><div class="ttdef"><b>Definition:</b> Level.cpp:979</div></div>
+<div class="ttc" id="aclass_level_html_a9a26d3c5a55bc6423b6d0d22930ea58d"><div class="ttname"><a href="class_level.html#a9a26d3c5a55bc6423b6d0d22930ea58d">Level::_finishingPlayer</a></div><div class="ttdeci">Player * _finishingPlayer</div><div class="ttdef"><b>Definition:</b> Level.h:37</div></div>
+<div class="ttc" id="aclass_level_html_a9db54e0bb482255744c8e00a42f502bd"><div class="ttname"><a href="class_level.html#a9db54e0bb482255744c8e00a42f502bd">Level::isBlockGround</a></div><div class="ttdeci">bool isBlockGround(const sf::Vector2i &amp;blockPosition) const</div><div class="ttdoc">est ce que le bloc est du sol (où le joueur peut marcher)</div><div class="ttdef"><b>Definition:</b> Level.cpp:1014</div></div>
+<div class="ttc" id="aclass_level_html_aa309bdd913240cd6ed6586e910bb506d"><div class="ttname"><a href="class_level.html#aa309bdd913240cd6ed6586e910bb506d">Level::isFinished</a></div><div class="ttdeci">bool isFinished() const</div><div class="ttdoc">vérifie si le niveau est terminé (si tout les burgers sont finis, ou qu'un joueur est mort)</div><div class="ttdef"><b>Definition:</b> Level.cpp:669</div></div>
+<div class="ttc" id="aclass_level_html_aa7bafbc1c3dc77ceb2fc623124b6524c"><div class="ttname"><a href="class_level.html#aa7bafbc1c3dc77ceb2fc623124b6524c">Level::getBlockYFromPixelPositionY</a></div><div class="ttdeci">static int getBlockYFromPixelPositionY(int y)</div><div class="ttdoc">récupère le bloc en Y</div><div class="ttdef"><b>Definition:</b> Level.cpp:925</div></div>
+<div class="ttc" id="aclass_level_html_aad1e8d8be98716e1ac17bb7dd058cf95"><div class="ttname"><a href="class_level.html#aad1e8d8be98716e1ac17bb7dd058cf95">Level::_number</a></div><div class="ttdeci">int _number</div><div class="ttdef"><b>Definition:</b> Level.h:34</div></div>
+<div class="ttc" id="aclass_level_html_ab20cc64ab9311b4413bd75479585aaaa"><div class="ttname"><a href="class_level.html#ab20cc64ab9311b4413bd75479585aaaa">Level::getBlockXFromPixelPositionX</a></div><div class="ttdeci">static int getBlockXFromPixelPositionX(int x)</div><div class="ttdoc">récupère le bloc en X en X, le rapport entre les blocs et les pixels n'est pas linéaire,...</div><div class="ttdef"><b>Definition:</b> Level.cpp:913</div></div>
+<div class="ttc" id="aclass_level_html_ab80fbf3aa9802fccd684f009d3fe2f80"><div class="ttname"><a href="class_level.html#ab80fbf3aa9802fccd684f009d3fe2f80">Level::processEvents</a></div><div class="ttdeci">void processEvents()</div><div class="ttdoc">traite les évènements</div><div class="ttdef"><b>Definition:</b> Level.cpp:1171</div></div>
+<div class="ttc" id="aclass_level_html_ad4ad71805bedb832d12fcc0235b45fbd"><div class="ttname"><a href="class_level.html#ad4ad71805bedb832d12fcc0235b45fbd">Level::killPepper</a></div><div class="ttdeci">void killPepper(Pepper *pepper)</div><div class="ttdoc">enlève le poivre passé en paramètre</div><div class="ttdef"><b>Definition:</b> Level.cpp:714</div></div>
+<div class="ttc" id="aclass_level_html_ad505fb672f549f1b6262527313813975"><div class="ttname"><a href="class_level.html#ad505fb672f549f1b6262527313813975">Level::_scores</a></div><div class="ttdeci">std::vector&lt; Score * &gt; _scores</div><div class="ttdef"><b>Definition:</b> Level.h:42</div></div>
+<div class="ttc" id="aclass_level_html_adaadd6467714cf31125a5f92af1961a8"><div class="ttname"><a href="class_level.html#adaadd6467714cf31125a5f92af1961a8">Level::Level</a></div><div class="ttdeci">Level(Game *game, sf::Sprite *sprite, int number)</div><div class="ttdoc">construit un nouveau niveau</div><div class="ttdef"><b>Definition:</b> Level.cpp:384</div></div>
+<div class="ttc" id="aclass_level_html_adfa9bbfd0ea8ae107e9138d4b0250b4a"><div class="ttname"><a href="class_level.html#adfa9bbfd0ea8ae107e9138d4b0250b4a">Level::update</a></div><div class="ttdeci">void update(sf::RenderWindow &amp;window, const sf::Time &amp;deltaTime, const sf::RenderStates &amp;states=sf::RenderStates::Default)</div><div class="ttdoc">mise à jour du niveau</div><div class="ttdef"><b>Definition:</b> Level.cpp:1218</div></div>
+<div class="ttc" id="aclass_level_html_ae3ff9313da953d36f80071e836d232a0"><div class="ttname"><a href="class_level.html#ae3ff9313da953d36f80071e836d232a0">Level::finish</a></div><div class="ttdeci">void finish(Player *finishingPlayer, bool resetSlices)</div><div class="ttdoc">termine le niveau</div><div class="ttdef"><b>Definition:</b> Level.cpp:680</div></div>
+<div class="ttc" id="aclass_level_html_ae43e335c36be0509f0827086da5a6861"><div class="ttname"><a href="class_level.html#ae43e335c36be0509f0827086da5a6861">Level::_bonus</a></div><div class="ttdeci">Bonus * _bonus</div><div class="ttdef"><b>Definition:</b> Level.h:44</div></div>
+<div class="ttc" id="aclass_level_html_aea750a8551da52d4c5cdabcb456d7f40"><div class="ttname"><a href="class_level.html#aea750a8551da52d4c5cdabcb456d7f40">Level::removeBonus</a></div><div class="ttdeci">void removeBonus()</div><div class="ttdoc">enlève un bonus</div><div class="ttdef"><b>Definition:</b> Level.cpp:1156</div></div>
+<div class="ttc" id="aclass_level_html_af6eaa54176d26c1534a4853bcd96ebb6"><div class="ttname"><a href="class_level.html#af6eaa54176d26c1534a4853bcd96ebb6">Level::getNumber</a></div><div class="ttdeci">int getNumber() const</div><div class="ttdoc">récupère le numéro du niveau</div><div class="ttdef"><b>Definition:</b> Level.cpp:617</div></div>
+<div class="ttc" id="aclass_level_html_afd66cc72865016f765769fcd800cbea0"><div class="ttname"><a href="class_level.html#afd66cc72865016f765769fcd800cbea0">Level::_bonusClock</a></div><div class="ttdeci">sf::Clock _bonusClock</div><div class="ttdef"><b>Definition:</b> Level.h:38</div></div>
+<div class="ttc" id="aclass_movable_html"><div class="ttname"><a href="class_movable.html">Movable</a></div><div class="ttdoc">Objet qui bouge sur l'écran.</div><div class="ttdef"><b>Definition:</b> Movable.h:21</div></div>
+<div class="ttc" id="aclass_pepper_html"><div class="ttname"><a href="class_pepper.html">Pepper</a></div><div class="ttdoc">Poivre pour attaquer les ennemis.</div><div class="ttdef"><b>Definition:</b> Pepper.h:19</div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Joueur.</div><div class="ttdef"><b>Definition:</b> Player.h:25</div></div>
+<div class="ttc" id="aclass_score_html"><div class="ttname"><a href="class_score.html">Score</a></div><div class="ttdoc">Score qui apparaît au dessus du joueur.</div><div class="ttdef"><b>Definition:</b> Score.h:8</div></div>
+<div class="ttc" id="aclass_slice_html"><div class="ttname"><a href="class_slice.html">Slice</a></div><div class="ttdoc">Tranche de hamburger.</div><div class="ttdef"><b>Definition:</b> Slice.h:21</div></div>
+<div class="ttc" id="aclass_updatable_html"><div class="ttname"><a href="class_updatable.html">Updatable</a></div><div class="ttdoc">Entités pouvant être mise à jour dans le jeu.</div><div class="ttdef"><b>Definition:</b> Updatable.h:10</div></div>
+<div class="ttc" id="anamespace_catch_1_1_generators_html_a3c4989dd0dca44455f55484cedaa18da"><div class="ttname"><a href="namespace_catch_1_1_generators.html#a3c4989dd0dca44455f55484cedaa18da">Catch::Generators::value</a></div><div class="ttdeci">GeneratorWrapper&lt; T &gt; value(T &amp;&amp;value)</div><div class="ttdef"><b>Definition:</b> catch.hpp:4001</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2b298ba2fe274a0e79ead9f59c761ae6.html">BurgerTime</a></li><li class="navelem"><a class="el" href="dir_7dfc6200125ba505770d11d2abcc3b77.html">Headers</a></li><li class="navelem"><a class="el" href="_level_8h.html">Level.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

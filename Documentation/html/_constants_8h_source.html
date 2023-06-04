@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BurgerTech:  Fichier source de /home/smo/Documents/Polytech/BurgerTime/Headers/Constants.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BurgerTech
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_constants_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Constants.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_constants_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// vitesse des objets</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="_constants_8h.html#a4fa69116464e354783f812d07c5a9921">    4</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="_constants_8h.html#a4fa69116464e354783f812d07c5a9921">playerSpeed</a> = 0.00004f; <span class="comment">//  0.00013f; // 0.0001f; // vitesse du joueur</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_constants_8h.html#a4994105f319bda158f6f8c74de63ff9c">    5</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="_constants_8h.html#a4994105f319bda158f6f8c74de63ff9c">enemyBaseSpeed</a> = 0.00002f; <span class="comment">// vitesse de base des enemis (elle peut augmenter)</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_constants_8h.html#a2a57865f5a6879dcb896666c2282f2a2">    6</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="_constants_8h.html#a2a57865f5a6879dcb896666c2282f2a2">enemySpeedIncrement</a> = 0.000002f; <span class="comment">// pour ne pas que les ennemis se chevauchent trop visuellement</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="_constants_8h.html#a794025fdcdf8d1d759c8a135d2925c45">    7</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="_constants_8h.html#a794025fdcdf8d1d759c8a135d2925c45">scoreSpeed</a> = 0.000025f; <span class="comment">// vitesse d&#39;un score</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_constants_8h.html#a2eb46afd258fbcc39300b80cb9c15575">    8</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="_constants_8h.html#a2eb46afd258fbcc39300b80cb9c15575">sliceSpeed</a> = 0.00005f; <span class="comment">// vitesse d&#39;une tranche</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="_constants_8h.html#abde477945be1f3a2c0cad0cd21c63dab">    9</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="_constants_8h.html#abde477945be1f3a2c0cad0cd21c63dab">sliceBounceSpeedFactor</a> = 0.6f; <span class="comment">// facteur de reduction de la vitesse d&#39;une tranche au rebond</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="_constants_8h.html#ac030f6ac18e03a8a3d88fb61ac0d8aa5">   10</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="_constants_8h.html#ac030f6ac18e03a8a3d88fb61ac0d8aa5">pepperSpeed</a> = 0.00008f; <span class="comment">// vitesse du poivre</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="_constants_8h.html#a56e8401fb8c3d374dbdb18560d9d4e6c">   12</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a56e8401fb8c3d374dbdb18560d9d4e6c">pepperSprayWait</a> = 200; <span class="comment">// en millisecondes, temps d&#39;attente entre 2 poivrages</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_constants_8h.html#a2ca3bbfc0fe7a56034cb0920449c0759">   13</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a2ca3bbfc0fe7a56034cb0920449c0759">pepperedWait</a> = 4; <span class="comment">// en secondes, temps de duree d&#39;un poivrage</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_constants_8h.html#affb9ea8d9dd1d9aaf8572e8d36d8d82e">   14</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#affb9ea8d9dd1d9aaf8572e8d36d8d82e">limboWaitTime</a> = 2; <span class="comment">// en secondes, temps d&#39;attente dans les limbes (au demarrage)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_constants_8h.html#a537e039980ad44e7b7e3e8267e4a4b1b">   15</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a537e039980ad44e7b7e3e8267e4a4b1b">bonusShowStart</a> = 30; <span class="comment">// secondes, temps d&#39;attente avant de montrer un bonus</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_constants_8h.html#adf98afa15934a44fffd126adf569d241">   16</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#adf98afa15934a44fffd126adf569d241">bonusShowTime</a> = 10; <span class="comment">// secondes, temps pendant lequel un bonus est affiche</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_constants_8h.html#a4df54a2397e6b12f93b57bdd1ea2992b">   17</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a4df54a2397e6b12f93b57bdd1ea2992b">scoreShowTime</a> = 2; <span class="comment">// secondes, temps d&#39;affichage d&#39;un score</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_constants_8h.html#a5bd0cac055c27c71188f95d01a299f75">   18</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a5bd0cac055c27c71188f95d01a299f75">levelFinishedTime</a> = 3; <span class="comment">// secondes, temps d&#39;attente quand le niveau est fini</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_constants_8h.html#a18e8930778bcfb9070d5625df0d272b0">   19</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a18e8930778bcfb9070d5625df0d272b0">gameOverTime</a> = 5; <span class="comment">// secondes, temps d&#39;attente quand le jeu est fini</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_constants_8h.html#aadafb0700fa9c6b379bf45a73a98da2b">   20</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#aadafb0700fa9c6b379bf45a73a98da2b">levelGameReadyTime</a> = 3; <span class="comment">// secondes, temps d&#39;attente pour passer au niveau suivant (gagne) ou rejouer le niveau (perdu)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// scores</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_constants_8h.html#a5ee944f4ac779eea66ce76214cb509bc">   23</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a5ee944f4ac779eea66ce76214cb509bc">bonus1Score</a> = 500;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_constants_8h.html#a5d569f678e34b162ea9e741fda2ca046">   24</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a5d569f678e34b162ea9e741fda2ca046">bonus2Score</a> = 1000;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_constants_8h.html#a6f1fd7e049118d686ce75bd57941dbdf">   25</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a6f1fd7e049118d686ce75bd57941dbdf">bonus3Score</a> = 1500;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_constants_8h.html#adddf2f568881e174f1345d142b69a7b6">   26</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#adddf2f568881e174f1345d142b69a7b6">sliceFallScore</a> = 50; <span class="comment">// score quand on fait tomber une tranche</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_constants_8h.html#ac8ed7676efba7d0843770ef21ea7e7ad">   27</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#ac8ed7676efba7d0843770ef21ea7e7ad">enemyFallWithSlice</a> = 150; <span class="comment">// score quand un ennemi tombe avec une tranche</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_constants_8h.html#ac7236dc5524579baab7a3ed83b1f0b4d">   28</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#ac7236dc5524579baab7a3ed83b1f0b4d">enemyMashedBySlice</a> = 100; <span class="comment">// score quand un ennemi est ecrase par une tranche</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_constants_8h.html#a85bd509f02875bcadd17090b2ffa501d">   29</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a85bd509f02875bcadd17090b2ffa501d">completeBurgerScore</a> = 200;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// score avec 2 joueurs</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_constants_8h.html#a1284547dba1ba6e7459e9d74e2d36b28">   32</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a1284547dba1ba6e7459e9d74e2d36b28">finishLevelScore</a> = 1000;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_constants_8h.html#a36de2ef1aef4ef307ad2771a9468e057">   34</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a36de2ef1aef4ef307ad2771a9468e057">baseHiScore</a> = 28000; <span class="comment">// hi-score de base</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_constants_8h.html#a58bd5fa6a1c53a004bac2156d8898251">   35</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a58bd5fa6a1c53a004bac2156d8898251">liveBonusScore</a> = 20000; <span class="comment">// nouvelle vie bonus tous les X</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// valeurs tirees du fichier levels.png</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_constants_8h.html#a26add0f9ab459e8057aca2b43f5774f2">   38</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a26add0f9ab459e8057aca2b43f5774f2">levelsCount</a> = 6; <span class="comment">// nombre max de niveaux</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="_constants_8h.html#ab3dd843e264d13bdf7d9c5607c510bf9">   39</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#ab3dd843e264d13bdf7d9c5607c510bf9">levelImageWidth</a> = 208; <span class="comment">// largeur en pixel de l&#39;image d&#39;un niveau</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_constants_8h.html#a83be0382265e15b054a5e2f0298c2d82">   40</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a83be0382265e15b054a5e2f0298c2d82">levelImageHeight</a> = 200; <span class="comment">// hauteur en pixel de l&#39;image d&#39;un niveau</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_constants_8h.html#abf47fce79dcca6167d90775a91edb8be">   41</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#abf47fce79dcca6167d90775a91edb8be">levelImagePadding</a> = 8; <span class="comment">// zone grise entre les niveaux</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="_constants_8h.html#ad3e675b4008fb5a37d63d26213f0a966">   42</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#ad3e675b4008fb5a37d63d26213f0a966">levelBlocksSizeX</a> = 24; <span class="comment">// largeur entre 2 echelles</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="_constants_8h.html#afe7577e4bbe80d56bc8b7b92008d37d8">   43</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#afe7577e4bbe80d56bc8b7b92008d37d8">levelBlocksDivisionX</a> = 8; <span class="comment">// 16 =&gt; taille d&#39;une echelle</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="_constants_8h.html#aa7e1ddd13a445687b4eae76d00f73dcf">   44</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#aa7e1ddd13a445687b4eae76d00f73dcf">levelBlocksPixelsY</a> = 8; <span class="comment">// taille d&#39;1 bloc en pixels</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="_constants_8h.html#a5b0183dd6d738c063cae55dfb787c9e4">   46</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a5b0183dd6d738c063cae55dfb787c9e4">groundSizeY</a> = 2; <span class="comment">// epaisseur du sol</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_constants_8h.html#a2dcdf022e52dcd02febee527670b07f9">   47</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a2dcdf022e52dcd02febee527670b07f9">sliceSizeX</a> = 32; <span class="comment">// largeur des tranches</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="_constants_8h.html#ac4c158e2e02f641675433ce58ebe09fe">   48</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#ac4c158e2e02f641675433ce58ebe09fe">sliceSizeY</a> = 7; <span class="comment">// hauteur des tranches</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="_constants_8h.html#a8e93b1d9c742ead8b3053956c4b57d39">   49</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a8e93b1d9c742ead8b3053956c4b57d39">sliceBounceY</a> = 11; <span class="comment">// hauteur du rebond des tranches</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="_constants_8h.html#ad543af7a63c20d253d97e8119e320689">   51</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#ad543af7a63c20d253d97e8119e320689">spriteSizeX</a> = 16; <span class="comment">// largeur du joueur/bonus/ennemis</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="_constants_8h.html#a96bfa4bdabcb3e85c7a27508dd0ac387">   52</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#a96bfa4bdabcb3e85c7a27508dd0ac387">playerFootX</a> = 4; <span class="comment">// position des pieds du joueur par rapport au bord de son sprite</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="_constants_8h.html#ac8d70e2746bfc16c19ae0d9e8b7add0a">   53</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_constants_8h.html#ac8d70e2746bfc16c19ae0d9e8b7add0a">playerBelowSliceY</a> = 4; <span class="comment">// taille de la portion qui n&#39;est pas importante pour toucher les tranches</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="_constants_8h.html#a3fc9d158278670d5b84bb74759a86de1">   55</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="_constants_8h.html#a3fc9d158278670d5b84bb74759a86de1">fontSize</a> = 7; <span class="comment">// taille de base de la police</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="_constants_8h.html#a53a7c6add48b9c38301b8f6168dc5c63">   56</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="_constants_8h.html#a53a7c6add48b9c38301b8f6168dc5c63">appTitle</a>[] = <span class="stringliteral">&quot;Burger Tech&quot;</span>; <span class="comment">// nom de l&#39;application</span></div>
+<div class="ttc" id="a_constants_8h_html_a1284547dba1ba6e7459e9d74e2d36b28"><div class="ttname"><a href="_constants_8h.html#a1284547dba1ba6e7459e9d74e2d36b28">finishLevelScore</a></div><div class="ttdeci">const int finishLevelScore</div><div class="ttdef"><b>Definition:</b> Constants.h:32</div></div>
+<div class="ttc" id="a_constants_8h_html_a18e8930778bcfb9070d5625df0d272b0"><div class="ttname"><a href="_constants_8h.html#a18e8930778bcfb9070d5625df0d272b0">gameOverTime</a></div><div class="ttdeci">const int gameOverTime</div><div class="ttdef"><b>Definition:</b> Constants.h:19</div></div>
+<div class="ttc" id="a_constants_8h_html_a26add0f9ab459e8057aca2b43f5774f2"><div class="ttname"><a href="_constants_8h.html#a26add0f9ab459e8057aca2b43f5774f2">levelsCount</a></div><div class="ttdeci">const int levelsCount</div><div class="ttdef"><b>Definition:</b> Constants.h:38</div></div>
+<div class="ttc" id="a_constants_8h_html_a2a57865f5a6879dcb896666c2282f2a2"><div class="ttname"><a href="_constants_8h.html#a2a57865f5a6879dcb896666c2282f2a2">enemySpeedIncrement</a></div><div class="ttdeci">const float enemySpeedIncrement</div><div class="ttdef"><b>Definition:</b> Constants.h:6</div></div>
+<div class="ttc" id="a_constants_8h_html_a2ca3bbfc0fe7a56034cb0920449c0759"><div class="ttname"><a href="_constants_8h.html#a2ca3bbfc0fe7a56034cb0920449c0759">pepperedWait</a></div><div class="ttdeci">const int pepperedWait</div><div class="ttdef"><b>Definition:</b> Constants.h:13</div></div>
+<div class="ttc" id="a_constants_8h_html_a2dcdf022e52dcd02febee527670b07f9"><div class="ttname"><a href="_constants_8h.html#a2dcdf022e52dcd02febee527670b07f9">sliceSizeX</a></div><div class="ttdeci">const int sliceSizeX</div><div class="ttdef"><b>Definition:</b> Constants.h:47</div></div>
+<div class="ttc" id="a_constants_8h_html_a2eb46afd258fbcc39300b80cb9c15575"><div class="ttname"><a href="_constants_8h.html#a2eb46afd258fbcc39300b80cb9c15575">sliceSpeed</a></div><div class="ttdeci">const float sliceSpeed</div><div class="ttdef"><b>Definition:</b> Constants.h:8</div></div>
+<div class="ttc" id="a_constants_8h_html_a36de2ef1aef4ef307ad2771a9468e057"><div class="ttname"><a href="_constants_8h.html#a36de2ef1aef4ef307ad2771a9468e057">baseHiScore</a></div><div class="ttdeci">const int baseHiScore</div><div class="ttdef"><b>Definition:</b> Constants.h:34</div></div>
+<div class="ttc" id="a_constants_8h_html_a3fc9d158278670d5b84bb74759a86de1"><div class="ttname"><a href="_constants_8h.html#a3fc9d158278670d5b84bb74759a86de1">fontSize</a></div><div class="ttdeci">const float fontSize</div><div class="ttdef"><b>Definition:</b> Constants.h:55</div></div>
+<div class="ttc" id="a_constants_8h_html_a4994105f319bda158f6f8c74de63ff9c"><div class="ttname"><a href="_constants_8h.html#a4994105f319bda158f6f8c74de63ff9c">enemyBaseSpeed</a></div><div class="ttdeci">const float enemyBaseSpeed</div><div class="ttdef"><b>Definition:</b> Constants.h:5</div></div>
+<div class="ttc" id="a_constants_8h_html_a4df54a2397e6b12f93b57bdd1ea2992b"><div class="ttname"><a href="_constants_8h.html#a4df54a2397e6b12f93b57bdd1ea2992b">scoreShowTime</a></div><div class="ttdeci">const int scoreShowTime</div><div class="ttdef"><b>Definition:</b> Constants.h:17</div></div>
+<div class="ttc" id="a_constants_8h_html_a4fa69116464e354783f812d07c5a9921"><div class="ttname"><a href="_constants_8h.html#a4fa69116464e354783f812d07c5a9921">playerSpeed</a></div><div class="ttdeci">const float playerSpeed</div><div class="ttdef"><b>Definition:</b> Constants.h:4</div></div>
+<div class="ttc" id="a_constants_8h_html_a537e039980ad44e7b7e3e8267e4a4b1b"><div class="ttname"><a href="_constants_8h.html#a537e039980ad44e7b7e3e8267e4a4b1b">bonusShowStart</a></div><div class="ttdeci">const int bonusShowStart</div><div class="ttdef"><b>Definition:</b> Constants.h:15</div></div>
+<div class="ttc" id="a_constants_8h_html_a53a7c6add48b9c38301b8f6168dc5c63"><div class="ttname"><a href="_constants_8h.html#a53a7c6add48b9c38301b8f6168dc5c63">appTitle</a></div><div class="ttdeci">const char appTitle[]</div><div class="ttdef"><b>Definition:</b> Constants.h:56</div></div>
+<div class="ttc" id="a_constants_8h_html_a56e8401fb8c3d374dbdb18560d9d4e6c"><div class="ttname"><a href="_constants_8h.html#a56e8401fb8c3d374dbdb18560d9d4e6c">pepperSprayWait</a></div><div class="ttdeci">const int pepperSprayWait</div><div class="ttdef"><b>Definition:</b> Constants.h:12</div></div>
+<div class="ttc" id="a_constants_8h_html_a58bd5fa6a1c53a004bac2156d8898251"><div class="ttname"><a href="_constants_8h.html#a58bd5fa6a1c53a004bac2156d8898251">liveBonusScore</a></div><div class="ttdeci">const int liveBonusScore</div><div class="ttdef"><b>Definition:</b> Constants.h:35</div></div>
+<div class="ttc" id="a_constants_8h_html_a5b0183dd6d738c063cae55dfb787c9e4"><div class="ttname"><a href="_constants_8h.html#a5b0183dd6d738c063cae55dfb787c9e4">groundSizeY</a></div><div class="ttdeci">const int groundSizeY</div><div class="ttdef"><b>Definition:</b> Constants.h:46</div></div>
+<div class="ttc" id="a_constants_8h_html_a5bd0cac055c27c71188f95d01a299f75"><div class="ttname"><a href="_constants_8h.html#a5bd0cac055c27c71188f95d01a299f75">levelFinishedTime</a></div><div class="ttdeci">const int levelFinishedTime</div><div class="ttdef"><b>Definition:</b> Constants.h:18</div></div>
+<div class="ttc" id="a_constants_8h_html_a5d569f678e34b162ea9e741fda2ca046"><div class="ttname"><a href="_constants_8h.html#a5d569f678e34b162ea9e741fda2ca046">bonus2Score</a></div><div class="ttdeci">const int bonus2Score</div><div class="ttdef"><b>Definition:</b> Constants.h:24</div></div>
+<div class="ttc" id="a_constants_8h_html_a5ee944f4ac779eea66ce76214cb509bc"><div class="ttname"><a href="_constants_8h.html#a5ee944f4ac779eea66ce76214cb509bc">bonus1Score</a></div><div class="ttdeci">const int bonus1Score</div><div class="ttdef"><b>Definition:</b> Constants.h:23</div></div>
+<div class="ttc" id="a_constants_8h_html_a6f1fd7e049118d686ce75bd57941dbdf"><div class="ttname"><a href="_constants_8h.html#a6f1fd7e049118d686ce75bd57941dbdf">bonus3Score</a></div><div class="ttdeci">const int bonus3Score</div><div class="ttdef"><b>Definition:</b> Constants.h:25</div></div>
+<div class="ttc" id="a_constants_8h_html_a794025fdcdf8d1d759c8a135d2925c45"><div class="ttname"><a href="_constants_8h.html#a794025fdcdf8d1d759c8a135d2925c45">scoreSpeed</a></div><div class="ttdeci">const float scoreSpeed</div><div class="ttdef"><b>Definition:</b> Constants.h:7</div></div>
+<div class="ttc" id="a_constants_8h_html_a83be0382265e15b054a5e2f0298c2d82"><div class="ttname"><a href="_constants_8h.html#a83be0382265e15b054a5e2f0298c2d82">levelImageHeight</a></div><div class="ttdeci">const int levelImageHeight</div><div class="ttdef"><b>Definition:</b> Constants.h:40</div></div>
+<div class="ttc" id="a_constants_8h_html_a85bd509f02875bcadd17090b2ffa501d"><div class="ttname"><a href="_constants_8h.html#a85bd509f02875bcadd17090b2ffa501d">completeBurgerScore</a></div><div class="ttdeci">const int completeBurgerScore</div><div class="ttdef"><b>Definition:</b> Constants.h:29</div></div>
+<div class="ttc" id="a_constants_8h_html_a8e93b1d9c742ead8b3053956c4b57d39"><div class="ttname"><a href="_constants_8h.html#a8e93b1d9c742ead8b3053956c4b57d39">sliceBounceY</a></div><div class="ttdeci">const int sliceBounceY</div><div class="ttdef"><b>Definition:</b> Constants.h:49</div></div>
+<div class="ttc" id="a_constants_8h_html_a96bfa4bdabcb3e85c7a27508dd0ac387"><div class="ttname"><a href="_constants_8h.html#a96bfa4bdabcb3e85c7a27508dd0ac387">playerFootX</a></div><div class="ttdeci">const int playerFootX</div><div class="ttdef"><b>Definition:</b> Constants.h:52</div></div>
+<div class="ttc" id="a_constants_8h_html_aa7e1ddd13a445687b4eae76d00f73dcf"><div class="ttname"><a href="_constants_8h.html#aa7e1ddd13a445687b4eae76d00f73dcf">levelBlocksPixelsY</a></div><div class="ttdeci">const int levelBlocksPixelsY</div><div class="ttdef"><b>Definition:</b> Constants.h:44</div></div>
+<div class="ttc" id="a_constants_8h_html_aadafb0700fa9c6b379bf45a73a98da2b"><div class="ttname"><a href="_constants_8h.html#aadafb0700fa9c6b379bf45a73a98da2b">levelGameReadyTime</a></div><div class="ttdeci">const int levelGameReadyTime</div><div class="ttdef"><b>Definition:</b> Constants.h:20</div></div>
+<div class="ttc" id="a_constants_8h_html_ab3dd843e264d13bdf7d9c5607c510bf9"><div class="ttname"><a href="_constants_8h.html#ab3dd843e264d13bdf7d9c5607c510bf9">levelImageWidth</a></div><div class="ttdeci">const int levelImageWidth</div><div class="ttdef"><b>Definition:</b> Constants.h:39</div></div>
+<div class="ttc" id="a_constants_8h_html_abde477945be1f3a2c0cad0cd21c63dab"><div class="ttname"><a href="_constants_8h.html#abde477945be1f3a2c0cad0cd21c63dab">sliceBounceSpeedFactor</a></div><div class="ttdeci">const float sliceBounceSpeedFactor</div><div class="ttdef"><b>Definition:</b> Constants.h:9</div></div>
+<div class="ttc" id="a_constants_8h_html_abf47fce79dcca6167d90775a91edb8be"><div class="ttname"><a href="_constants_8h.html#abf47fce79dcca6167d90775a91edb8be">levelImagePadding</a></div><div class="ttdeci">const int levelImagePadding</div><div class="ttdef"><b>Definition:</b> Constants.h:41</div></div>
+<div class="ttc" id="a_constants_8h_html_ac030f6ac18e03a8a3d88fb61ac0d8aa5"><div class="ttname"><a href="_constants_8h.html#ac030f6ac18e03a8a3d88fb61ac0d8aa5">pepperSpeed</a></div><div class="ttdeci">const float pepperSpeed</div><div class="ttdef"><b>Definition:</b> Constants.h:10</div></div>
+<div class="ttc" id="a_constants_8h_html_ac4c158e2e02f641675433ce58ebe09fe"><div class="ttname"><a href="_constants_8h.html#ac4c158e2e02f641675433ce58ebe09fe">sliceSizeY</a></div><div class="ttdeci">const int sliceSizeY</div><div class="ttdef"><b>Definition:</b> Constants.h:48</div></div>
+<div class="ttc" id="a_constants_8h_html_ac7236dc5524579baab7a3ed83b1f0b4d"><div class="ttname"><a href="_constants_8h.html#ac7236dc5524579baab7a3ed83b1f0b4d">enemyMashedBySlice</a></div><div class="ttdeci">const int enemyMashedBySlice</div><div class="ttdef"><b>Definition:</b> Constants.h:28</div></div>
+<div class="ttc" id="a_constants_8h_html_ac8d70e2746bfc16c19ae0d9e8b7add0a"><div class="ttname"><a href="_constants_8h.html#ac8d70e2746bfc16c19ae0d9e8b7add0a">playerBelowSliceY</a></div><div class="ttdeci">const int playerBelowSliceY</div><div class="ttdef"><b>Definition:</b> Constants.h:53</div></div>
+<div class="ttc" id="a_constants_8h_html_ac8ed7676efba7d0843770ef21ea7e7ad"><div class="ttname"><a href="_constants_8h.html#ac8ed7676efba7d0843770ef21ea7e7ad">enemyFallWithSlice</a></div><div class="ttdeci">const int enemyFallWithSlice</div><div class="ttdef"><b>Definition:</b> Constants.h:27</div></div>
+<div class="ttc" id="a_constants_8h_html_ad3e675b4008fb5a37d63d26213f0a966"><div class="ttname"><a href="_constants_8h.html#ad3e675b4008fb5a37d63d26213f0a966">levelBlocksSizeX</a></div><div class="ttdeci">const int levelBlocksSizeX</div><div class="ttdef"><b>Definition:</b> Constants.h:42</div></div>
+<div class="ttc" id="a_constants_8h_html_ad543af7a63c20d253d97e8119e320689"><div class="ttname"><a href="_constants_8h.html#ad543af7a63c20d253d97e8119e320689">spriteSizeX</a></div><div class="ttdeci">const int spriteSizeX</div><div class="ttdef"><b>Definition:</b> Constants.h:51</div></div>
+<div class="ttc" id="a_constants_8h_html_adddf2f568881e174f1345d142b69a7b6"><div class="ttname"><a href="_constants_8h.html#adddf2f568881e174f1345d142b69a7b6">sliceFallScore</a></div><div class="ttdeci">const int sliceFallScore</div><div class="ttdef"><b>Definition:</b> Constants.h:26</div></div>
+<div class="ttc" id="a_constants_8h_html_adf98afa15934a44fffd126adf569d241"><div class="ttname"><a href="_constants_8h.html#adf98afa15934a44fffd126adf569d241">bonusShowTime</a></div><div class="ttdeci">const int bonusShowTime</div><div class="ttdef"><b>Definition:</b> Constants.h:16</div></div>
+<div class="ttc" id="a_constants_8h_html_afe7577e4bbe80d56bc8b7b92008d37d8"><div class="ttname"><a href="_constants_8h.html#afe7577e4bbe80d56bc8b7b92008d37d8">levelBlocksDivisionX</a></div><div class="ttdeci">const int levelBlocksDivisionX</div><div class="ttdef"><b>Definition:</b> Constants.h:43</div></div>
+<div class="ttc" id="a_constants_8h_html_affb9ea8d9dd1d9aaf8572e8d36d8d82e"><div class="ttname"><a href="_constants_8h.html#affb9ea8d9dd1d9aaf8572e8d36d8d82e">limboWaitTime</a></div><div class="ttdeci">const int limboWaitTime</div><div class="ttdef"><b>Definition:</b> Constants.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2b298ba2fe274a0e79ead9f59c761ae6.html">BurgerTime</a></li><li class="navelem"><a class="el" href="dir_7dfc6200125ba505770d11d2abcc3b77.html">Headers</a></li><li class="navelem"><a class="el" href="_constants_8h.html">Constants.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

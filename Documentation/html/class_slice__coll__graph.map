@@ -1,0 +1,12 @@
+<map id="Slice" name="Slice">
+<area shape="rect" id="node1" title="Tranche de hamburger." alt="" coords="18,171,71,197"/>
+<area shape="rect" id="node2" href="$class_movable.html" title="Objet qui bouge sur l&#39;écran." alt="" coords="325,5,404,32"/>
+<area shape="rect" id="node8" href="$class_bonus.html" title="Bonus pour les joueur." alt="" coords="435,81,497,108"/>
+<area shape="rect" id="node9" href="$class_player.html" title="Joueur." alt="" coords="237,81,300,108"/>
+<area shape="rect" id="node3" href="$class_updatable.html" title="Entités pouvant être mise à jour dans le jeu." alt="" coords="424,349,513,376"/>
+<area shape="rect" id="node4" href="$class_game.html" title="Le jeu." alt="" coords="530,260,591,287"/>
+<area shape="rect" id="node7" href="$class_level.html" title="Niveau du jeu." alt="" coords="436,171,493,197"/>
+<area shape="rect" id="node5" href="$class_sprite_sheet.html" title=" " alt="" coords="675,171,772,197"/>
+<area shape="rect" id="node6" href="$class_sheet.html" title=" " alt="" coords="581,81,639,108"/>
+<area shape="rect" id="node10" href="$class_burger.html" title="Hamburger composé de tranche à compléter pour terminer les niveaux." alt="" coords="25,81,91,108"/>
+</map>

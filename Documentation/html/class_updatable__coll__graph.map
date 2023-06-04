@@ -1,0 +1,10 @@
+<map id="Updatable" name="Updatable">
+<area shape="rect" id="node1" title="Entités pouvant être mise à jour dans le jeu." alt="" coords="50,5,139,32"/>
+<area shape="rect" id="node2" href="$class_game.html" title="Le jeu." alt="" coords="279,336,340,363"/>
+<area shape="rect" id="node5" href="$class_level.html" title="Niveau du jeu." alt="" coords="106,247,163,273"/>
+<area shape="rect" id="node7" href="$class_movable.html" title="Objet qui bouge sur l&#39;écran." alt="" coords="94,81,173,108"/>
+<area shape="rect" id="node3" href="$class_sprite_sheet.html" title=" " alt="" coords="483,247,581,273"/>
+<area shape="rect" id="node4" href="$class_sheet.html" title=" " alt="" coords="443,157,501,184"/>
+<area shape="rect" id="node6" href="$class_bonus.html" title="Bonus pour les joueur." alt="" coords="94,157,157,184"/>
+<area shape="rect" id="node8" href="$class_player.html" title="Joueur." alt="" coords="181,157,243,184"/>
+</map>

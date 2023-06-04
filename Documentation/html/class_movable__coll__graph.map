@@ -1,0 +1,10 @@
+<map id="Movable" name="Movable">
+<area shape="rect" id="node1" title="Objet qui bouge sur l&#39;écran." alt="" coords="35,5,114,32"/>
+<area shape="rect" id="node7" href="$class_bonus.html" title="Bonus pour les joueur." alt="" coords="146,81,209,108"/>
+<area shape="rect" id="node8" href="$class_player.html" title="Joueur." alt="" coords="43,81,106,108"/>
+<area shape="rect" id="node2" href="$class_updatable.html" title="Entités pouvant être mise à jour dans le jeu." alt="" coords="121,349,210,376"/>
+<area shape="rect" id="node3" href="$class_game.html" title="Le jeu." alt="" coords="227,260,288,287"/>
+<area shape="rect" id="node6" href="$class_level.html" title="Niveau du jeu." alt="" coords="134,171,191,197"/>
+<area shape="rect" id="node4" href="$class_sprite_sheet.html" title=" " alt="" coords="371,171,469,197"/>
+<area shape="rect" id="node5" href="$class_sheet.html" title=" " alt="" coords="239,81,297,108"/>
+</map>

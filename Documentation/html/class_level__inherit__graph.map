@@ -1,0 +1,4 @@
+<map id="Level" name="Level">
+<area shape="rect" id="node1" title="Niveau du jeu." alt="" coords="21,80,79,107"/>
+<area shape="rect" id="node2" href="$class_updatable.html" title="Entités pouvant être mise à jour dans le jeu." alt="" coords="5,5,95,32"/>
+</map>
