@@ -70,6 +70,6 @@ Nous avons réalisé la documentation à l'aide de Doxygen sur Linux. Afin d'y a
 **Répartition du travail dans le binôme**
 - Nous avons fait l'UML ensemble sur un draw.io partagé.
 - Nous nous sommes réparti les classes à programmer à avons soumis les changements sur GitHub, nous avons cependant perdu une partie de l'historique de commits car nous avons par erreur créé une branche 'main' et une branche 'master' et faute de réussir à les merger nous avons du supprimer l'ancienne branche et son historique de commits.
-- Nous tenons à préciser que nous avons reçu de l'aide pour la programmation (d'un parent fan de jeux d'arcade - et de programmation !), sans quoi nous n'auriont pas réussi à programmer un jeu aussi complet !
+- Nous tenons à préciser que nous avons reçu de l'aide pour la programmation, ce qui nous à permis de réaliser un jeu aussi complet
 - Alice à réalisé la documentation sur Doxygen
 - Louise à recolorisé les sprites d'origine et écrit les tests unitaires : ils sont relativement réduits faute de temps
