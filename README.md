@@ -56,6 +56,9 @@ Utiliser [Ctrl Droit] pour lancer du poivre sur les ennemis
 Utiliser ``make [NOM DE LA CLASSE]Test`` pour générer l'éxecutable de test de la classe puis le lancer avec ``./[NOM DE LA CLASSE]Test``
 Il est aussi possible de régénérer ces exécutables en utilisant ``make clean_tests`` puis la commande make précédente.
 
+## Documentation
+Nous avons réalisé la documentation à l'aide de Doxygen sur Linux. Afin d'y accéder, télécharger le dossier intitulé **Documentation**, puis ouvrir le fichier **index.html**
+
 ## Commentaires sur le projet
 
 **Ce qui ne marche pas dans le jeu**
