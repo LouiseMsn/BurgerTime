@@ -9,6 +9,11 @@
 #include "Headers/Movable.h"
 #include "Headers/Bonus.h"
 
+/**
+ * @brief Construit un bonus
+ * 
+ * @param game 
+ */
 Bonus::Bonus(Game* game) :
 	Movable(game),
 	_score(0),
@@ -37,16 +42,31 @@ Bonus::Bonus(Game* game) :
 	}
 }
 
+/**
+ * @brief récupère le score
+ * 
+ * @return int valeur du sore
+ */
 int Bonus::getScore() const
 {
 	return _score;
 }
 
+/**
+ * @brief obtient un score
+ * 
+ * @return true 
+ * @return false 
+ */
 bool Bonus::isScored() const
 {
 	return _scored;
 }
 
+/**
+ * @brief est scoré
+ * 
+ */
 void Bonus::setScored()
 {
 	_scored = true;

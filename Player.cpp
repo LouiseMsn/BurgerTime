@@ -13,6 +13,12 @@
 #define SET_SPRITE_PLAYER(x) if (_number % 2) setSprite(SPRITE(Player2##x)); else setSprite(SPRITE(Player1##x));
 #define SET_SUBSTATE(x) (_number % 2) ? setSubState(Player2##x) : setSubState(Player1##x)
 
+/**
+ * @brief construit un nouveau joueur
+ * 
+ * @param game jeu
+ * @param number numéro du joueur
+ */
 Player::Player(Game* game, int number) :
 	Movable(game)
 {
@@ -23,6 +29,11 @@ Player::Player(Game* game, int number) :
 	prepareForPlay(true);
 }
 
+/**
+ * @brief préparation du jeu
+ * vies et poivres du joueur, score à 0, vitesse, direction par défaut
+ * @param gameStart true ou false
+ */
 void Player::prepareForPlay(bool gameStart)
 {
 	stand(true);
@@ -39,6 +50,12 @@ void Player::prepareForPlay(bool gameStart)
 	}
 }
 
+/**
+ * @brief ajoute un socre au joueur
+ * 
+ * @param score 
+ * @param pixelPosition position du joueur
+ */
 void Player::addScore(int score, const sf::Vector2i& pixelPosition)
 {
 	auto before = _score / liveBonusScore;
@@ -62,31 +79,62 @@ void Player::addScore(int score, const sf::Vector2i& pixelPosition)
 	game->getCurrentLevel()->addScore(score, pixelPosition, color);
 }
 
+/**
+ * @brief vérifie si un joueur est mort
+ * 
+ * @return true 
+ * @return false 
+ */
 bool Player::isDead() const
 {
 	return getState() == PlayerDead;
 }
 
+/**
+ * @brief récupère le nombre de vie actuel d'un joueur
+ * 
+ * @return int nombre de vies restantes
+ */
 int Player::getLives() const
 {
 	return _lives;
 }
 
+/**
+ * @brief récupère le score actuel d'un joueur
+ * 
+ * @return int score
+ */
 int Player::getScore() const
 {
 	return _score;
 }
 
+/**
+ * @brief récupère le nombre de poivres actuel d'un joueur
+ * 
+ * @return int nombre de poivres
+ */
 int Player::getPeppers() const
 {
 	return _peppers;
 }
 
+/**
+ * @brief récupère le numéro du joueur
+ * 
+ * @return int numéro du joueur
+ */
 int Player::getNumber() const
 {
 	return _number;
 }
 
+/**
+ * @brief le joueur est debout
+ * 
+ * @param force 
+ */
 void Player::stand(bool force)
 {
 	if (force)
@@ -117,6 +165,10 @@ void Player::stand(bool force)
 	setMovingDirection(None);
 }
 
+/**
+ * @brief le joueur termine un niveau
+ * 
+ */
 void Player::finishLevel()
 {
 	setSpeed(0);
@@ -132,6 +184,10 @@ void Player::finishLevel()
 	}
 }
 
+/**
+ * @brief le joueur meurt
+ * 
+ */
 void Player::die()
 {
 	if (isDead())
@@ -143,6 +199,10 @@ void Player::die()
 	getGame()->playSound(SoundPlayerDie);
 }
 
+/**
+ * @brief le joueur jette du poivre
+ * 
+ */
 void Player::sprayPepper()
 {
 	if (!_peppers || _lastPepper.getElapsedTime().asMilliseconds() < pepperSprayWait)
@@ -162,6 +222,14 @@ void Player::sprayPepper()
 	game->playSound(SoundSprayPepper);
 }
 
+/**
+ * @brief setter de la position du joueur en pixel
+ * 
+ * @param pixelPosition 
+ * @param checkBlocks 
+ * @return true 
+ * @return false 
+ */
 bool Player::setPixelPosition(const sf::Vector2i& pixelPosition, bool checkBlocks)
 {
 	if (!Movable::setPixelPosition(pixelPosition, checkBlocks))
@@ -185,6 +253,13 @@ bool Player::setPixelPosition(const sf::Vector2i& pixelPosition, bool checkBlock
 	return true;
 }
 
+/**
+ * @brief setter de l'état et des sous-états du joueur (devant, gauche, droite, mort ...)
+ * 
+ * @param state 
+ * @return true 
+ * @return false 
+ */
 bool Player::setState(int state)
 {
 	if (!Movable::setState(state))
@@ -214,6 +289,11 @@ bool Player::setState(int state)
 	return true;
 }
 
+/**
+ * @brief bouge le joueur en fonction de la touche appuyée par l'utilisateur
+ * 
+ * @param key touche appuyée par l'utilisations
+ */
 void Player::moveFromKey(sf::Keyboard::Key key)
 {
 	auto state = getState();
@@ -241,6 +321,13 @@ void Player::moveFromKey(sf::Keyboard::Key key)
 	Movable::moveFromKey(key);
 }
 
+/**
+ * @brief mise à jour du joueur
+ * 
+ * @param window 
+ * @param deltaTime 
+ * @param states 
+ */
 void Player::update(sf::RenderWindow& window, const sf::Time& deltaTime, const sf::RenderStates& states)
 {
 	if (getGame()->isPaused())

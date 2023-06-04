@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Bonus pour les joueur
+ * 
+ */
 class Bonus : public Movable
 {
 	int _score;

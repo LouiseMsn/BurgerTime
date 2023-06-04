@@ -13,6 +13,15 @@
 #include "Headers/Slice.h"
 #include "Headers/Burger.h"
 
+/**
+ * @brief construit une nouvelle tranche de hamburger
+ * 
+ * @param game jeu
+ * @param burger burger auquel la tranche appartient
+ * @param number numéro
+ * @param type type de tranche (viande, salade, fromage..)
+ * @param verticalPosition position verticale de la tranche
+ */
 Slice::Slice(Game* game, const Burger* burger, int number, BurgerTechSprite type, int verticalPosition) :
 	Movable(game)
 {
@@ -47,6 +56,10 @@ Slice::Slice(Game* game, const Burger* burger, int number, BurgerTechSprite type
 	}
 }
 
+/**
+ * @brief détruit la tranche
+ * 
+ */
 Slice::~Slice()
 {
 	for (const auto& item : _chunks)
@@ -55,26 +68,51 @@ Slice::~Slice()
 	}
 }
 
+/**
+ * @brief récupère la position verticale de la tranche
+ * 
+ * @return int 
+ */
 int Slice::getVerticalPosition() const
 {
 	return _verticalPosition;
 }
 
+/**
+ * @brief récupère le type de tranche (fromage, salade, viande..)
+ * 
+ * @return BurgerTechSprite 
+ */
 BurgerTechSprite Slice::getSliceType() const
 {
 	return _type;
 }
 
+/**
+ * @brief récupère le numéro de la tranche
+ * 
+ * @return int numéro de la tranche
+ */
 int Slice::getNumber() const
 {
 	return _number;
 }
 
+/**
+ * @brief récupère le burger auquel apparatient la tranche
+ * 
+ * @return const Burger* 
+ */
 const Burger* Slice::getBurger() const
 {
 	return _burger;
 }
 
+/**
+ * @brief prépare pour joueur
+ * initialise la vitesse, position, le rebondissement de la tranche au début du niveau
+ * 
+ */
 void Slice::prepareForPlay()
 {
 	_bouncePosition = 0;
@@ -87,6 +125,14 @@ void Slice::prepareForPlay()
 	setSpeed(sliceSpeed);
 }
 
+/**
+ * @brief place la tranche à une position passée en paramètre en pixel
+ * 
+ * @param pixelPosition 
+ * @param checkBlocks 
+ * @return true 
+ * @return false 
+ */
 bool Slice::setPixelPosition(const sf::Vector2i& pixelPosition, bool checkBlocks)
 {
 	if (_pixelPosition == pixelPosition)
@@ -97,6 +143,13 @@ bool Slice::setPixelPosition(const sf::Vector2i& pixelPosition, bool checkBlocks
 	return true;
 }
 
+/**
+ * @brief met la tranche dans un état 
+ * 
+ * @param state immobile, entrain de tomber, entrain de rebondir vers le haut ou vers le bas, empilée
+ * @return true 
+ * @return false 
+ */
 bool Slice::setState(int state)
 {
 	if (!Movable::setState(state))
@@ -134,6 +187,13 @@ bool Slice::setState(int state)
 	return true;
 }
 
+/**
+ * @brief dessine le sprite de la tranche sur la fenêtre
+ * 
+ * @param window 
+ * @param deltaTime 
+ * @param states 
+ */
 void Slice::drawSprite(sf::RenderWindow& window, const sf::Time& deltaTime, const sf::RenderStates& states)
 {
 	if (_type == Plate)
@@ -151,6 +211,14 @@ void Slice::drawSprite(sf::RenderWindow& window, const sf::Time& deltaTime, cons
 	}
 }
 
+/**
+ * @brief on descend les morceaux voisins qui sont au même niveau
+ * les tranches sont divisées en morceaux, un appui jusqu'à 6 permet de faire tomber la tranche
+ * 
+ * @param chunk 
+ * @param level 
+ * @param player 
+ */
 void Slice::stepOnIfSameLevel(int chunk, int level, Player* player)
 {
 	if (chunk < 0 || chunk >= _chunksCount)
@@ -174,6 +242,15 @@ void Slice::stepOnIfSameLevel(int chunk, int level, Player* player)
 	}
 }
 
+/**
+ * @brief pas du joueur
+ * si la position du joueur interesecte notre tranche, on détermine le morceau et on écrase à partir du morceau le plus bas si il à déjà été écrasé
+ * 
+ * @param pixelBounds 
+ * @param player 
+ * @return true 
+ * @return false 
+ */
 bool Slice::playerStep(const sf::IntRect& pixelBounds, Player* player)
 {
 	if (getState() != SliceImmobile)
@@ -195,6 +272,11 @@ bool Slice::playerStep(const sf::IntRect& pixelBounds, Player* player)
 	return true;
 }
 
+/**
+ * @brief forme du rebondissement de la tranche
+ * 
+ * @param value valeur de la hauteur du rebondissement
+ */
 void Slice::setBouncingShape(int value)
 {
 	_stepped[0] = value;
@@ -203,6 +285,11 @@ void Slice::setBouncingShape(int value)
 	_stepped[3] = value;
 }
 
+/**
+ * @brief mise à jour lorsque la tranche bouge
+ * 
+ * @param speed 
+ */
 void Slice::updateWhenMoved(int speed)
 {
 	if (_type == Plate)
